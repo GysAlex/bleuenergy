@@ -1,0 +1,377 @@
+:root{
+    --gradient: linear-gradient(90deg, #166534cc, #036aa1cc) center center;
+    --text-color: #4b5563;
+    --main-green: #2E7D32;
+}
+
+.cta button 
+{
+    background-color: white !important;
+}
+
+.hero
+{
+    overflow-x: clip;
+}
+
+.hero .img-container
+{
+    height: 500px;
+}
+
+.hero .img-container .wrapper
+{
+    top: 35%;
+}
+
+.tri-avantages-section {
+    width: 100%;
+    padding: 80px 0;
+    overflow-x: clip;
+}
+
+.tri-avantages-container {
+    max-width: var(--max-cont_size); /* Utilisation de la variable */
+    margin: 0 auto;
+    text-align: center;
+    width: 92%;
+}
+
+.tri-avantages-title {
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 600;
+    background: var(--simple-gradient);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 50px;
+}
+
+.tri-avantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.avantage-card {
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+    opacity: 1;
+    transform: translateY(20px);
+}
+
+.avantage-icon {
+    font-size: 48px;
+    color: #2E7D32; /* Couleur de l'icône */
+    margin-bottom: 20px;
+}
+
+.avantage-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2E7D32;
+    margin-bottom: 10px;
+}
+
+.avantage-description {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.avantage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+.tri-technologies-section {
+    width: 100%;
+    padding: 80px 0;
+    background: var(--second-part-gradient);
+    overflow-x: clip;
+}
+
+.tri-technologies-container {
+    max-width: var(--max-cont_size);
+    margin: 0 auto;
+    text-align: center;
+    width: 92%;
+}
+
+.tri-technologies-title {
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 600;
+    background: var(--simple-gradient);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 50px;
+}
+
+.technologies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    gap: 90px;
+}
+
+.technology-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* Ajout des transitions pour un effet de survol fluide */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.technology-card:hover {
+    transform: translateY(-5px); /* Fait flotter la carte vers le haut */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Donne plus de profondeur à l'ombre */
+}
+
+.technology-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.technology-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.technology-content {
+    padding: 25px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.technology-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark-green);
+    margin-bottom: 20px;
+}
+
+.technology-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.benefit-item i {
+    color: var(--main-green);
+    font-size: 1rem;
+}
+
+/* Préparation pour l'animation */
+.technology-card--left {
+    opacity: 1;
+}
+
+.technology-card--right {
+    opacity: 1;
+}
+
+/* Responsive pour les petits écrans */
+@media (max-width: 768px) {
+    .technologies-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.nos-produits-section {
+    width: 100%;
+    padding: 80px 0;
+    overflow-x: clip;
+}
+
+.nos-produits-container {
+    max-width: var(--max-cont_size);
+    margin: 0 auto;
+    text-align: center;
+    width: 92%;
+}
+
+.nos-produits-title {
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 600;
+    background: var(--simple-gradient);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 50px;
+}
+
+.produits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.produit-card {
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    /* Préparation pour l'animation */
+    opacity: 1;
+}
+
+.produit-icon {
+    font-size: 48px;
+    color: var(--main-green);
+    margin-bottom: 20px;
+}
+
+.produit-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--main-green);
+    margin-bottom: 10px;
+}
+
+.produit-description {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.produit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Starting a new section */
+
+.tri-processus-section {
+    width: 100%;
+    padding: 80px 0;
+    background: var(--second-part-gradient);
+    overflow-x: clip;
+}
+
+.tri-processus-container {
+    max-width: var(--max-cont_size);
+    margin: 0 auto;
+    text-align: center;
+    width: 92%;
+}
+
+.tri-processus-title {
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 600;
+    background: var(--simple-gradient);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 50px;
+}
+
+.processus-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.processus-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    min-width: 120px;
+    /* Préparation pour l'animation */
+}
+
+.processus-number {
+    width: 60px;
+    height: 60px;
+    background: var(--simple-gradient);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.processus-label {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.4;
+    max-width: 100px;
+}
+
+
+.tri-contact-section {
+    width: 100%;
+    padding: 60px 0;
+    overflow-x: clip;
+    background: var(--simple-gradient);
+}
+
+.tri-contact-container {
+    max-width: var(--max-cont_size);
+    margin: 0 auto;
+    text-align: center;
+    width: 92%;
+}
+
+.tri-contact-title {
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 600;
+    color: white;
+    margin-bottom: 50px;
+    transform: translateY(20px);
+}
+
+.tri-contact-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+    justify-items: center; /* Centrer les éléments dans la grille */
+}
+
+.contact-item {
+    display: flex; /* Maintien du flexbox pour l'alignement vertical icône/texte */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* Préparation pour l'animation */
+    opacity: 1;
+    transform: translateY(20px);
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    font-size: 1rem;
+    color: var(--text-color);
+}
