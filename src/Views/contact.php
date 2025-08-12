@@ -695,15 +695,6 @@ if (isset($_POST['newsletter_email'])) {
             }
         }
 
-        /*Forcing the mobile nav-bar effect */
-
-        .mobile-menu ul li:hover a
-        {
-            background: var(--simple-gradient);
-            background-clip: text;
-            color: transparent;    
-        }
-
     </style>
 </head>
 <body>

@@ -354,11 +354,11 @@
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
     <?php
         include __DIR__."/components/header.php";
     ?>
     
+    <!-- Hero Section -->
     <section class="hero-section">
         <div class="container hero-content">
             <div class="row align-items-center">
