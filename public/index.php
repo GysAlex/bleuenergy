@@ -15,6 +15,11 @@ if($uri === "/" && $_SERVER["REQUEST_METHOD"] == "GET")
     PageController::home();
 }
 
+else if ($uri === "/" && $_SERVER["REQUEST_METHOD"] == "POST")
+{
+    PageController::sendContactMail();
+}
+
 else if($uri === "/partenaire" && $_SERVER["REQUEST_METHOD"] == "GET")
 {
     PageController::partnership();
