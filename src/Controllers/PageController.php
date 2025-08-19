@@ -27,6 +27,11 @@ class PageController
         return view('about');
     }
 
+    public static function usine()
+    {
+        return view('usine');
+    }
+
     public static function partnership()
     {
         return view('partenaire');
@@ -73,6 +78,7 @@ class PageController
     }
 
 
+
     public static function sendContactMail()
     {
         header('Content-Type: application/json');
@@ -83,8 +89,8 @@ class PageController
             'message' => 'Requête invalide.'
         ];
 
-        // Collecte des données du formulaire
-        $nom = htmlspecialchars(trim($_POST['fullname'] ?? ''));
+        // Collecte des données du formulaire corrigé
+        $nom = htmlspecialchars(trim($_POST['name'] ?? '') . ' ' . trim($_POST['surname'] ?? ''));
         $email = htmlspecialchars(trim($_POST['email'] ?? ''));
         $message = htmlspecialchars(trim($_POST['message'] ?? ''));
 
@@ -104,22 +110,26 @@ class PageController
 
         $mail = new PHPMailer(true);
         try {
-            // Paramètres du serveur SMTP pour votre hébergement
+            // Paramètres du serveur SMTP
             $mail->isSMTP();
-            $mail->Host       = 'mail.alexcode.online';
+            $mail->Host       = 'bleueenergy.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'noreply@alexcode.online';
-            $mail->Password   = '.M@;z47vT?i4dO3G'; // Remplacez par le vrai mot de passe
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Notez SMTPS car le port est 465
+            $mail->Username   = 'noreply@bleueenergy.com';
+            $mail->Password   = 'G}&ILFR{4U%+'; // Remplacez par le vrai mot de passe
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port       = 465;
             $mail->CharSet = 'UTF-8';
 
-            // Expéditeur et adresse de réponse
-            $mail->setFrom('noreply@alexcode.online', 'Formulaire Alexcode'); // Expéditeur : utiliser la même adresse que le Username
+            // Expéditeur : Utilisation de l'adresse d'envoi officielle
+            // C'est l'adresse autorisée par le serveur pour l'envoi
+            $mail->setFrom('noreply@bleueenergy.com', 'Formulaire BleueEnergy');
+            
+            // Adresse de réponse : Utilisation de l'email correct de l'utilisateur
+            // Les réponses iront à l'utilisateur qui a rempli le formulaire
             $mail->addReplyTo($email, $nom);
             
-            // Destinataire
-            $mail->addAddress('contact@alexcode.online');
+            // Destinataire : Envoi à l'adresse de contact
+            $mail->addAddress('contact@bleueenergy.com');
 
             // Contenu de l'e-mail
             $mail->isHTML(false);

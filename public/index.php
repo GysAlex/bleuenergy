@@ -64,6 +64,11 @@ else if($uri === "/contact" && $_SERVER["REQUEST_METHOD"] == "GET")
     PageController::contact();
 }
 
+else if($uri === "/usine" && $_SERVER["REQUEST_METHOD"] == "GET")
+{
+    PageController::usine();
+}
+
 
 else 
 {

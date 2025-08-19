@@ -805,19 +805,5 @@ $tagline = "Pionniers de la Valorisation Énergétique";
         include __DIR__."/components/footer2.php";
     ?>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Header scroll effect - to change navbar background
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            const progressBar = document.getElementById('progressBar');
-            
-            if (window.scrollY > 50) { // Adjust this value as needed
-                navbar.classList.add('scrolled');
-                // Votre code pour l'effet de scroll...
-            }
-        });
-    </script>
 </body>
 </html>

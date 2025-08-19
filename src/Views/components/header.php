@@ -12,7 +12,7 @@
                     <a class="<?php addClassIf("partenaire", 'active') ?>" href="/partenaire">Partenaires</a>
                 </li>
                 <li>
-                    <a class="<?php addClassIf("about", 'active') ?>" href="/about">Projets</a>
+                    <a class="<?php addClassIf("about", 'active') ?>" href="/about">A propos</a>
                 </li>
                 <li>
                     <a class="<?php addClassIf("impact", 'active') ?>" href="/impact">Impact</a>
@@ -37,7 +37,7 @@
                     <a class="nav-item <?php addClassIf("partenaire", 'active') ?>" href="/partenaire">Partenaires</a>
                 </li>
                 <li>
-                    <a class="nav-item <?php addClassIf("about", 'active') ?>" href="/about">Projets</a>
+                    <a class="nav-item <?php addClassIf("about", 'active') ?>" href="/about">A propos</a>
                 </li>
                 <li>
                     <a class="nav-item <?php addClassIf("impact", 'active') ?>" href="/impact">Impact</a>
