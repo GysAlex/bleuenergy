@@ -1,7 +1,13 @@
 <footer>
     <div class="footer-wrapper">
         <div class="footer-column footer-brand">
-            <h4>BLUE ENERGY</h4>
+            <div class="footerbrand" style="display: flex; justify-content: start">
+                <div class="img-container" style="min-width: 150px; height: 50px"> 
+                    <img src="/asset/images/logo.png" alt="" style="width: 100%; height: 100%; object-fit:cover; object-position: start">
+                </div>
+                <h4>BLUE ENERGY</h4>
+            </div>
+
             <p>Transformer les déchets en ressources énergétiques pour un avenir plus durable et une mobilité urbaine propre.</p>
         </div>
         <div class="footer-column">

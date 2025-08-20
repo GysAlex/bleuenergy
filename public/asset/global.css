@@ -86,7 +86,7 @@ header nav .desktop-menu-items li
 }
 
 
-header nav .desktop-menu-items a
+header nav .desktop-menu-items  a
 {
     text-decoration: none;
     color: currentColor;

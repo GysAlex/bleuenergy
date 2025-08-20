@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href=<?php asset('global.css') ?>>
     <link rel="stylesheet" href=<?php asset('accueil.css') ?>>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script> 
     <title>Blueu Energy | Accueil </title>
 </head>
 <body>
@@ -52,14 +53,87 @@
 
     </div>
 
+    <section class="probleme-section">
+        <div class="probleme-container">
+            <div class="probleme-grid">
+                <div class="probleme-image-container">
+                    <div class="probleme-image-inner">
+                        <img src="/asset/images/pb.png" alt="Problème de la gestion des déchets">
+                    </div>
+                </div>
+
+                <div class="probleme-content">
+                    <h2 class="probleme-title">Le défi de la gestion des déchets au Cameroun</h2>
+                    <div class="probleme-text-wrapper">
+                        <p class="probleme-paragraphe">
+                            Les villes camerounaises, notamment Yaoundé et Douala, font face à une crise croissante dans la gestion de leurs déchets urbains. Les décharges sauvages prolifèrent, les infrastructures de collecte sont insuffisantes et la méthode actuelle d’enfouissement constitue une solution temporaire, coûteuse et nuisible à l’environnement.
+                        </p>
+                        <p class="probleme-paragraphe">
+                            Cette situation entraîne :
+                        </p>
+                        <ul class="probleme-list">
+                            <li>Une dégradation des sols et des ressources en eau.</li>
+                            <li>Une augmentation des émissions de gaz à effet de serre.</li>
+                            <li>Des risques sanitaires élevés pour les populations.</li>
+                            <li>Une urbanisation anarchique.</li>
+                        </ul>
+                        <p class="probleme-paragraphe">
+                            Parallèlement, le secteur du transport urbain reste dominé par des moyens artisanaux et polluants (mototaxis, taxis vétustes, véhicules au carburant fossile), aggravant la congestion et l’empreinte carbone. L’absence d’une source énergétique propre et fiable freine la modernisation du transport public et la transition vers une mobilité durable.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projet-wte-section">
+        <div class="projet-wte-container">
+            <div class="projet-wte-grid">
+                <div class="projet-wte-content">
+                    <h2 class="projet-wte-title">Une nouvelle approche: <b> Le projet Waste to Energy</b></h2>
+                    <p class="projet-wte-paragraphe">
+                        Le projet Waste to Energy (WTE), inscrit dans l’initiative Global Gateway de l’Union Européenne, vise à transformer durablement le modèle de gestion urbaine des déchets au Cameroun en créant une chaîne de valeur complète autour de la valorisation énergétique.
+                    </p>
+                    <div class="objectifs-list">
+                        <div class="objectif-item">
+                            <span class="objectif-icon-wrapper"><i class="fa-solid fa-bullseye"></i></span>
+                            <p class="objectif-text">Assainir durablement l’environnement urbain en réduisant les volumes de déchets par la valorisation.</p>
+                        </div>
+                        <div class="objectif-item">
+                            <span class="objectif-icon-wrapper"><i class="fa-solid fa-bullseye"></i></span>
+                            <p class="objectif-text">Mettre en place un système intégré de collecte, traitement et recyclage des déchets.</p>
+                        </div>
+                        <div class="objectif-item">
+                            <span class="objectif-icon-wrapper"><i class="fa-solid fa-bullseye"></i></span>
+                            <p class="objectif-text">Produire localement du biogaz, du biodiesel et de la bioélectricité.</p>
+                        </div>
+                        <div class="objectif-item">
+                            <span class="objectif-icon-wrapper"><i class="fa-solid fa-bullseye"></i></span>
+                            <p class="objectif-text">Stimuler l’économie verte par la création d’emplois et la formation aux métiers liés aux énergies renouvelables et au recyclage.</p>
+                        </div>
+                        <div class="objectif-item">
+                            <span class="objectif-icon-wrapper"><i class="fa-solid fa-bullseye"></i></span>
+                            <p class="objectif-text">Alimenter la mobilité durable, notamment :(Une flotte logistique au biogaz, Le BRT de Douala et Yaoundé 100 % électrique vert, dont l’électricité sera fournie directement par les usines WTE.)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projet-wte-image-container">
+                    <div class="projet-wte-image-inner">
+                        <img src="/asset/images/incinération.jpg" alt="Le projet Waste to Energy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="main-content">
         <main >
             <div class="section1">
                 <div class="ind">
                     <div class="title">
-                        Notre Processus
+                        Comment allons nous procéder ?
                     </div>
-                    <span>
+                    <span >
                         Une approche innovante en trois phases, de la collecte des déchets à leur transformation en
                         énergie propre
                     </span>
@@ -175,9 +249,7 @@
                     <section class="section section-collecte">
                         <div class="content-text">
                             <h2>La Collecte et le Tri Intelligent</h2>
-                            <p>Notre système optimisé permet de collecter et trier efficacement les déchets, première
-                                étape essentielle de notre processus de valorisation. Grâce à des technologies avancées,
-                                nous séparons les matériaux recyclables des déchets organiques et non-recyclables.</p>
+                            <p>Notre projet déploie un système de collecte et de tri modernisé grâce à une flotte de 1 000 camions fonctionnant au biogaz, dont 200 sont dédiés à Douala, 200 à Yaoundé et 600 aux capitales régionales et zones interurbaines. Pour un tri efficace à la source, nous mettons également en place 10 000 bacs à ordure dans l’ensemble des villes du Cameroun. </p>
                             <div class="more">
                                 <a href="#" class="btn-more">En savoir plus →</a>
                             </div>
@@ -190,10 +262,7 @@
                     <section class="section section-transformation">
                         <div class="content-text">
                             <h2>La Transformation Énergétique</h2>
-                            <p>Nos procédés avancés et écologiques permettent de convertir les déchets en biocarburant
-                                et en électricité propre. Cette technologie innovante maximise le rendement énergétique
-                                tout en minimisant les émissions polluantes.</p>
-
+                            <p>Grâce à des technologies de pointe, nous convertissons les déchets organiques en biogaz pour alimenter notre flotte logistique. Les déchets spécifiques comme les graisses et les huiles usagées sont transformés en biodiesel. Les déchets non recyclables subissent une incinération contrôlée pour produire de la bioélectricité verte. </p>
                             <div class="more">
                                 <a href="#" class="btn-more">En savoir plus →</a>
                             </div>
@@ -206,15 +275,13 @@
                     <section class="section section-impact">
                         <div class="content-text">
                             <h2 class="">L'impact et les Applications</h2>
-                            <p class="">L'énergie produite alimente directement notre réseau de bus urbains, créant un cycle
-                                vertueux de mobilité durable. Cette approche réduit considérablement les émissions de
-                                CO₂ et transforme les déchets en ressource précieuse.</p>
+                            <p class="">L'énergie produite alimente directement la mobilité urbaine durable en fournissant l'électricité nécessaire au BRT de Douala et Yaoundé. En partenariat avec le MINDHU, le MINEPAT et un consortium international, nous mettons en service 600 bus Scania au biogaz ou biodiesel. Cette initiative génère de nombreux emplois directs et indirects, contribue à la formation continue et réduit significativement les émissions de CO₂ pour une meilleure qualité de l'air. </p>
                             <div class="more">
                                 <a href="#" class="btn-more">En savoir plus →</a>
                             </div>
                         </div>
                         <div class="content-image">
-                            <img src="/asset/images/transport.png" alt="Impact et Applications">
+                            <img src="/asset/images/camion.jpeg" alt="Impact et Applications">
                         </div>
                     </section>
                 </div>
@@ -244,7 +311,7 @@
                 </div>
                 <div class="text-content">
                     <h2 class="gsap-slide-up">Innovation Technologique</h2>
-                    <p class="gsap-slide-up">Notre technologie à la pointe transforme les déchets en une ressource énergétique qui viable et durable, créant une solution complète pour les défis environnementaux et énergétiques d'aujourd'hui.</p>
+                    <p class="gsap-slide-up">Notre technologie brevetée transforme les déchets en une ressource énergétique qui viable et durable, créant une solution complète pour les défis environnementaux et énergétiques d'aujourd'hui.</p>
                     <div class="features-list">
                         <div class="feature-item">
                             <span class="cont-icon">
@@ -297,7 +364,7 @@
                 </div>
                 <div class="stat-card gsap-fade-in">
                     <h3 class="stat-number" data-target="30">0</h3>
-                    <p class="stat-unit">MWh</p>
+                    <p class="stat-unit">GWh</p>
                     <p class="stat-label">Énergie Renouvelable</p>
                 </div>
                 <div class="stat-card gsap-fade-in">
@@ -313,7 +380,7 @@
                 <div class="left-content">
                     <h2>Agissons Ensemble pour une Planète Plus Propre</h2>
                     <p>Nous sommes à la recherche de partenariats pour étendre notre impact. Contactez-nous pour explorer les possibilités de collaboration et découvrir comment notre technologie peut s'adapter à vos besoins spécifiques.</p>
-                    <a href="/partenaire" class="btn-primary">Voir nos partenaires </a>
+                    <a href="#" class="btn-primary">Contactez Notre Équipe</a>
                 </div>
                 <div class="right-content">
                     <div class="contact-form-card">
@@ -343,5 +410,81 @@
     ?>
 
     <script src="/asset/accueil.js" type="module"></script>
+
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('contactForm');
+        const submitBtn = form.querySelector('.btn-submit');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const actionUrl = '/'; 
+            const formData = new FormData(form);
+
+            submitBtn.textContent = 'Envoi en cours...';
+            submitBtn.disabled = true;
+
+            fetch(actionUrl, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erreur réseau ou réponse du serveur non valide');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.status === 'success') {
+                    // --- Début de la modification : Afficher le toast SweetAlert2 ---
+                    Swal.fire({
+                        toast: true,
+                        icon: 'success',
+                        title: data.message,
+                        position: 'top-end',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true
+                    });
+                    // --- Fin de la modification ---
+                    form.reset(); // Réinitialise le formulaire
+                } else {
+                    // --- Début de la modification : Afficher le toast SweetAlert2 en cas d'échec ---
+                    Swal.fire({
+                        toast: true,
+                        icon: 'error',
+                        title: data.message,
+                        position: 'top-end',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true
+                    });
+                    // --- Fin de la modification ---
+                }
+            })
+            .catch(error => {
+                console.error('Erreur:', error);
+                // --- Début de la modification : Afficher un toast générique en cas d'erreur ---
+                Swal.fire({
+                    toast: true,
+                    icon: 'error',
+                    title: 'Une erreur est survenue lors de l\'envoi.',
+                    position: 'top-end',
+                    showConfirmButton: false,
+                    timer: 3000,
+                    timerProgressBar: true
+                });
+                // --- Fin de la modification ---
+            })
+            .finally(() => {
+                submitBtn.textContent = 'Envoyer';
+                submitBtn.disabled = false;
+            });
+        });
+    });
+    </script>
 </body>
 </html>
