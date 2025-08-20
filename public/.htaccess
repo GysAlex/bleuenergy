@@ -1,7 +1,0 @@
-AddType application/javascript .js
-RewriteEngine On
-RewriteCond %{REQUEST_URI} ^/asset/ [NC]
-RewriteRule ^ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ index.php [QSA,L]
