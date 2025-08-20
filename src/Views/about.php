@@ -633,7 +633,7 @@ $tagline = "Pionniers de la Valorisation Énergétique";
 
     <section class="hero">
         <div class="hero-content">
-            <h1><b>À Propos de Nous : Notre Histoire, Notre Engagement</b></h1>
+            <h1><b>Notre Histoire, Notre Engagement</b></h1>
             <p><b>Découvrez l'entreprise et les visionnaires derrière ce projet ambitieux, ainsi que notre présence active au cœur des défis énergétiques et environnementaux de demain.</b></p>
         </div>
     </section>

@@ -743,8 +743,7 @@ main .ind span
 
     .mysvg
     {
-        height: 2300px;
-        left: 90%;
+        display: none;
     }
 
     .theLine
