@@ -36,7 +36,7 @@
     <section class="partners-section">
         <div class="partners-content-container">
             <div class="partners-image-wrapper">
-                <img src="/assets/images/partenaires.png" alt="Deux personnes qui se serrent la main" class="partners-image">
+                <img src="/asset/images/partenaires.png" alt="Deux personnes qui se serrent la main" class="partners-image">
             </div>
             <div class="partners-text-container">
                 <div class="partners-heading-wrapper">
