@@ -39,7 +39,6 @@ if (isset($_POST['newsletter_email'])) {
     <title>Contact</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href=<?php asset('global.css') ?>>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
@@ -84,76 +83,30 @@ if (isset($_POST['newsletter_email'])) {
             animation: pulse 2s infinite;
         }
 
-        :root {
+               :root {
             --primary-green: #4CAF50;
             --secondary-blue: #2196F3;
             --accent-teal: #009688;
             --gradient-bg: linear-gradient(135deg, #4CAF50 0%, #2196F3 100%);
             --text-dark: #333;
             --text-light: #666;
-            --simple-gradient: linear-gradient(90deg, rgba(22, 101, 52, 0.5), rgba(3, 106, 161, 0.5));
         }
 
-
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', sans-serif;
             line-height: 1.6;
             color: var(--text-dark);
         }
 
        
-        
-        /*This line help to fix the problem on the nav-bar */
-       ul{
-            margin-bottom: 0;
-        }
-
         /* Header */
-         /* Header */
-        /* La classe navbar de Bootstrap est déjà fixée, mais nous pouvons ajouter des styles supplémentaires */
-        /* RESTORED OLD NAVBAR STYLE */
-        .navbar {
-            background-color: transparent !important; /* Make it transparent by default */
-            transition: background-color 0.3s ease;
-        }
-
        
-    
-
-        .navbar-brand {
-            font-weight: 700;
-            color: var(--primary-green) !important; /* Utilise la variable CSS */
-            font-size: 1.5rem;
-        }
-
-        .navbar-nav .nav-link {
-            color: white;
-            font-weight: 500;
-            margin: 0 0.5rem;
-            transition: color 0.3s ease, background-color 0.3s ease; /* Ajout de background-color à la transition */
-            padding: 0.5rem 1rem; /* Ajout de padding pour une meilleure zone de survol */
-            border-radius: 50px; /* Coins légèrement arrondis pour l'arrière-plan au survol */
-        }
-
-        .navbar-nav .nav-link:hover {
-            color: var(--primary-green) !important; /* Garde la couleur primaire au survol */
-            background-color: rgba(255, 255, 255, 0.23); /* Arrière-plan blanc transparent au survol */
-        }
-        
-        /* Styles pour le bouton de bascule (toggler) de Bootstrap */
-        .navbar-toggler {
-            border-color: rgba(255, 255, 255, 0.1);
-        }
-
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-        }
-
-
-
-       
-
         /* Hero Section - Background Image avec overlay vert foncé */
         .hero {
             background: 
@@ -164,13 +117,14 @@ if (isset($_POST['newsletter_email'])) {
             color: white;
             position: relative;
             text-align: left;
-            min-height: 100vh;
+            min-height: 90vh;
             display: flex;
             align-items: center;
+         
         }
 
         .hero h1 {
-            font-size: 2.8rem;
+            font-size: 1.8rem;
             color: white;
             margin-bottom: 20px;
             font-weight: 700;
@@ -179,7 +133,7 @@ if (isset($_POST['newsletter_email'])) {
         }
 
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: #eee;
             margin-bottom: 30px;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
@@ -207,56 +161,7 @@ if (isset($_POST['newsletter_email'])) {
             box-shadow: 0 6px 20px rgba(0,0,0,0.4);
         }
 
-        /* FAQ Section */
-        .faq-section {
-            padding: 80px 0;
-            background: #f8f9fa;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 60px;
-            color: #28a745;
-            font-size: 2rem;
-            font-weight: 600;
-        }
-
-        .faq-item {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            border-left: 4px solid #28a745;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            margin-bottom: 20px;
-            height: 100%;
-        }
-
-        .faq-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-
-        .faq-item h3 {
-            color: #28a745;
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .faq-item h3 i {
-            font-size: 1.5rem;
-        }
-
-        .faq-item p {
-            color: #666;
-            font-size: 1rem;
-            line-height: 1.7;
-        }
+       
 
         /* Contact Section */
         .contact-section {
@@ -267,7 +172,7 @@ if (isset($_POST['newsletter_email'])) {
         .contact-form h2 {
             color: #28a745;
             margin-bottom: 20px;
-            font-size: 1.8rem;
+            font-size: 1.1rem;
             font-weight: 600;
             display: flex;
             align-items: center;
@@ -313,7 +218,7 @@ if (isset($_POST['newsletter_email'])) {
         }
 
         .form-group textarea {
-            height: 150px;
+            height: 100px;
             resize: vertical;
         }
 
@@ -342,8 +247,8 @@ if (isset($_POST['newsletter_email'])) {
         }
 
         .info-icon {
-            width: 50px;
-            height: 50px;
+            width: 34px;
+            height: 30px;
             background: #28a745;
             border-radius: 50%;
             display: flex;
@@ -482,164 +387,8 @@ if (isset($_POST['newsletter_email'])) {
             transform: translateY(-2px);
         }
 
-
-
         /* Footer */
-        .footer {
-            background: #1a1a2e;
-            color: white;
-            padding: 70px 0 30px;
-            position: relative;
-        }
-
-        .footer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, #28a745, #20c997);
-        }
-
-        .footer-section h3 {
-            color: #20c997;
-            margin-bottom: 25px;
-            font-size: 1.3rem;
-            font-weight: 600;
-            position: relative;
-            padding-bottom: 10px;
-        }
-
-        .footer-section h3::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 2px;
-            background: #28a745;
-        }
-
-        .footer-section p {
-            color: #ccc;
-            margin-bottom: 20px;
-            line-height: 1.7;
-        }
-
-        .footer-section ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 12px;
-            position: relative;
-            padding-left: 20px;
-        }
-
-        .footer-section ul li::before {
-            content: '→';
-            position: absolute;
-            left: 0;
-            color: #28a745;
-        }
-
-        .footer-section ul li a {
-            color: #ccc;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .footer-section ul li a:hover {
-            color: #20c997;
-            padding-left: 5px;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid #333;
-            padding-top: 30px;
-            text-align: center;
-            color: #999;
-            font-size: 0.9rem;
-        }
-.icons{
-
-    
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            gap: 40px;
-            margin-top: 30px;
-           font-size: 1.1rem;
-            background: rgba(255,255,255,0.1);
-            border-radius: 50%;
-
-}
-
-
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 30px;
-        }
-
-        .social-links a {
-            width: 45px;
-            height: 45px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            font-size: 1.1rem;
-        }
-
-        .social-links a:hover {
-            background: #28a745;
-            transform: translateY(-5px);
-        }
-
-        .alert {
-            padding: 15px 20px;
-            margin-bottom: 25px;
-            border-radius: 8px;
-            font-size: 1rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .alert::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 5px;
-            height: 100%;
-        }
-
-        .alert-success {
-            background: #d4edda;
-            color: #155724;
-            border: 1px solid #c3e6cb;
-        }
-
-        .alert-success::after {
-            background: #28a745;
-        }
-
-        .alert-danger {
-            background: #f8d7da;
-            color: #721c24;
-            border: 1px solid #f5c6cb;
-        }
-
-        .alert-danger::after {
-            background: #dc3545;
-        }
+       
 
         /* Responsive adjustments */
         @media (max-width: 992px) {
@@ -694,16 +443,11 @@ if (isset($_POST['newsletter_email'])) {
                 padding: 20px;
             }
         }
-
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-
-    <?php
-        include __DIR__."/components/header.php";
-    ?>
-
+     <!-- Navigation -->
+   
 
     <!-- Hero Section avec Background Image et overlay vert foncé -->
     <section class="hero">
@@ -722,40 +466,131 @@ if (isset($_POST['newsletter_email'])) {
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq-section">
-        <div class="container">
-            <h2 class="section-title animate-fade">
-                <i class="fas fa-question-circle"></i> Questions Fréquemment Posées
-            </h2>
-            <div class="row">
-                <div class="col-md-6 col-lg-3 animate-fade" style="animation-delay: 0.1s">
-                    <div class="faq-item">
-                        <h3><i class="fas fa-cogs"></i> Comment fonctionne votre technologie ?</h3>
-                        <p>Notre technologie utilise un processus avancé de méthanisation et de conversion thermique pour transformer les déchets organiques en biocarburant et en électricité, le tout avec un impact environnemental minimal.</p>
-                    </div>
+<style>
+    /* FAQ Section */
+    .faq-section {
+        padding: 80px 0;
+        background: #f8f9fa;
+        overflow: hidden;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+        color: #28a745;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .faq-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        perspective: 1000px;
+    }
+
+    .faq-column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: calc(50% - 10px);
+        max-width: 500px;
+    }
+
+    .faq-item {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        border-left: 4px solid #28a745;
+        transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+        cursor: pointer;
+        height: auto;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+
+    .faq-item:hover {
+        transform: translateY(-10px) rotateY(5deg) scale(1.03);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+
+    .faq-item h3 {
+        color: #28a745;
+        margin-bottom: 15px;
+        font-size: 1rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .faq-item h3 i {
+        font-size: 1.5rem;
+    }
+
+    .faq-item p {
+        color: #666;
+        font-size: 1rem;
+        line-height: 1.7;
+        transform: translateZ(30px);
+    }
+
+    /* Animation */
+    @keyframes floatIn {
+        0% {
+            opacity: 0;
+            transform: translateY(50px) rotateX(-30deg);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0) rotateX(0);
+        }
+    }
+
+    .animate-float {
+        animation: floatIn 0.8s ease-out forwards;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .faq-column {
+            width: 100%;
+        }
+    }
+</style>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="container">
+        <h2 class="section-title animate-fade">
+            <i class="fas fa-question-circle"></i> Questions Fréquemment Posées
+        </h2>
+        <div class="faq-container">
+            <div class="faq-column">
+                <div class="faq-item animate-float" style="animation-delay: 0.1s">
+                    <h3><i class="fas fa-cogs"></i> Comment fonctionne votre technologie ?</h3>
+                    <p>Notre technologie utilise un processus avancé de méthanisation et de conversion thermique pour transformer les déchets organiques en biocarburant.</p>
                 </div>
-                <div class="col-md-6 col-lg-3 animate-fade" style="animation-delay: 0.2s">
-                    <div class="faq-item">
-                        <h3><i class="fas fa-handshake"></i> Comment devenir partenaire ?</h3>
-                        <p>Pour devenir partenaire, vous pouvez nous contacter via le formulaire en précisant la nature de votre intérêt et nous appoiter de développement. Notre équipe vous proposera un rendez-vous pour explorer les possibilités de collaboration.</p>
-                    </div>
+                <div class="faq-item animate-float" style="animation-delay: 0.3s">
+                    <h3><i class="fas fa-briefcase"></i> Quels emplois disponibles ?</h3>
+                    <p>Nous recrutons régulièrement dans plusieurs domaines : environnemental, gestion de projets, logistique, maintenance technique, développement durable.</p>
                 </div>
-                <div class="col-md-6 col-lg-3 animate-fade" style="animation-delay: 0.3s">
-                    <div class="faq-item">
-                        <h3><i class="fas fa-briefcase"></i> Quels emplois disponibles ?</h3>
-                        <p>Nous recrutons régulièrement dans plusieurs domaines : environnemental, gestion de projets, logistique, maintenance technique, développement durable et communication.</p>
-                    </div>
+            </div>
+            <div class="faq-column">
+                <div class="faq-item animate-float" style="animation-delay: 0.2s">
+                    <h3><i class="fas fa-handshake"></i> Comment devenir partenaire ?</h3>
+                    <p>Pour devenir partenaire, vous pouvez nous contacter via le formulaire en précisant la nature de votre intérêt et nous vous contacterons dans les plus brefs délais.</p>
                 </div>
-                <div class="col-md-6 col-lg-3 animate-fade" style="animation-delay: 0.4s">
-                    <div class="faq-item">
-                        <h3><i class="fas fa-users"></i> Bénéfices pour la communauté ?</h3>
-                        <p>Notre projet crée des emplois locaux, diminue les coûts énergétiques municipaux et améliore les infrastructures de transport public, tout en sensibilisant à l'économie circulaire.</p>
-                    </div>
+                <div class="faq-item animate-float" style="animation-delay: 0.4s">
+                    <h3><i class="fas fa-users"></i> Bénéfices pour la communauté ?</h3>
+                    <p>Notre projet crée des emplois locaux, diminue les coûts énergétiques municipaux et améliore les infrastructures de transport public, tout en sensibilisant à l'économie circulaire.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
@@ -826,7 +661,7 @@ if (isset($_POST['newsletter_email'])) {
                             <div class="info-content">
                                 <h3>Email</h3>
                                 <p>Envoyez-nous votre email à tout moment</p>
-                                <p><strong>ceo@blueenergy.com</strong></p>
+                                <p><strong></strong></p>
                             </div>
                         </div>
                         
@@ -837,7 +672,7 @@ if (isset($_POST['newsletter_email'])) {
                             <div class="info-content">
                                 <h3>Téléphone</h3>
                                 <p>Appelez-nous pour une réponse rapide</p>
-                                <p><strong>+237 696 74 83 92</strong></p>
+                                <p><strong></strong></p>
                             </div>
                         </div>
                         
@@ -895,13 +730,43 @@ if (isset($_POST['newsletter_email'])) {
         </div>
     </section>
 
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h2 class="animate-fade">Newsletter</h2>
+            <p class="animate-fade" style="animation-delay: 0.2s">Abonnez-vous à notre newsletter pour recevoir les dernières actualités sur notre projet et les avancées dans le domaine de l'économie circulaire.</p>
+            
+            <?php if ($newsletter_sent): ?>
+                <div class="alert alert-success animate-fade" style="max-width: 400px; margin: 0 auto 20px;">
+                    <i class="fas fa-check-circle"></i> Merci pour votre inscription à notre newsletter !
+                </div>
+            <?php endif; ?>
+            
+            <form class="newsletter-form animate-fade" method="POST" action="" style="animation-delay: 0.4s">
+                <input type="email" name="newsletter_email" placeholder="Votre adresse email" required>
+                <button type="submit">
+                    <i class="fas fa-paper-plane"></i> S'abonner
+                </button>
+            </form>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <?php
-        include __DIR__."/components/footer2.php";
-    ?>
+   
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
     <script>
+        // Animation du header au scroll
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
 
         // Animation des éléments au défilement
         const animateElements = document.querySelectorAll('.animate-fade, .animate-left, .animate-right');
