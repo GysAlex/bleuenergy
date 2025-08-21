@@ -78,7 +78,7 @@
             <div class="technologies-grid">
                 <div class="technology-card technology-card--left">
                     <div class="technology-image">
-                        <img src="/asset/images/hero.jpg" alt="Tri des Déchets Organiques">
+                        <img src="/asset/images/waste_to_energy.jpg" alt="Tri des Déchets Organiques">
                     </div>
                     <div class="technology-content">
                         <h3 class="technology-title">Tri des Déchets Organiques</h3>
@@ -92,7 +92,7 @@
                 </div>
                 <div class="technology-card technology-card--right">
                     <div class="technology-image">
-                        <img src="/asset/images/hero.jpg" alt="Traitement Thermique">
+                        <img src="/asset/images/traitement (1).jpg" alt="Traitement Thermique">
                     </div>
                     <div class="technology-content">
                         <h3 class="technology-title">Traitement Thermique</h3>
@@ -152,7 +152,7 @@
                 </div>
                 <div class="processus-item ball">
                     <div class="processus-number">2</div>
-                    <p class="processus-label">Tri initial</p>
+                    <p class="processus-label">Tri</p>
                 </div>
                 <div class="processus-item ball">
                     <div class="processus-number">3</div>
@@ -176,15 +176,15 @@
             <div class="tri-contact-details">
                 <div class="contact-item">
                     <i class="fa-solid fa-location-dot contact-icon"></i>
-                    <p class="contact-info">123 Rue Principale, Ville</p>
+                    <p class="contact-info">Akwa, Douala Cameroun</p>
                 </div>
                 <div class="contact-item">
                     <i class="fa-solid fa-envelope contact-icon"></i>
-                    <p class="contact-info">contact@ecotri.com</p>
+                    <p class="contact-info">ceo@blueenergy.com</p>
                 </div>
                 <div class="contact-item">
                     <i class="fa-solid fa-phone contact-icon"></i>
-                    <p class="contact-info">+123 456 789</p>
+                    <p class="contact-info">+237 6 96 74 83 92</p>
                 </div>
             </div>
         </div>
