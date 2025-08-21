@@ -97,7 +97,6 @@ function animateNosProduitsSection() {
         scrollTrigger: {
             trigger: ".nos-produits-section",
             start: "40% 80%",
-            markers: true,
             toggleActions: "play none none reverse",
         }
     });

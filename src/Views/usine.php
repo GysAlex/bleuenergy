@@ -62,7 +62,7 @@
                 <div class="wte-usine-image-content">
                     <div class="wte-usine-image-wrapper">
                         <div class="wte-usine-subtitle">Processus de Conversion Waste-to-Energy</div>
-                        <img src="./asset/images/incinération.jpg" alt="L'usine Waste-to-Energy">
+                        <img src="/asset/images/incinération.jpg" alt="L'usine Waste-to-Energy">
                     </div>
                 </div>
                 
@@ -141,7 +141,7 @@
                 <div class="biogaz-image-content">
                     <div class="biogaz-image-wrapper">
                         <h3 class="biogaz-subtitle">Processus de Méthanisation et Production</h3>
-                        <img src="./asset/images/méthanisation.jpg" alt="L'usine de Biogaz">
+                        <img src="/asset/images/méthanisation.jpg" alt="L'usine de Biogaz">
                     </div>
                 </div>
             </div>

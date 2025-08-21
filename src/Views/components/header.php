@@ -165,8 +165,11 @@
                 <li>
                     <a class="<?php addClassIf(" ", 'active') ?>" href="/">Accueil</a>
                 </li>
+                <li>
+                    <a class="<?php addClassIf(" ", 'active') ?>" href="/project">projet</a>
+                </li>
                 <li class="has-submenu">
-                    <a href="#">Notre Processus<i class="fa-solid fa-chevron-down submenu-icon"></i></a>
+                    <a href="/technologie">Notre Processus<i class="fa-solid fa-chevron-down submenu-icon"></i></a>
                     <ul class="submenu">
                         <li>
                             <a href="/technologie/tir">
@@ -216,13 +219,16 @@
                 </li>
             </ul>
         </div>
-        <nav>
+        <nav style="font-size: .95em;">
             <div class="brand">
                 <img src="/asset/images/logo.png" alt="logo">
             </div>
             <ul class="desktop-menu-items" >
                 <li>
                     <a class=" nav-item <?php addClassIf("", 'active') ?>" href="/"  href="">Accueil</a>
+                </li>
+                <li>
+                    <a class=" nav-item <?php addClassIf("projet", 'active') ?>" href="/project"  href="">Projet</a>
                 </li>
                 <li>
                     <a class="nav-item <?php addClassIf("technologie", 'active') ?>" href="/technologie">
@@ -241,6 +247,12 @@
                             <a href="/technologie/camion">
                                 <i class="fa-solid fa-arrow-right"></i>
                                 Camions
+                            </a>
+                        </li>
+                        <li class="inner-menu">
+                            <a href="/technologie/usine">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                Usines
                             </a>
                         </li>
                     </ul>

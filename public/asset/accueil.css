@@ -82,11 +82,13 @@
         gap: 80px;
     }
     .probleme-image-container {
-        height: 300px;   
+        height: 320px;   
     }
 
     .probleme-image-inner {
-        transform: translate(10px, 40px);
+        transform: translate(20px, 20px);
+        width: 90%;
+        height: 90%;
     }
 }
 
@@ -212,7 +214,9 @@
     }
 
     .projet-wte-image-inner {
-        transform: translate(-10px, -40px);
+        transform: translate(20px, 20px);
+        width: 90%;
+        height: 90%;
     }
 
 }

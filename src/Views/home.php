@@ -332,7 +332,7 @@
                 </div>
                 <div class="text-content">
                     <h2 class="gsap-slide-up">Innovation Technologique</h2>
-                    <p class="gsap-slide-up">Notre technologie brevetée transforme les déchets en une ressource énergétique qui viable et durable, créant une solution complète pour les défis environnementaux et énergétiques d'aujourd'hui.</p>
+                    <p class="gsap-slide-up">Notre technologie transforme les déchets en une ressource énergétique qui viable et durable, créant une solution complète pour les défis environnementaux et énergétiques d'aujourd'hui.</p>
                     <div class="features-list">
                         <div class="feature-item">
                             <span class="cont-icon">

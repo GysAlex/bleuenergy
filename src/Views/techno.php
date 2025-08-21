@@ -333,8 +333,8 @@
 
                     </div>
                     <div class="card-icon"><i class="fas fa-microchip"></i></div>
-                    <h3 class="card-title">Cellule Électrique Indépendante</h3>
-                    <p class="card-description">Notre cellule électrique intégrée assure une autonomie et une fiabilité optimisée dans la production d'énergie.</p>
+                    <h3 class="card-title">Réseau Électrique Indépendante</h3>
+                    <p class="card-description">Notre réseau électrique intégrée assure une autonomie et une fiabilité optimisée dans la production d'énergie.</p>
                 </div>
 
                 <div class="alimentation-card">
@@ -355,7 +355,7 @@
                 <div class="destination-image-overlay">
                     <img src="/asset/images/usine2.jfif" alt="Vue de la ville de nuit" class="destination-image">
                     <div class="destination-text-overlay">
-                        <p>L'énergie produite est principalement destinée à alimenter le réseau urbain, incluant le réseau de transport par bus et d'autres infrastructures essentielles de la ville.</p>
+                        <p>L'énergie produite est principalement destinée à alimenter le réseau électrique, incluant le réseau de transport urbain par bus et d'autres infrastructures essentielles de la ville.</p>
                     </div>
                 </div>
             </div>
