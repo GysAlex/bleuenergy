@@ -40,7 +40,7 @@ function svgDrawSection()
 {
     gsap.registerPlugin(DrawSVGPlugin, MotionPathPlugin, GSDevTools, ScrollTrigger)
 
-    let isMobile = window.matchMedia("(max-width: 768px)").matches;
+    let isMobile = window.matchMedia("(max-width: 1200px)").matches;
 
 
     if (!isMobile)

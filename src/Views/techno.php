@@ -333,7 +333,7 @@
 
                     </div>
                     <div class="card-icon"><i class="fas fa-microchip"></i></div>
-                    <h3 class="card-title">Réseau Électrique Indépendante</h3>
+                    <h3 class="card-title">Réseau Électrique Indépendant</h3>
                     <p class="card-description">Notre réseau électrique intégrée assure une autonomie et une fiabilité optimisée dans la production d'énergie.</p>
                 </div>
 
