@@ -41,7 +41,7 @@
         <p>&copy; 2025. Blue Energy. Tous droits réservés.</p>
         <div class="social-links">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
