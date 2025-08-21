@@ -268,7 +268,7 @@
                             </div>
                         </div>
                         <div class="content-image">
-                            <img src="/asset/images/usine.jfif" alt="Transformation Énergétique">
+                            <img src="/asset/images/hero.jpeg" alt="Transformation Énergétique">
                         </div>
                     </section>
 

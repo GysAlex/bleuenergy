@@ -2,6 +2,7 @@
     --gradient: linear-gradient(90deg, #166534cc, #036aa1cc) center center;
     --text-color: #4b5563;
     --main-green: #2E7D32;
+    --simple-gradient: linear-gradient(90deg, #166534cc, #036aa1cc);
 }
 
 .cta button 
