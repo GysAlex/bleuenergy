@@ -110,7 +110,7 @@
                 </div>
                 <div class="technology-card technology-card--right">
                     <div class="technology-image">
-                        <img src="/asset/images/traitement (1).jpg" alt="Traitement Thermique">
+                        <img src="/asset/images/usine.jfif" alt="Traitement Thermique">
                     </div>
                     <div class="technology-content">
                         <h3 class="technology-title">Traitement Thermique</h3>
