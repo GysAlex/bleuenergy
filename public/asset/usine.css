@@ -49,11 +49,17 @@
         top: 30%;
     }
 
+    .hero .img-container
+    {
+        height: 480px;
+    }
+
 }
 
 .wte-usine-section {
     width: 100%;
     padding: 60px 0;
+    overflow-x: clip;
 }
 
 .wte-usine-container {
@@ -177,6 +183,7 @@
     width: 100%;
     padding: 60px 0;
     background: var(--second-part-gradient) ;
+    overflow-x: clip;
 }
 
 .biogaz-container {
@@ -306,6 +313,7 @@
     padding: 60px 0;
     background-color: #e6f0f5; /* Couleur de fond basée sur l'image */
     text-align: center;
+    overflow-x: clip;
 }
 
 .cta-container {

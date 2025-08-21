@@ -22,6 +22,11 @@ class PageController
         return view('contact');
     }
 
+    public static function project()
+    {
+        return view('project');
+    }
+
     public static function about()
     {
         return view('about');

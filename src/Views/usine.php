@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Transformation Énergétique par les Déchets | Blue Energy</title>
+    <meta name="description" content="Découvrez les unités de transformation de Blue Energy : l'usine Waste-to-Energy (WTE) générant de l'électricité verte et l'usine de biogaz produisant du biocarburant pour la mobilité urbaine durable.">
+    <meta name="keywords" content="transformation énergétique, usine WTE, usine de biogaz, biocarburant, bioélectricité, mobilité urbaine, énergie verte, déchets en énergie, Blue Energy">
+
+    <meta property="og:title" content="Le Cœur de Notre Technologie : Transformer les Déchets en Énergie Vitale">
+    <meta property="og:description" content="De l'incinération contrôlée à la méthanisation, nos usines WTE et biogaz sont au centre de notre mission pour une énergie propre et une mobilité durable.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.bleueenergy.com/usine">
+    <meta property="og:image" content="https://www.bleueenergy.com/asset/images/méthanisation.jpg">
+    <meta property="og:site_name" content="Blue Energy">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nos Usines : Waste-to-Energy & Biogaz">
+    <meta name="twitter:description" content="Explorez comment nos usines de conversion des déchets en énergie et en biocarburant alimentent l'avenir durable de l'Afrique.">
+    <meta name="twitter:image" content="https://www.bleueenergy.com/asset/images/méthanisation.jpg">
+
+    <?php
+        include __DIR__."/components/meta.php";
+    ?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href=<?php asset('global.css') ?>>
     <link rel="stylesheet" href=<?php asset('usine.css') ?>>
-    <title>Blueu Energy | Accueil </title>
+
 </head>
 <body>
     <?php
@@ -44,7 +62,7 @@
                 <div class="wte-usine-image-content">
                     <div class="wte-usine-image-wrapper">
                         <div class="wte-usine-subtitle">Processus de Conversion Waste-to-Energy</div>
-                        <img src="./asset/images/incinération.jpg" alt="L'usine Waste-to-Energy">
+                        <img src="/asset/images/incinération.jpg" alt="L'usine Waste-to-Energy">
                     </div>
                 </div>
                 
@@ -123,7 +141,7 @@
                 <div class="biogaz-image-content">
                     <div class="biogaz-image-wrapper">
                         <h3 class="biogaz-subtitle">Processus de Méthanisation et Production</h3>
-                        <img src="./asset/images/méthanisation.jpg" alt="L'usine de Biogaz">
+                        <img src="/asset/images/méthanisation.jpg" alt="L'usine de Biogaz">
                     </div>
                 </div>
             </div>

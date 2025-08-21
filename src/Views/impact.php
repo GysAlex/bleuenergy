@@ -1,8 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Impact | Blue Energy</title>
+    <meta name="description" content="Découvrez l'impact positif et mesurable de Blue Energy : valorisation de 2,2 millions de tonnes de déchets, réduction de 1,5 million de tonnes de CO₂, production de 912,5 GWh d'énergie verte et création d'emplois durables.">
+    <meta name="keywords" content="impact environnemental, impact économique, valorisation des déchets, réduction CO2, énergie renouvelable, autonomie énergétique, création d'emplois, technologie verte, Blue Energy, développement durable">
+
+    <meta property="og:title" content="Les Chiffres Clés de Notre Impact Environnemental et Économique">
+    <meta property="og:description" content="Des tonnes de déchets transformées, des millions de tonnes de CO₂ évitées, et des GWh d'énergie verte produite. Découvrez comment nous rendons l'avenir plus vert et plus prospère.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.bleueenergy.com/impact">
+    <meta property="og:image" content="https://www.bleueenergy.com/asset/images/impact-environnemental.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Impact de Blue Energy : Les Chiffres du Changement">
+    <meta name="twitter:description" content="Nous transformons le paysage urbain en une source d'énergie et de prospérité. Découvrez nos résultats concrets en matière de réduction d'émissions et de création de valeur durable.">
+    <meta name="twitter:image" content="https://www.bleueenergy.com/asset/images/impact-environnemental.jpg">
+
+    <?php
+        include __DIR__."/components/meta.php";
+    ?>
     <title>Impact</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">

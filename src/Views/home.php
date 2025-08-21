@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projet Waste to Energy au Cameroun | Gestion des déchets et énergie propre</title>
+    <meta name="description" content="Découvrez le projet Waste to Energy, une solution innovante pour la gestion des déchets urbains au Cameroun. Nous transformons les ordures en biogaz, biodiesel et bioélectricité pour une mobilité durable et une économie circulaire.">
+    <meta name="keywords" content="gestion déchets Cameroun, Waste to Energy, énergie propre, biogaz, biodiesel, bioélectricité, Douala, Yaoundé, développement durable, économie circulaire, HYSACAM">
+    <meta name="author" content="Votre Nom d'Entreprise ou Agence">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Waste to Energy Cameroun | La solution durable pour les déchets et l'énergie">
+    <meta property="og:description" content="Découvrez le projet Waste to Energy, une solution innovante pour la gestion des déchets urbains au Cameroun. Nous transformons les ordures en biogaz, biodiesel et bioélectricité pour une mobilité durable et une économie circulaire.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.bleueenergy.com">
+    <meta property="og:image" content="https://www.bleueenergy.com/asset/images/incinération.jpg">
+    <meta property="og:locale" content="fr_FR">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@VotreCompteTwitter"> <!-- must be changed later -->
+    <meta name="twitter:title" content="Waste to Energy Cameroun | L'innovation pour un futur propre">
+    <meta name="twitter:description" content="Nous transformons les déchets urbains de Douala et Yaoundé en énergies renouvelables (biogaz, biodiesel) pour une mobilité durable et une meilleure qualité de vie.">
+    <meta name="twitter:image" content="https://www.bleueenergy.com/asset/images/incinération.jpg">
+
+    <?php
+        include __DIR__."/components/meta.php";
+    ?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href=<?php asset('global.css') ?>>
     <link rel="stylesheet" href=<?php asset('accueil.css') ?>>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script> 
-    <title>Blueu Energy | Accueil </title>
+
 </head>
 <body>
     <?php
@@ -311,7 +332,7 @@
                 </div>
                 <div class="text-content">
                     <h2 class="gsap-slide-up">Innovation Technologique</h2>
-                    <p class="gsap-slide-up">Notre technologie brevetée transforme les déchets en une ressource énergétique qui viable et durable, créant une solution complète pour les défis environnementaux et énergétiques d'aujourd'hui.</p>
+                    <p class="gsap-slide-up">Notre technologie transforme les déchets en une ressource énergétique qui viable et durable, créant une solution complète pour les défis environnementaux et énergétiques d'aujourd'hui.</p>
                     <div class="features-list">
                         <div class="feature-item">
                             <span class="cont-icon">
