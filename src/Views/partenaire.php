@@ -1,23 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Nos Partenaires | Collaborations Stratégiques pour un Futur Durable</title>
-    <meta name="description" content="Découvrez les partenaires stratégiques de BleueEnergy, acteurs clés de la transition énergétique et de la gestion des déchets au Cameroun. Ensemble, nous bâtissons un avenir durable.">
-    <meta name="keywords" content="partenaires, collaboration, développement durable, gestion des déchets, énergie renouvelable, partenariat stratégique, BleueEnergy, Scania, HYSACAM, Douala, Yaoundé, Global Gateway, Communauté Urbaine">
-
-    <meta property="og:title" content="BleueEnergy et ses Partenaires | Bâtir un Avenir Vert Ensemble">
-    <meta property="og:description" content="Découvrez nos collaborations avec des leaders de la technologie, des institutions financières et des autorités locales pour un projet de valorisation des déchets à impact durable.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://www.bleueenergy.com/partenaire">
-    <meta property="og:image" content="https://www.bleueenergy.com/asset/images/partenaires.png">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nos Partenaires | BleueEnergy et l'Avenir Durable au Cameroun">
-    <meta name="twitter:description" content="Nos partenaires, incluant Scania et HYSACAM, sont au cœur de notre projet de transformation des déchets en énergie. Découvrez comment nous œuvrons pour un futur plus propre.">
-    <meta name="twitter:image" content="https://www.bleueenergy.com/asset/images/partenaires.png">
-    <?php
-        include __DIR__."/components/meta.php";
-    ?>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href=<?php asset('global.css') ?>>
     <link rel="stylesheet" href=<?php asset('partenaire.css') ?>>
@@ -195,7 +180,7 @@
                         Complétez le formulaire ci-dessous pour nous faire part de votre intérêt à devenir partenaire. Notre équipe vous contactera dans les meilleurs délais pour discuter des possibilités de collaboration.
                     </p>
                     <button class="join-partners-button">
-                        Devenir Partenaire
+                       <a href="/contact"> Devenir Partenaire</a>
                     </button>
                 </div>
 
@@ -208,10 +193,12 @@
             <h2 class="partners-contact-title">Vous avez des questions sur nos partenaires</h2>
             <p class="partners-contact-description">
                 Notre équipe dédiée aux partenariats stratégiques est à votre disposition pour répondre à toutes vos questions et explorer les possibilités de collaboration.
-            </p>
-            <button class="contact-us-button">
-                <i class="fa-solid fa-envelope"></i> Contactez-nous
-            </button>
+            </p> 
+                   <a href="/impact" style="color: white;">
+  <button class="contact-us-button">
+    <i class="fa-solid fa-envelope"></i> Contactez-nous
+  </button>
+</a>
         </div>
     </section>
 

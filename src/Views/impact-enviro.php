@@ -1,9 +1,8 @@
 
 <html lang="fr">
 <head>
-    <?php
-        include __DIR__."/components/meta.php";
-    ?>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impact Environnemental</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -739,7 +738,7 @@
         <div class="container">
             <h2>Rejoignez Notre Initiative Écologique</h2>
             <p>Ensemble, créons un avenir plus durable pour l'Afrique</p>
-            <a href="About.php" class="cta-button">En Savoir Plus</a>
+            <a href="/about" class="cta-button">En Savoir Plus</a>
         </div>
     </section>
 
