@@ -3,6 +3,7 @@
 
 :root{
     --max-cont_size: 1250px;
+     --text-color: #4b5563;
     --simple-gradient: linear-gradient(90deg, rgba(22, 101, 52, 0.5), rgba(3, 106, 161, 0.5));
     --stat-gradient: linear-gradient(90deg, #166534cc, #036aa1cc), url('images/usine2.jfif') center center;
     --second-part-gradient: linear-gradient(45deg, #F9FAFB, #EFF6FF);
@@ -237,7 +238,7 @@ footer {
     padding: 60px 20px 20px 20px;
     font-family: Poppins, Arial, sans-serif;
     position: relative;
-    mask-image: linear-gradient(#036aa1cc, black, black);
+    box-shadow: 1px 5px 10px rgba(22, 101, 52, 0.5);
 }
 
 .footer-overlay
@@ -273,7 +274,9 @@ footer {
 .footer-brand p {
     font-size: 0.9rem;
     line-height: 1.6;
-    color: #a0aec0;
+    color: transparent;
+    background: var(--simple-gradient);
+    background-clip: text;
 }
 
 .footer-column h4 {
@@ -294,19 +297,28 @@ footer {
 }
 
 .footer-column a {
-    color: #a0aec0;
+    color: transparent;
+    background: var(--simple-gradient);
+    background-clip: text;
     text-decoration: none;
     font-size: 0.9rem;
     transition: color 0.3s ease;
 }
 
 .footer-column a:hover {
-    color: #fff;
+    color: rgba(22, 101, 52, 0.5);
 }
 
 .footer-newsletter .newsletter-form {
     display: flex;
     margin-top: 20px;
+}
+
+.footer-newsletter
+{
+    color: transparent;
+    background: var(--simple-gradient);
+    background-clip: text;
 }
 
 .footer-newsletter .newsletter-form input {
@@ -352,11 +364,15 @@ footer {
 .footer-bottom p {
     margin: 0;
     font-size: 0.9rem;
-    color: #a0aec0;
+    color: transparent;
+    background: var(--simple-gradient);
+    background-clip: text;
 }
 
 .social-links a {
-    color: #fff;
+    color: transparent;
+    background: var(--simple-gradient);
+    background-clip: text;
     margin-left: 20px;
     font-size: 1.2rem;
     transition: color 0.3s ease;
