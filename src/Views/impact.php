@@ -7,12 +7,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href=<?php asset('global.css') ?>>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         :root {
-            --primary-green: #4CAF50;
-            --secondary-blue: #2196F3;
+            --primary-green: #00bf63;
+            --secondary-blue: #004aad;
             --accent-teal: #009688;
             --gradient-bg: linear-gradient(135deg, #4CAF50 0%, #2196F3 100%);
             --text-dark: #333;
@@ -26,10 +29,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Montserrat':
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             line-height: 1.6;
             color: var(--text-dark);
         }
@@ -109,10 +113,17 @@
         }
 
         .hero-title {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-size: 32px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: var(--simple-gradient);
+    background-size: 500%;
+    background-position: bottom left;
+    animation: bg-animation infinite reverse 10s;
+    background-clip: text;
+    color: transparent;
         }
 
         .hero-subtitle {
@@ -697,7 +708,7 @@
     <section class="hero-section" id="accueil">
         <div class="container">
             <div class="hero-content text-center" data-aos="fade-up">
-                <h1 class="hero-title">Transformer les Défis en Progrès Concrets</h1>
+                <h1 class="hero-title" style="font-family: 'Montserrat'">Transformer les Défis en Progrès Concrets</h1>
                 <p class="hero-subtitle">
                     À travers nos technologies, nos projets génèrent des bénéfices mesurables pour
                     l'environnement, la société et l'économie. Découvrez un avenir plus durable et
