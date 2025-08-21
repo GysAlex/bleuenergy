@@ -251,7 +251,7 @@
                             <h2>La Collecte et le Tri Intelligent</h2>
                             <p>Notre projet déploie un système de collecte et de tri modernisé grâce à une flotte de 1 000 camions fonctionnant au biogaz, dont 200 sont dédiés à Douala, 200 à Yaoundé et 600 aux capitales régionales et zones interurbaines. Pour un tri efficace à la source, nous mettons également en place 10 000 bacs à ordure dans l’ensemble des villes du Cameroun. </p>
                             <div class="more">
-                                <a href="#" class="btn-more">En savoir plus →</a>
+                                <a href="/technologie/usine" class="btn-more">En savoir plus →</a>
                             </div>
                         </div>
                         <div class="content-image">
@@ -264,7 +264,7 @@
                             <h2>La Transformation Énergétique</h2>
                             <p>Grâce à des technologies de pointe, nous convertissons les déchets organiques en biogaz pour alimenter notre flotte logistique. Les déchets spécifiques comme les graisses et les huiles usagées sont transformés en biodiesel. Les déchets non recyclables subissent une incinération contrôlée pour produire de la bioélectricité verte. </p>
                             <div class="more">
-                                <a href="/usine" class="btn-more">En savoir plus →</a>
+                                <a href="/technologie/usine" class="btn-more">En savoir plus →</a>
                             </div>
                         </div>
                         <div class="content-image">
@@ -277,7 +277,7 @@
                             <h2 class="">L'impact et les Applications</h2>
                             <p class="">L'énergie produite alimente directement la mobilité urbaine durable en fournissant l'électricité nécessaire au BRT de Douala et Yaoundé. En partenariat avec le MINDHU, le MINEPAT et un consortium international, nous mettons en service 600 bus Scania au biogaz ou biodiesel. Cette initiative génère de nombreux emplois directs et indirects, contribue à la formation continue et réduit significativement les émissions de CO₂ pour une meilleure qualité de l'air. </p>
                             <div class="more">
-                                <a href="/usine" class="btn-more">En savoir plus →</a>
+                                <a href="/technologie/usine" class="btn-more">En savoir plus →</a>
                             </div>
                         </div>
                         <div class="content-image">
