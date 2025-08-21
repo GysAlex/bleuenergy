@@ -264,7 +264,7 @@
                             <h2>La Transformation Énergétique</h2>
                             <p>Grâce à des technologies de pointe, nous convertissons les déchets organiques en biogaz pour alimenter notre flotte logistique. Les déchets spécifiques comme les graisses et les huiles usagées sont transformés en biodiesel. Les déchets non recyclables subissent une incinération contrôlée pour produire de la bioélectricité verte. </p>
                             <div class="more">
-                                <a href="#" class="btn-more">En savoir plus →</a>
+                                <a href="/usine" class="btn-more">En savoir plus →</a>
                             </div>
                         </div>
                         <div class="content-image">
@@ -277,7 +277,7 @@
                             <h2 class="">L'impact et les Applications</h2>
                             <p class="">L'énergie produite alimente directement la mobilité urbaine durable en fournissant l'électricité nécessaire au BRT de Douala et Yaoundé. En partenariat avec le MINDHU, le MINEPAT et un consortium international, nous mettons en service 600 bus Scania au biogaz ou biodiesel. Cette initiative génère de nombreux emplois directs et indirects, contribue à la formation continue et réduit significativement les émissions de CO₂ pour une meilleure qualité de l'air. </p>
                             <div class="more">
-                                <a href="#" class="btn-more">En savoir plus →</a>
+                                <a href="/usine" class="btn-more">En savoir plus →</a>
                             </div>
                         </div>
                         <div class="content-image">
