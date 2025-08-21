@@ -13,19 +13,19 @@
         <div class="footer-column">
             <h4>Solutions</h4>
             <ul>
-                <li><a href="#">Collecte et Tri</a></li>
-                <li><a href="#">Transformation</a></li>
-                <li><a href="#">Distribution d'Énergie</a></li>
-                <li><a href="#">Applications Transport</a></li>
+                <li><a href="/technologie/tri">Collecte et Tri</a></li>
+                <li><a href="#transformation">Transformation</a></li>
+                <li><a href="/technologie">Distribution d'Énergie</a></li>
+                <li><a href="/technologie/camion">Applications Transport</a></li>
             </ul>
         </div>
         <div class="footer-column">
             <h4>À Propos</h4>
             <ul>
-                <li><a href="#">Notre Mission</a></li>
-                <li><a href="#">Équipe</a></li>
-                <li><a href="#">Partenaires</a></li>
-                <li><a href="#">Mentions légales</a></li>
+                <li><a href="/projet">Notre Mission</a></li>
+                <li><a href="/about">Équipe</a></li>
+                <li><a href="/partenaire">Partenaires</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </div>
         <div class="footer-column footer-newsletter">

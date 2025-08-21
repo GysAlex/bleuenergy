@@ -321,7 +321,7 @@
                 </div>
             </div>
         </section>
-        <section class="alimentation-section">
+        <section class="alimentation-section" id="transformation">
             <div class="alimentation-header">
                 <div class="section-title">De la Transformation à l'Alimentation du Réseau</div>
                 <span class="section-subtitle">Comment l'énergie produite est captée et distribuée pour alimenter le réseau...</span>
@@ -364,7 +364,7 @@
 
     <section class="final-techno">
         <div class="call-to-action">
-            <a href="" class="cta-button">
+            <a href="/impact" class="cta-button">
                 Voir les Bénéfices Concrets de Notre Solution <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
