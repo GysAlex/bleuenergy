@@ -85,13 +85,13 @@
 
                 <div class="partner-card">
                     <div class="partner-card-image-wrapper">
-                        <img src="/asset/images/P4.jpeg" alt="Collectivité Territoriale C" class="partner-card-image">
+                        <img src="/asset/images/cuy.jpeg" alt="Collectivité Territoriale C" class="partner-card-image">
                     </div>
                     <div class="partner-card-content">
-                        <h3 class="partner-card-title">Gestionnaire Public des Déchets Urbains </h3>
+                        <h3 class="partner-card-title">Autorité Municipale de la Capitale </h3>
                         <p class="partner-card-description">
-                           Partenaire opérationnel essentiel, assurant la gestion efficace des déchets et contribuant activement à la propreté urbaine dans le cadre du projet.
-                        <a href="https://www.hysacam-proprete.com/" class="partner-card-link">Visiter leur site →</a>
+                        Partenaire institutionnel stratégique, la Communauté Urbaine de Yaoundé contribue à l’ancrage territorial du projet dans la capitale politique. Acteur clé du développement local, elle facilite la coordination et la mise en œuvre des actions sur le terrain, en cohérence avec les priorités urbaines. Elle accompagne activement les initiatives favorisant la modernisation de la ville, l’amélioration du cadre de vie des populations et la transition vers un développement durable.
+                        <a href="https://www.bing.com/ck/a?!&&p=0a7092f1b2f498b889677f0c916f341d0eb90d8cecc49b1e8b4560d042fe31b4JmltdHM9MTc1NTczNDQwMA&ptn=3&ver=2&hsh=4&fclid=2f8ce9bd-e4ed-65d0-201a-ff90e5a7644b&psq=commune+urbaine+de+yaounde&u=a1aHR0cHM6Ly95YW91bmRlLmNtLw&ntb=1" class="partner-card-link">Visiter leur site →</a>
                     </div>
                 </div>
 
@@ -100,14 +100,14 @@
 
                 <div class="partner-card">
                     <div class="partner-card-image-wrapper">
-                        <img src="/asset/images/P6.jpeg" alt="Centre de Recherche E" class="partner-card-image">
+                        <img src="/asset/images/minepat.png" alt="Centre de Recherche E" class="partner-card-image">
                     </div>
                     <div class="partner-card-content">
-                        <h3 class="partner-card-title">Autorité Municipale de la Capitale</h3>
+                        <h3 class="partner-card-title">MINEPAT</h3>
                         <p class="partner-card-description">
-                            Partenaire institutionnel engagé, jouant un rôle stratégique dans l’ancrage territorial du projet et facilitant sa mise en œuvre au sein de la capitale. Elle accompagne activement les initiatives locales de transition énergétique durable.
+                        Partenaire institutionnel majeur, le Ministère de l’Économie du Cameroun joue un rôle stratégique dans le développement et la consolidation du projet. Grâce à son engagement, il contribue à renforcer l’ancrage économique et territorial de l’initiative, tout en facilitant sa mise en œuvre. Le ministère accompagne activement les actions innovantes favorisant la croissance, la compétitivité et le développement durable.
                         </p>
-                        <a href="https://www.ongola.com/communaute-urbaine-yaounde-cameroun/" class="partner-card-link">Visiter leur site →</a>
+                        <a href="https://www.bing.com/ck/a?!&&p=c2cfc26543f11aa3b9b9d58387c46b1aa4bc249a7856016e6d1dff67f805ee62JmltdHM9MTc1NTczNDQwMA&ptn=3&ver=2&hsh=4&fclid=2f8ce9bd-e4ed-65d0-201a-ff90e5a7644b&psq=minepat&u=a1aHR0cHM6Ly93d3cubWluZXBhdC5nb3YuY20v&ntb=1" class="partner-card-link">Visiter leur site →</a>
                     </div>
                 </div>
 
@@ -116,9 +116,9 @@
                         <img src="/asset/images/P3.jpeg" alt="Opérateur de Transport F" class="partner-card-image">
                     </div>
                     <div class="partner-card-content">
-                        <h3 class="partner-card-title">Instance Métropolitaine Côtière</h3>
+                        <h3 class="partner-card-title">Communaute Urbaine de Douala</h3>
                         <p class="partner-card-description">
-                            Partenaire institutionnel engagé, jouant un rôle stratégique dans l’ancrage territorial du projet et facilitant sa mise en œuvre au sein de la capitale. Elle accompagne activement les initiatives locales de transition énergétique durable.
+                        Partenaire institutionnel de proximité, la Communauté Urbaine de Douala joue un rôle central dans l’ancrage territorial du projet. En tant qu’acteur clé du développement local, elle facilite la mise en œuvre des actions sur le terrain et favorise leur intégration dans la dynamique urbaine de la capitale économique. Elle s’engage activement à soutenir les initiatives innovantes contribuant à l’amélioration du cadre de vie et à la transition vers un développement urbain durable.
                         </p>
                         <a href="https://www.govserv.org/CM/Duala/638961459539920/Communaut%C3%A9-Urbaine-de-Douala" class="partner-card-link">Visiter leur site →</a>
                     </div>
