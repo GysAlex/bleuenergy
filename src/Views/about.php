@@ -7,9 +7,26 @@ $tagline = "Pionniers de la Valorisation Énergétique";
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $page_title; ?></title>
+
+    <title>Notre Histoire et Engagement | Blue Energy</title>
+    <meta name="description" content="Découvrez l'histoire de Blue Energy, notre vision et notre engagement à transformer les déchets urbains en une ressource énergétique précieuse grâce à l'innovation et la durabilité.">
+    <meta name="keywords" content="Blue Energy, notre histoire, engagement, développement durable, énergie renouvelable, gestion des déchets, innovation, vision, mission, Cameroun">
+
+    <meta property="og:title" content="L'Histoire de Blue Energy | Des Déchets à l'Énergie Durable">
+    <meta property="og:description" content="Née de la conviction que les déchets sont une ressource inexploitée, Blue Energy s'engage à bâtir un avenir où la durabilité est au cœur de la transition énergétique.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.bleueenergy.com/notre-histoire.html">
+    <meta property="og:image" content="https://www.bleueenergy.com/asset/images/bleue-energy-histoire.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Notre Histoire | Blue Energy, Pionniers de la Transition Énergétique">
+    <meta name="twitter:description" content="Nous sommes les visionnaires derrière la transformation des déchets urbains en une solution énergétique pour les défis de demain. Découvrez notre mission et nos valeurs.">
+
+    <?php
+        include __DIR__."/components/meta.php";
+    ?>
+
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -592,7 +609,7 @@ $tagline = "Pionniers de la Valorisation Énergétique";
             <h2 class="section-title animate-on-scroll">Notre Vision</h2>
             
             <div class="team-member animate-on-scroll">
-                <img src="public/asset/images/Mr Biheng.jpg" alt="Photo de Roger Thierry BIKENE">
+                <img src="/asset/images/Mr Biheng.jpg" alt="Photo de Roger Thierry BIKENE">
                 <div class="member-info">
                     <div class="member-quote">"Plus qu'une simple initiative de transport durable,
                          Waste-to-Energy représente une réponse concrète aux défis écologiques, 
@@ -626,22 +643,22 @@ $tagline = "Pionniers de la Valorisation Énergétique";
                     <?php
                     $gallery_items = [
                         [
-                            'image' => 'public/asset/images/d.jpg',
+                            'image' => '/asset/images/d.jpg',
                             'alt' => 'Rencontre avec les partenaires',
                             'title' => 'Primature'
                         ],
                         [
-                            'image' => 'public/asset/images/a.jpg',
+                            'image' => '/asset/images/a.jpg',
                             'alt' => 'Rencontre avec les partenaires',
                             'title' => 'MINDHU'
                         ],
                         [
-                            'image' => 'public/asset/images/b.jpg',
+                            'image' => '/asset/images/b.jpg',
                             'alt' => 'Rencontre avec les partenaires',
                             'title' => 'CUY'
                         ],
                         [
-                            'image' => 'public/asset/images/e.jpg',
+                            'image' => '/asset/images/e.jpg',
                             'alt' => 'Rencontre avec les partenaires',
                             'title' => 'CAA'
                         ]

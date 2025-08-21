@@ -1,8 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Partenaires | Collaborations Stratégiques pour un Futur Durable</title>
+    <meta name="description" content="Découvrez les partenaires stratégiques de BleueEnergy, acteurs clés de la transition énergétique et de la gestion des déchets au Cameroun. Ensemble, nous bâtissons un avenir durable.">
+    <meta name="keywords" content="partenaires, collaboration, développement durable, gestion des déchets, énergie renouvelable, partenariat stratégique, BleueEnergy, Scania, HYSACAM, Douala, Yaoundé, Global Gateway, Communauté Urbaine">
+
+    <meta property="og:title" content="BleueEnergy et ses Partenaires | Bâtir un Avenir Vert Ensemble">
+    <meta property="og:description" content="Découvrez nos collaborations avec des leaders de la technologie, des institutions financières et des autorités locales pour un projet de valorisation des déchets à impact durable.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.bleueenergy.com/partenaire">
+    <meta property="og:image" content="https://www.bleueenergy.com/asset/images/partenaires.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nos Partenaires | BleueEnergy et l'Avenir Durable au Cameroun">
+    <meta name="twitter:description" content="Nos partenaires, incluant Scania et HYSACAM, sont au cœur de notre projet de transformation des déchets en énergie. Découvrez comment nous œuvrons pour un futur plus propre.">
+    <meta name="twitter:image" content="https://www.bleueenergy.com/asset/images/partenaires.png">
+    <?php
+        include __DIR__."/components/meta.php";
+    ?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href=<?php asset('global.css') ?>>
     <link rel="stylesheet" href=<?php asset('partenaire.css') ?>>
@@ -36,7 +51,7 @@
     <section class="partners-section">
         <div class="partners-content-container">
             <div class="partners-image-wrapper">
-                <img src="/assets/images/usine.jfif" alt="Deux personnes qui se serrent la main" class="partners-image">
+                <img src="/asset/images/partenaires.png" alt="Deux personnes qui se serrent la main" class="partners-image">
             </div>
             <div class="partners-text-container">
                 <div class="partners-heading-wrapper">
@@ -60,79 +75,67 @@
 
                 <div class="partner-card">
                     <div class="partner-card-image-wrapper">
-                        <img src="/asset/images/usine.jfif" alt="Partenaire Technologique A" class="partner-card-image">
+                        <img src="/asset/images/P2.jpeg" alt="Partenaire Technologique A" class="partner-card-image">
                     </div>
                     <div class="partner-card-content">
-                        <h3 class="partner-card-title">Partenaire Technologique A</h3>
+                        <h3 class="partner-card-title">Partenaire Technologique </h3>
                         <p class="partner-card-description">
-                            Leader mondial en solutions d'ingénierie énergétique, apportant une expertise technique de pointe dans la conception de nos usines de traitement.
-                        </p>
-                        <a href="#" class="partner-card-link">Visiter leur site →</a>
+                        Scania accompagne notre transition énergétique avec des solutions de transport fiables, innovantes et adaptées aux défis du développement durable.
+                        <a href="https://www.scania.com/fr/fr/home.html/" class="partner-card-link">Visiter leur site →</a>
                     </div>
                 </div>
 
                 <div class="partner-card">
                     <div class="partner-card-image-wrapper">
-                        <img src="/asset/images/usine.jfif" alt="Institution Financière B" class="partner-card-image">
+                        <img src="/asset/images/P5.jpeg" alt="Institution Financière B" class="partner-card-image">
                     </div>
                     <div class="partner-card-content">
-                        <h3 class="partner-card-title">Institution Financière B</h3>
+                        <h3 class="partner-card-title">Institution Financière </h3>
                         <p class="partner-card-description">
-                            Partenaire financier majeur, soutenant le développement et le déploiement de nos infrastructures à grande échelle.
+                           Partenaire stratégique majeur, facilitant l’intégration régionale et soutenant le financement de nos infrastructures durables à grande échelle.
                         </p>
-                        <a href="#" class="partner-card-link">Visiter leur site →</a>
+                        <a href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/stronger-europe-world/global-gateway_en" class="partner-card-link">Visiter leur site →</a>
                     </div>
                 </div>
 
                 <div class="partner-card">
                     <div class="partner-card-image-wrapper">
-                        <img src="/asset/images/usine.jfif" alt="Collectivité Territoriale C" class="partner-card-image">
+                        <img src="/asset/images/cuy.jpeg" alt="Collectivité Territoriale C" class="partner-card-image">
                     </div>
                     <div class="partner-card-content">
-                        <h3 class="partner-card-title">Collectivité Territoriale C</h3>
+                        <h3 class="partner-card-title">Autorité Municipale de la Capitale </h3>
                         <p class="partner-card-description">
-                            Partenaire institutionnel clé, facilitant la mise en œuvre locale du projet et l'intégration de nos solutions dans le cadre urbain.
+                        Partenaire institutionnel stratégique, la Communauté Urbaine de Yaoundé contribue à l’ancrage territorial du projet dans la capitale politique. Acteur clé du développement local, elle facilite la coordination et la mise en œuvre des actions sur le terrain, en cohérence avec les priorités urbaines.
+                        <a href="https://www.bing.com/ck/a?!&&p=0a7092f1b2f498b889677f0c916f341d0eb90d8cecc49b1e8b4560d042fe31b4JmltdHM9MTc1NTczNDQwMA&ptn=3&ver=2&hsh=4&fclid=2f8ce9bd-e4ed-65d0-201a-ff90e5a7644b&psq=commune+urbaine+de+yaounde&u=a1aHR0cHM6Ly95YW91bmRlLmNtLw&ntb=1" class="partner-card-link">Visiter leur site →</a>
+                    </div>
+                </div>
+
+                  
+              
+
+                <div class="partner-card">
+                    <div class="partner-card-image-wrapper">
+                        <img src="/asset/images/minepat.png" alt="Centre de Recherche E" class="partner-card-image">
+                    </div>
+                    <div class="partner-card-content">
+                        <h3 class="partner-card-title">MINEPAT</h3>
+                        <p class="partner-card-description">
+                        Partenaire institutionnel majeur, le Ministère de l’Économie du Cameroun joue un rôle stratégique dans le développement et la consolidation du projet. Grâce à son engagement, il contribue à renforcer l’ancrage économique et territorial de l’initiative, tout en facilitant sa mise en œuvre.
                         </p>
-                        <a href="#" class="partner-card-link">Visiter leur site →</a>
+                        <a href="https://www.bing.com/ck/a?!&&p=c2cfc26543f11aa3b9b9d58387c46b1aa4bc249a7856016e6d1dff67f805ee62JmltdHM9MTc1NTczNDQwMA&ptn=3&ver=2&hsh=4&fclid=2f8ce9bd-e4ed-65d0-201a-ff90e5a7644b&psq=minepat&u=a1aHR0cHM6Ly93d3cubWluZXBhdC5nb3YuY20v&ntb=1" class="partner-card-link">Visiter leur site →</a>
                     </div>
                 </div>
 
                 <div class="partner-card">
                     <div class="partner-card-image-wrapper">
-                        <img src="/asset/images/usine.jfif" alt="Fournisseur de Services Logistiques D" class="partner-card-image">
+                        <img src="/asset/images/P3.jpeg" alt="Opérateur de Transport F" class="partner-card-image">
                     </div>
                     <div class="partner-card-content">
-                        <h3 class="partner-card-title">Fournisseur de Services Logistiques D</h3>
+                        <h3 class="partner-card-title">Communaute Urbaine de Douala</h3>
                         <p class="partner-card-description">
-                            Spécialiste de la logistique verte, optimisant nos opérations de collecte et de transport des déchets.
+                        Partenaire institutionnel de proximité, la Communauté Urbaine de Douala joue un rôle central dans l’ancrage territorial du projet. En tant qu’acteur clé du développement local, elle facilite la mise en œuvre des actions sur le terrain et favorise leur intégration dans la dynamique urbaine de la capitale économique.
                         </p>
-                        <a href="#" class="partner-card-link">Visiter leur site →</a>
-                    </div>
-                </div>
-
-                <div class="partner-card">
-                    <div class="partner-card-image-wrapper">
-                        <img src="/asset/images/usine.jfif" alt="Centre de Recherche E" class="partner-card-image">
-                    </div>
-                    <div class="partner-card-content">
-                        <h3 class="partner-card-title">Centre de Recherche E</h3>
-                        <p class="partner-card-description">
-                            Partenaire en recherche et développement, explorant de nouvelles voies d'optimisation pour nos procédés de valorisation énergétique.
-                        </p>
-                        <a href="#" class="partner-card-link">Visiter leur site →</a>
-                    </div>
-                </div>
-
-                <div class="partner-card">
-                    <div class="partner-card-image-wrapper">
-                        <img src="/asset/images/usine.jfif" alt="Opérateur de Transport F" class="partner-card-image">
-                    </div>
-                    <div class="partner-card-content">
-                        <h3 class="partner-card-title">Opérateur de Transport F</h3>
-                        <p class="partner-card-description">
-                            Opérateur de réseau de transport urbain, partenaire pour l'intégration de notre énergie dans la mobilité durable.
-                        </p>
-                        <a href="#" class="partner-card-link">Visiter leur site →</a>
+                        <a href="https://www.govserv.org/CM/Duala/638961459539920/Communaut%C3%A9-Urbaine-de-Douala" class="partner-card-link">Visiter leur site →</a>
                     </div>
                 </div>
 

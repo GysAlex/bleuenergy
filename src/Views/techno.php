@@ -1,8 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Technologie | De la Transformation des Déchets à l'Énergie Verte</title>
+    <meta name="description" content="Découvrez notre technologie de pointe pour transformer les déchets urbains en biogaz, biodiesel et bioélectricité. Notre processus inclut méthanisation, incinération contrôlée et pyrolyse pour une valorisation énergétique maximale.">
+    <meta name="keywords" content="technologie Waste to Energy, méthanisation, incinération contrôlée, pyrolyse, biogaz, biodiesel, bioélectricité, gestion déchets, usine de valorisation, Cameroun">
+
+    <meta property="og:title" content="Technologie BleueEnergy | Notre Processus de Transformation des Déchets">
+    <meta property="og:description" content="Explorez notre infrastructure technologique : de la collecte et du tri des déchets à la production de biogaz, biodiesel et bioélectricité.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.bleueenergy.com/technologie">
+    <meta property="og:image" content="https://www.bleueenergy.com/asset/images/incinération.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Technologie BleueEnergy : Transformer les Déchets en Énergie Verte">
+    <meta name="twitter:description" content="Découvrez comment notre technologie avancée transforme les déchets urbains en énergies renouvelables (biogaz, biodiesel et bioélectricité) pour une mobilité durable et une économie circulaire au Cameroun.">
+    <meta name="twitter:image" content="https://www.bleueenergy.com/asset/images/incinération.jpg">
+
+    <?php
+        include __DIR__."/components/meta.php";
+    ?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href=<?php asset('global.css') ?>>
     <link rel="stylesheet" href=<?php asset('techno.css') ?>>
@@ -13,7 +29,7 @@
         include __DIR__."/components/header.php";
     ?>
     
-        <div class="hero">
+    <div class="hero">
         <div class="img-container">
 
             <div class="wrapper">
@@ -317,8 +333,8 @@
 
                     </div>
                     <div class="card-icon"><i class="fas fa-microchip"></i></div>
-                    <h3 class="card-title">Cellule Électrique Indépendante</h3>
-                    <p class="card-description">Notre cellule électrique intégrée assure une autonomie et une fiabilité optimisée dans la production d'énergie.</p>
+                    <h3 class="card-title">Réseau Électrique Indépendant</h3>
+                    <p class="card-description">Notre réseau électrique intégrée assure une autonomie et une fiabilité optimisée dans la production d'énergie.</p>
                 </div>
 
                 <div class="alimentation-card">
@@ -339,7 +355,7 @@
                 <div class="destination-image-overlay">
                     <img src="/asset/images/usine2.jfif" alt="Vue de la ville de nuit" class="destination-image">
                     <div class="destination-text-overlay">
-                        <p>L'énergie produite est principalement destinée à alimenter le réseau urbain, incluant le réseau de transport par bus et d'autres infrastructures essentielles de la ville.</p>
+                        <p>L'énergie produite est principalement destinée à alimenter le réseau électrique, incluant le réseau de transport urbain par bus et d'autres infrastructures essentielles de la ville.</p>
                     </div>
                 </div>
             </div>

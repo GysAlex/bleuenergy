@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Impact | Blue Energy</title>
+    <meta name="description" content="Découvrez l'impact positif et mesurable de Blue Energy : valorisation de 2,2 millions de tonnes de déchets, réduction de 1,5 million de tonnes de CO₂, production de 912,5 GWh d'énergie verte et création d'emplois durables.">
+    <meta name="keywords" content="impact environnemental, impact économique, valorisation des déchets, réduction CO2, énergie renouvelable, autonomie énergétique, création d'emplois, technologie verte, Blue Energy, développement durable">
+
+    <meta property="og:title" content="Les Chiffres Clés de Notre Impact Environnemental et Économique">
+    <meta property="og:description" content="Des tonnes de déchets transformées, des millions de tonnes de CO₂ évitées, et des GWh d'énergie verte produite. Découvrez comment nous rendons l'avenir plus vert et plus prospère.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.bleueenergy.com/impact">
+    <meta property="og:image" content="https://www.bleueenergy.com/asset/images/impact-environnemental.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Impact de Blue Energy : Les Chiffres du Changement">
+    <meta name="twitter:description" content="Nous transformons le paysage urbain en une source d'énergie et de prospérité. Découvrez nos résultats concrets en matière de réduction d'émissions et de création de valeur durable.">
+    <meta name="twitter:image" content="https://www.bleueenergy.com/asset/images/impact-environnemental.jpg">
+
+    <?php
+        include __DIR__."/components/meta.php";
+    ?>
     <title>Impact</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href=<?php asset('global.css') ?>>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         :root {
-            --primary-green: #4CAF50;
-            --secondary-blue: #2196F3;
+            --primary-green: #00bf63;
+            --secondary-blue: #004aad;
             --accent-teal: #009688;
             --gradient-bg: linear-gradient(135deg, #4CAF50 0%, #2196F3 100%);
             --text-dark: #333;
@@ -25,10 +42,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Montserrat':
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             line-height: 1.6;
             color: var(--text-dark);
         }
@@ -51,7 +69,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('images/city1.jpg') no-repeat center center;
+            background: url('/asset/images/city1.jpg') no-repeat center center;
             opacity: 0.3;
              background-size: cover;
             
@@ -63,10 +81,17 @@
         }
 
         .hero-title {
-            font-size: 2rem;
-            font-weight: 800;
-            margin-bottom: 1.2rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-size: 32px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: var(--simple-gradient);
+    background-size: 500%;
+    background-position: bottom left;
+    animation: bg-animation infinite reverse 10s;
+    background-clip: text;
+    color: transparent;
         }
 
         .hero-subtitle {
@@ -436,7 +461,7 @@
     <section class="hero-section" id="accueil">
         <div class="container">
             <div class="hero-content text-center" data-aos="fade-up">
-                <h1 class="hero-title">Transformer les Défis en Progrès Concrets</h1>
+                <h1 class="hero-title" style="font-family: 'Montserrat'">Transformer les Défis en Progrès Concrets</h1>
                 <p class="hero-subtitle">
                     À travers nos technologies, nos projets génèrent des bénéfices mesurables pour
                     l'environnement, la société et l'économie. Découvrez un avenir plus durable et
@@ -562,7 +587,7 @@
             <div class="row">
                 <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="community-card">
-                        <div class="community-image" style="background-image: url('images/bosser.jpg')"></div>
+                        <div class="community-image" style="background-image: url('/asset/images/bosser.jpg')"></div>
                         <div class="community-content">
                             <h5><i class="fas fa-briefcase"></i> Création d'Emplois</h5>
                             <p>Plus de +750 emplois créés dans des secteurs durables, offrant des opportunités de carrière dans les technologies vertes.</p>
@@ -572,7 +597,7 @@
 
                 <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="community-card">
-                        <div class="community-image" style="background-image: url('images/plante.jpg')"></div>
+                        <div class="community-image" style="background-image: url('/asset/images/plante.jpg')"></div>
                         <div class="community-content">
                             <h5><i class="fas fa-hands-helping"></i> Éducation et Sensibilisation</h5>
                             <p>Programmes éducatifs pour sensibiliser aux enjeux environnementaux et sociaux.</p>
@@ -581,7 +606,7 @@
                 </div>
                 <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="community-card">
-                        <div class="community-image" style="background-image: url('images/urbain.jpg')"></div>
+                        <div class="community-image" style="background-image: url('/asset/images/urbain.jpg')"></div>
                         <div class="community-content">
                             <h5><i class="fas fa-city"></i> Mobilité Urbaine Améliorée</h5>
                             <p>Solutions de transport durable réduisant la pollution urbaine et améliorant la qualité de l'air dans les villes.</p>

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php
+        include __DIR__."/components/meta.php";
+    ?>
     <title>Notre Flotte de Véhicules Spécialisés</title>
     <style>
         * {
@@ -22,7 +23,7 @@
         .hero {
             height: 70vh;
             background: linear-gradient(135deg, rgba(0,100,150,0.8), rgba(15, 131, 73, 0.8)), 
-                        url('public/asset/images/scania1.jpeg');
+                        url('/asset/images/scania1.jpeg');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -490,7 +491,7 @@
         <div class="container">
             <div class="services-grid">
                 <div class="service-image">
-                    <img src="public/asset/images/scania.jpg" alt="Camion de collecte">
+                    <img src="/asset/images/scania.jpg" alt="Camion de collecte">
                 </div>
                 <div class="service-content">
                     <h2>Camions de Collecte</h2>
@@ -551,7 +552,7 @@
                     </div>
                 </div>
                 <div class="transport-image">
-                    <img src="public/asset/images/scannia.jpg" alt="Bus Scania">
+                    <img src="/asset/images/scannia.jpg" alt="Bus Scania">
                 </div>
             </div>
         </div>

@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blue Energy - Notre Impact Économique</title>
+    <?php
+        include __DIR__."/components/meta.php";
+    ?>
+<head>
+    <title>Notre Impact Économique et Social | Blue Energy</title>
+    <meta name="description" content="Découvrez l'impact économique et social de Blue Energy sur les communautés locales en Afrique. Création d'emplois, réduction du coût de la vie et solutions pour un environnement plus sain.">
+    <meta name="keywords" content="impact économique, impact social, création d'emplois, développement durable, énergie renouvelable, biocarburant, biogaz, villes propres, santé publique, agriculture durable, Blue Energy">
+
+    <meta property="og:title" content="L'Impact de Blue Energy | Transformer les Défis Africains en Opportunités">
+    <meta property="og:description" content="Nous transformons les déchets en richesse : des emplois locaux à la production d'énergie verte, notre projet a un impact positif mesurable sur l'économie et la société.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.bleueenergy.com/impact.html">
+    <meta property="og:image" content="https://www.bleueenergy.com/asset/images/impact-economique.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Impact Économique et Social | Blue Energy">
+    <meta name="twitter:description" content="Découvrez comment notre projet de valorisation des déchets contribue concrètement au développement durable, à l'économie locale et à l'amélioration de la qualité de vie en Afrique.">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
@@ -225,7 +239,7 @@
             </div>
         </div>
     </section>
-<br><br><br><br>
+    <br><br><br><br>
     <!-- Impact Section -->
     <section class="section-padding bg-light">
         <div class="container">

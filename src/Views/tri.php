@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Technologies de Tri des Déchets | Blue Energy</title>
+    <meta name="description" content="Découvrez les technologies innovantes de Blue Energy pour le tri des déchets en Afrique. Nous transformons les déchets organiques en biogaz et biofertilisants et utilisons le traitement thermique pour la valorisation énergétique.">
+    <meta name="keywords" content="technologie de tri, tri des déchets, valorisation énergétique, biogaz, biofertilisants, traitement thermique, gestion des déchets, énergie verte, solutions durables, Blue Energy">
+
+    <meta property="og:title" content="Nos Technologies de Tri des Déchets | Blue Energy">
+    <meta property="og:description" content="Nous utilisons des technologies de pointe pour le tri et la valorisation des déchets en Afrique, créant des produits durables comme le biogaz, les biofertilisants et le biocarburant.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.bleueenergy.com/technologie/tri">
+    <meta property="og:image" content="https://www.bleueenergy.com/asset/images/technologies.jpg">
+    <meta property="og:site_name" content="Blue Energy">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Technologies de Tri Innovantes pour l'Afrique">
+    <meta name="twitter:description" content="Découvrez nos méthodes de tri des déchets : de la valorisation organique à la production d'énergie, nous bâtissons un avenir durable pour les communautés africaines.">
+    <meta name="twitter:image" content="https://www.bleueenergy.com/asset/images/technologies.jpg">
+
+    <?php
+        include __DIR__."/components/meta.php";
+    ?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href=<?php asset('global.css') ?>>
     <link rel="stylesheet" href=<?php asset('tri.css') ?>>
-    <title>Blueu Energy | Accueil </title>
+    
 </head>
 <body>
     <?php
@@ -78,7 +96,7 @@
             <div class="technologies-grid">
                 <div class="technology-card technology-card--left">
                     <div class="technology-image">
-                        <img src="/asset/images/hero.jpg" alt="Tri des Déchets Organiques">
+                        <img src="/asset/images/waste_to_energy.jpg" alt="Tri des Déchets Organiques">
                     </div>
                     <div class="technology-content">
                         <h3 class="technology-title">Tri des Déchets Organiques</h3>
@@ -92,7 +110,7 @@
                 </div>
                 <div class="technology-card technology-card--right">
                     <div class="technology-image">
-                        <img src="/asset/images/hero.jpg" alt="Traitement Thermique">
+                        <img src="/asset/images/usine.jfif" alt="Traitement Thermique">
                     </div>
                     <div class="technology-content">
                         <h3 class="technology-title">Traitement Thermique</h3>
@@ -152,7 +170,7 @@
                 </div>
                 <div class="processus-item ball">
                     <div class="processus-number">2</div>
-                    <p class="processus-label">Tri initial</p>
+                    <p class="processus-label">Tri</p>
                 </div>
                 <div class="processus-item ball">
                     <div class="processus-number">3</div>
@@ -176,15 +194,15 @@
             <div class="tri-contact-details">
                 <div class="contact-item">
                     <i class="fa-solid fa-location-dot contact-icon"></i>
-                    <p class="contact-info">123 Rue Principale, Ville</p>
+                    <p class="contact-info">Akwa, Douala Cameroun</p>
                 </div>
                 <div class="contact-item">
                     <i class="fa-solid fa-envelope contact-icon"></i>
-                    <p class="contact-info">contact@ecotri.com</p>
+                    <p class="contact-info">ceo@blueenergy.com</p>
                 </div>
                 <div class="contact-item">
                     <i class="fa-solid fa-phone contact-icon"></i>
-                    <p class="contact-info">+123 456 789</p>
+                    <p class="contact-info">+237 6 96 74 83 92</p>
                 </div>
             </div>
         </div>

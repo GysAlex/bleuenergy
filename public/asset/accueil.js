@@ -17,7 +17,7 @@ function heroAnimation()
         rotation: "random(-80, 80)",
         duration: 0.7, 
         ease: "back",
-        stagger: 0.15
+        stagger: 0.2
     })
     .from('.hero .explain', {
         yPercent: -50,
@@ -314,8 +314,8 @@ function animateStats() {
                     displayValue = Math.round(proxy.val / 1000) + "K";
                 } else if (unitText === "%") {
                     displayValue = Math.round(proxy.val) + "%";
-                } else if (unitText === "MWh") {
-                    displayValue = Math.round(proxy.val) + "MWh";
+                } else if (unitText === "GWh") {
+                    displayValue = Math.round(proxy.val) + "GWh";
                 } else {
                     displayValue = Math.round(proxy.val);
                 }
@@ -355,14 +355,82 @@ function animateFourthPart() {
     }, 0.2); // Démarre avec un léger délai après la gauche
 }
 
+function animateProblemeSection() {
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".probleme-section",
+            start: "20px 60%",
+            toggleActions: "play none none reverse",
+        }
+    });
+
+    // Animation de l'image (l'inner div)
+    tl.from(".probleme-image-inner", {
+        duration: .8,
+        opacity: 0,
+        x: -100,
+        ease: "power2.out",
+    });
+
+    // Animation du titre, des paragraphes et des éléments de la liste
+    const textElements = gsap.utils.toArray(".probleme-title, .probleme-paragraphe, .probleme-list li");
+    tl.from(textElements, {
+        x: 100,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.4,
+        ease: "power2.out"
+    }, "<0.2");
+}
+
+function animateProjetWteSection() {
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".projet-wte-section",
+            start: "20px 60%",
+            toggleActions: "play none none reverse",
+        }
+    });
+
+    // Animation du masque de l'image (l'inner div)
+    tl.from(".projet-wte-image-inner", {
+        duration: .8,
+        opacity: 0,
+        x: 100,
+        ease: "power2.out",
+    });
+
+    // Animation du titre et du paragraphe
+    const textElements = gsap.utils.toArray(".projet-wte-title, .projet-wte-paragraphe");
+    tl.from(textElements, {
+        x: -100,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: "power2.out"
+    }, "<0.2");
+
+    // Animation de la liste d'objectifs
+    const objectifs = gsap.utils.toArray(".objectif-item");
+    tl.from(objectifs, {
+        x: -100,
+        opacity: 0,
+        duration: 0.6,
+        stagger: 0.2,
+        ease: "power2.out"
+    }, "<0.8");
+}
+
 window.onload = ()=>{
     svgDrawSection()
     animate_navBar()
     animateSecondPart()
     animateStats()
     animateFourthPart()
+    animateProblemeSection()
     toggleMenu()
     animate_navBar()
     lenisFunction()
     heroAnimation()
+    animateProjetWteSection()
 }

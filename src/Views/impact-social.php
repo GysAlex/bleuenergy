@@ -7,9 +7,24 @@ $page_description = "Découvrez comment Blue Energy améliore la qualité de vie
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $page_title; ?></title>
+
+    <title>Impact Social | Blue Energy</title>
+    <meta name="description" content="Découvrez l'impact social de Blue Energy : amélioration de la qualité de vie, santé publique, assainissement urbain et création d'emplois locaux grâce à une gestion innovante des déchets.">
+    <meta name="keywords" content="impact social, communauté, santé publique, qualité de vie, assainissement urbain, emplois locaux, éducation, développement durable, Blue Energy">
+
+    <meta property="og:title" content="Impact Social de Blue Energy | Bâtir des Communautés Plus Saines">
+    <meta property="og:description" content="Notre projet de valorisation des déchets contribue directement à la santé et au bien-être des communautés, en réduisant les maladies, en créant des villes plus propres et en stimulant le développement local.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.bleueenergy.com/impact-social.html">
+    <meta property="og:image" content="https://www.bleueenergy.com/asset/images/ville.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="L'Impact Social de Blue Energy">
+    <meta name="twitter:description" content="Découvrez comment notre initiative transforme les villes et améliore la qualité de vie des habitants en Afrique, en favorisant la santé, l'assainissement et l'éducation environnementale.">
+    <meta name="twitter:image" content="https://www.bleueenergy.com/asset/images/ville.jpg">
+    <?php
+        include __DIR__."/components/meta.php";
+    ?>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -66,7 +81,7 @@ $page_description = "Découvrez comment Blue Energy améliore la qualité de vie
         }
         
         .hero-section {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/social.jpg');
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/asset/images/social.jpg');
             background-size: cover;
             background-position: center;
             color: white;
@@ -194,7 +209,7 @@ $page_description = "Découvrez comment Blue Energy améliore la qualité de vie
                         </div>
                         <h3>Prévention des maladies hydriques</h3>
                         <p>Réduction significative des risques d'épidémies grâce à une meilleure gestion des déchets.</p>
-                        <img src="public/asset/images/maladie.jpg" 
+                        <img src="/asset/images/maladie.jpg" 
                              class="solution-img" alt="Prévention des maladies">
                     </div>
                 </div>
@@ -206,7 +221,7 @@ $page_description = "Découvrez comment Blue Energy améliore la qualité de vie
                         </div>
                         <h3>Réduction de l'insalubrité</h3>
                         <p>Réduire la pollution des déchets brûlés protège santé, air, climat et environnement local.</p>
-                        <img src="public/asset/images/reduit.jpg" 
+                        <img src="/asset/images/reduit.jpg" 
                              class="solution-img" alt="Réduction de l'insalubrité">
                     </div>
                 </div>
@@ -218,7 +233,7 @@ $page_description = "Découvrez comment Blue Energy améliore la qualité de vie
                         </div>
                         <h3>Assainissement Urbain</h3>
                         <p>Amélioration générale de la salubrité des espaces publics.</p>
-                        <img src="public/asset/images/central.jpg" 
+                        <img src="/asset/images/central.jpg" 
                              class="solution-img" alt="Assainissement Urbain">
                     </div>
                 </div>
@@ -233,7 +248,7 @@ $page_description = "Découvrez comment Blue Energy améliore la qualité de vie
             
             <div class="row align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <img src="public/asset/images/ville.jpg" 
+                    <img src="/asset/images/ville.jpg" 
                          class="urban-img shadow-lg floating-animation w-100" alt="Ville propre">
                 </div>
                 

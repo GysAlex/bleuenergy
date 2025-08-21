@@ -15,6 +15,11 @@ if($uri === "/" && $_SERVER["REQUEST_METHOD"] == "GET")
     PageController::home();
 }
 
+else if ($uri === "/" && $_SERVER["REQUEST_METHOD"] == "POST")
+{
+    PageController::sendContactMail();
+}
+
 else if($uri === "/partenaire" && $_SERVER["REQUEST_METHOD"] == "GET")
 {
     PageController::partnership();
@@ -23,6 +28,12 @@ else if($uri === "/about" && $_SERVER["REQUEST_METHOD"] == "GET")
 {
     PageController::about();
 }
+
+else if($uri === "/project" && $_SERVER["REQUEST_METHOD"] == "GET")
+{
+    PageController::project();
+}
+
 else if($uri === "/technologie" && $_SERVER["REQUEST_METHOD"] == "GET")
 {
     PageController::techno();
@@ -57,6 +68,11 @@ else if($uri === "/impact/economique" && $_SERVER["REQUEST_METHOD"] == "GET")
 else if($uri === "/contact" && $_SERVER["REQUEST_METHOD"] == "GET")
 {
     PageController::contact();
+}
+
+else if($uri === "/technologie/usine" && $_SERVER["REQUEST_METHOD"] == "GET")
+{
+    PageController::usine();
 }
 
 
