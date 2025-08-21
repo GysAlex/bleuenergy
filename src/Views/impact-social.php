@@ -194,7 +194,7 @@ $page_description = "Découvrez comment Blue Energy améliore la qualité de vie
                         </div>
                         <h3>Prévention des maladies hydriques</h3>
                         <p>Réduction significative des risques d'épidémies grâce à une meilleure gestion des déchets.</p>
-                        <img src="images/maladie.jpg" 
+                        <img src="public/asset/images/maladie.jpg" 
                              class="solution-img" alt="Prévention des maladies">
                     </div>
                 </div>
@@ -206,7 +206,7 @@ $page_description = "Découvrez comment Blue Energy améliore la qualité de vie
                         </div>
                         <h3>Réduction de l'insalubrité</h3>
                         <p>Réduire la pollution des déchets brûlés protège santé, air, climat et environnement local.</p>
-                        <img src="images/reduit.jpg" 
+                        <img src="public/asset/images/reduit.jpg" 
                              class="solution-img" alt="Réduction de l'insalubrité">
                     </div>
                 </div>
@@ -218,7 +218,7 @@ $page_description = "Découvrez comment Blue Energy améliore la qualité de vie
                         </div>
                         <h3>Assainissement Urbain</h3>
                         <p>Amélioration générale de la salubrité des espaces publics.</p>
-                        <img src="images/central.jpg" 
+                        <img src="public/asset/images/central.jpg" 
                              class="solution-img" alt="Assainissement Urbain">
                     </div>
                 </div>
@@ -233,7 +233,7 @@ $page_description = "Découvrez comment Blue Energy améliore la qualité de vie
             
             <div class="row align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <img src="images/ville.jpg" 
+                    <img src="public/asset/images/ville.jpg" 
                          class="urban-img shadow-lg floating-animation w-100" alt="Ville propre">
                 </div>
                 

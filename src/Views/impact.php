@@ -51,8 +51,10 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            background: url('images/city1.jpg') no-repeat center center;
             opacity: 0.3;
+             background-size: cover;
+            
         }
 
         .hero-content {
@@ -86,7 +88,7 @@
             box-shadow: 0 10px 40px rgba(0,0,0,0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border: 1px solid rgba(0,0,0,0.05);
-            height: 97%;
+            height: 95%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -99,14 +101,14 @@
         }
 
         .impact-icon {
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 1.5rem;
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: white;
         }
 
@@ -123,80 +125,7 @@
         }
 
         /* Styles for circular progress */
-        .circle-progress {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            justify-content: center;
-            margin: 1.5rem auto 1rem;
-            position: relative;
-            /* Using conic-gradient for the fill effect */
-            background: conic-gradient(
-                var(--primary-green) calc(var(--progress-green, 0) * 1%),
-                var(--secondary-blue) calc(var(--progress-blue, 0) * 1%),
-                var(--accent-teal) calc(var(--progress-teal, 0) * 1%),
-                var(--light-grey) 0%
-            );
-            overflow: hidden;
-            box-shadow: 0 0 0 8px rgba(0,0,0,0.05);
-            transition: background 0.5s ease-out; /* For general background changes */
-        }
-
-        /* Specific conic gradients for each circle to show individual color fills */
-        .circle-progress.green {
-            background: conic-gradient(var(--primary-green) calc(var(--progress-val, 0) * 1%), var(--light-grey) calc(var(--progress-val, 0) * 1%));
-        }
-
-        .circle-progress.blue {
-            background: conic-gradient(var(--secondary-blue) calc(var(--progress-val, 0) * 1%), var(--light-grey) calc(var(--progress-val, 0) * 1%));
-        }
-
-        .circle-progress.teal {
-            background: conic-gradient(var(--accent-teal) calc(var(--progress-val, 0) * 1%), var(--light-grey) calc(var(--progress-val, 0) * 1%));
-        }
-
-
-        .circle-progress::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 85%;
-            height: 85%;
-            border-radius: 50%;
-            background: white;
-            z-index: 1;
-        }
-
-        .circle-progress .impact-number {
-            position: relative;
-            z-index: 2;
-            font-size: 2.8rem;
-            font-weight: 800;
-            margin: 0;
-            line-height: 1;
-            color: var(--text-dark);
-            transition: color 0.5s ease-out;
-        }
-
-        .circle-progress.green .impact-number { color: var(--primary-green); }
-        .circle-progress.blue .impact-number { color: var(--secondary-blue); }
-        .circle-progress.teal .impact-number { color: var(--accent-teal); }
-
-        .circle-progress small {
-            position: relative;
-            z-index: 2;
-            font-size: 0.8rem;
-            color: var(--text-light);
-            text-align: center;
-            padding: 0 10px;
-            margin-top: 5px;
-        }
+        
 
         .impact-card .impact-description {
             display: none;
@@ -265,7 +194,7 @@
 
         .feature-icon {
             color: white;
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
 
@@ -454,8 +383,8 @@
             }
 
             .circle-progress {
-                width: 140px;
-                height: 140px;
+                width: 120px;
+                height: 120px;
             }
             .circle-progress .impact-number {
                 font-size: 2rem;
@@ -509,7 +438,7 @@
             <div class="hero-content text-center" data-aos="fade-up">
                 <h1 class="hero-title">Transformer les Défis en Progrès Concrets</h1>
                 <p class="hero-subtitle">
-                    À travers nos technologies, nos projets génèrent des bénéfices  pour
+                    À travers nos technologies, nos projets génèrent des bénéfices mesurables pour
                     l'environnement, la société et l'économie. Découvrez un avenir plus durable et
                     prospère pour tous.
                 </p>
@@ -558,7 +487,7 @@
                         </div>
                         <h3><a href="impact-eco.php">Impact Economique</a></h3>
                         <p class="impact-small-description">Stimuler la croissance et assurer une autonomie énergétique</p>
-                        <div class="circle-progress teal" data-target="+91.25" data-full-target="" data-unit="M" data-decimals="1">
+                        <div class="circle-progress teal" data-target="+912.5" data-full-target="" data-unit="M" data-decimals="1">
                             <div class="impact-number teal counter">0</div>
                             <small>de valeur économique générée</small>
                         </div>
@@ -601,7 +530,7 @@
                 <div class="col-lg-6" data-aos="fade-left">
                     <div class="chart-container">
                         <h5>Réduction des Émissions de CO₂</h5>
-                        <div style="max-width: 300px; margin: 0 auto; ">
+                        <div style="max-width: 200px; margin: 0 auto; ">
                             <canvas id="co2Chart"></canvas>
                         </div>
                         <div class="co2-chart-details">
@@ -628,12 +557,12 @@
     <section class="detail-section">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">
-                <i class="fas fa-heart"></i> Améliorer la Qualité de Vie 
+                Améliorer la Qualité de Vie 
             </h2>
             <div class="row">
                 <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="community-card">
-                        <div class="community-image" style="background-image: url('images/emploi.jpg')"></div>
+                        <div class="community-image" style="background-image: url('images/bosser.jpg')"></div>
                         <div class="community-content">
                             <h5><i class="fas fa-briefcase"></i> Création d'Emplois</h5>
                             <p>Plus de +750 emplois créés dans des secteurs durables, offrant des opportunités de carrière dans les technologies vertes.</p>
@@ -643,7 +572,7 @@
 
                 <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="community-card">
-                        <div class="community-image" style="background-image: url('images/enviro.jpg')"></div>
+                        <div class="community-image" style="background-image: url('images/plante.jpg')"></div>
                         <div class="community-content">
                             <h5><i class="fas fa-hands-helping"></i> Éducation et Sensibilisation</h5>
                             <p>Programmes éducatifs pour sensibiliser aux enjeux environnementaux et sociaux.</p>
@@ -652,7 +581,7 @@
                 </div>
                 <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="community-card">
-                        <div class="community-image" style="background-image: url('images/BUS.png')"></div>
+                        <div class="community-image" style="background-image: url('images/urbain.jpg')"></div>
                         <div class="community-content">
                             <h5><i class="fas fa-city"></i> Mobilité Urbaine Améliorée</h5>
                             <p>Solutions de transport durable réduisant la pollution urbaine et améliorant la qualité de l'air dans les villes.</p>

@@ -242,7 +242,7 @@ $tagline = "Pionniers de la Valorisation Énergétique";
             display: flex;
             align-items: center;
             gap: 2rem;
-            max-width: 650px;
+            max-width: 750px;
             margin: 0 auto;
             background: white;
             padding: 1.8rem;
@@ -592,7 +592,7 @@ $tagline = "Pionniers de la Valorisation Énergétique";
             <h2 class="section-title animate-on-scroll">Notre Vision</h2>
             
             <div class="team-member animate-on-scroll">
-                <img src="images/Mr Biheng.jpg" alt="Photo de Roger Thierry BIKENE">
+                <img src="public/asset/images/Mr Biheng.jpg" alt="Photo de Roger Thierry BIKENE">
                 <div class="member-info">
                     <div class="member-quote">"Plus qu'une simple initiative de transport durable,
                          Waste-to-Energy représente une réponse concrète aux défis écologiques, 
@@ -626,22 +626,22 @@ $tagline = "Pionniers de la Valorisation Énergétique";
                     <?php
                     $gallery_items = [
                         [
-                            'image' => 'images/d.jpg',
+                            'image' => 'public/asset/images/d.jpg',
                             'alt' => 'Rencontre avec les partenaires',
                             'title' => 'Primature'
                         ],
                         [
-                            'image' => 'images/a.jpg',
+                            'image' => 'public/asset/images/a.jpg',
                             'alt' => 'Rencontre avec les partenaires',
                             'title' => 'MINDHU'
                         ],
                         [
-                            'image' => 'images/b.jpg',
+                            'image' => 'public/asset/images/b.jpg',
                             'alt' => 'Rencontre avec les partenaires',
                             'title' => 'CUY'
                         ],
                         [
-                            'image' => 'images/e.jpg',
+                            'image' => 'public/asset/images/e.jpg',
                             'alt' => 'Rencontre avec les partenaires',
                             'title' => 'CAA'
                         ]

@@ -111,7 +111,7 @@ if (isset($_POST['newsletter_email'])) {
         .hero {
             background: 
                 linear-gradient(rgba(0, 80, 0, 0.7), rgba(0, 80, 0, 0.7)),
-                url('images/ac.jpg') no-repeat center center;
+                url('public/asset/images/ac.jpg') no-repeat center center;
             background-size: cover;
             padding: 150px 0;
             color: white;

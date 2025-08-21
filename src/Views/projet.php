@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Waste to Energy</title>
+    <title> projet</title>
     <style>
         * {
             margin: 0;
@@ -383,41 +383,7 @@
         }
 
         /* Footer */
-        .footer {
-            background: #1f2937;
-            color: white;
-            padding: 3rem 0 1rem;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-section h4 {
-            margin-bottom: 1rem;
-            color: #3b82f6;
-        }
-
-        .footer-section a {
-            color: #d1d5db;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-section a:hover {
-            color: white;
-        }
-
-        .footer-bottom {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid #374151;
-            color: #9ca3af;
-        }
+       
 
         /* Animations et effets scroll */
         .fade-in {
