@@ -746,8 +746,7 @@ $tagline = "Pionniers de la Valorisation Énergétique";
                 <p>Rejoignez-nous dans cette aventure transformatrice pour créer des villes plus propres et énergétiquement autonomes.</p>
                 
                 <div class="cta-buttons">
-                    <a href="impact.php" class="btn btn-primary">Découvrir Notre Impact</a>
-                    <a href="#services" class="btn btn-secondary">Notre Collectivité</a>
+                    <a href="/impact" class="btn btn-primary">Découvrir Notre Impact</a>
                 </div>
             </div>
         </div>
@@ -800,15 +799,7 @@ $tagline = "Pionniers de la Valorisation Énergétique";
             item.style.animationDelay = (index * 0.2) + 's';
         });
 
-        // Parallax effect for hero background
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const parallax = document.querySelector('.hero');
-            if (parallax) {
-                const speed = scrolled * 0.5;
-                parallax.style.transform = `translateY(${speed}px)`;
-            }
-        });
+
 
         // Add hover effects to interactive elements
         document.querySelectorAll('.team-member, .value-item, .btn').forEach(element => {

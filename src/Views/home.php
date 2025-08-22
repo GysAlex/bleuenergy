@@ -406,7 +406,7 @@
                 <div class="right-content">
                     <div class="contact-form-card">
                         <h3>Demande de Contact</h3>
-                        <form action="#">
+                        <form action="/" id="contactForm" method="POST" class="contact-form">
                             <div class="form-group">
                                 <input type="text" name="name" placeholder="Votre nom">
                                 <input type="text" name="surname" placeholder="Votre prénom">
@@ -415,7 +415,7 @@
                                 <input type="email" name="email" placeholder="Votre email">
                             </div>
                             <div class="form-group">
-                                <textarea placeholder="Votre message" name="email"></textarea>
+                                <textarea placeholder="Votre message" name="message"></textarea>
                             </div>
                             <button type="submit" class="btn-submit">Envoyer</button>
                         </form>

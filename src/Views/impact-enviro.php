@@ -588,7 +588,7 @@
         <div class="container">
             <h2>Rejoignez Notre Initiative Écologique</h2>
             <p>Ensemble, créons un avenir plus durable pour le Cameroun</p>
-            <a href="About.php" class="cta-button">En Savoir Plus</a>
+            <a href="/about" class="cta-button">En Savoir Plus</a>
         </div>
     </section>
 

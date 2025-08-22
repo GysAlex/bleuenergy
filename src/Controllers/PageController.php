@@ -114,39 +114,72 @@ class PageController
         }
 
         $mail = new PHPMailer(true);
-        try {
-            // Paramètres du serveur SMTP
-            $mail->isSMTP();
-            $mail->Host       = 'bleueenergy.com';
-            $mail->SMTPAuth   = true;
-            $mail->Username   = 'noreply@bleueenergy.com';
-            $mail->Password   = 'G}&ILFR{4U%+'; // Remplacez par le vrai mot de passe
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-            $mail->Port       = 465;
-            $mail->CharSet = 'UTF-8';
+    try {
+        // Paramètres du serveur SMTP
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.gmail.com';
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'fokoalex5@gmail.com';
+        $mail->Password   = 'lvwx jdww qvck rosf';
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        $mail->Port       = 465;
+        $mail->CharSet = 'UTF-8';
 
-            // Expéditeur : Utilisation de l'adresse d'envoi officielle
-            // C'est l'adresse autorisée par le serveur pour l'envoi
-            $mail->setFrom('noreply@bleueenergy.com', 'Formulaire BleueEnergy');
-            
-            // Adresse de réponse : Utilisation de l'email correct de l'utilisateur
-            // Les réponses iront à l'utilisateur qui a rempli le formulaire
-            $mail->addReplyTo($email, $nom);
-            
-            // Destinataire : Envoi à l'adresse de contact
-            $mail->addAddress('contact@bleueenergy.com');
+        // Destinataires
+        $mail->setFrom('fokoalex5@gmail.com', 'Formulaire BleueEnergy');
+        $mail->addAddress('fokoalex5@gmail.com'); //Test
+        // $mail->addAddress('da@bleueenergy.com');
+        $mail->addReplyTo($email, $nom);
 
-            // Contenu de l'e-mail
-            $mail->isHTML(false);
-            $mail->Subject = "Nouvelle demande de contact de la part de $nom";
-            $mail->Body    = "Nom: $nom\nEmail: $email\n\nMessage:\n$message";
+        // Activer le format HTML
+        $mail->isHTML(true);
 
-            $mail->send();
-            
-            // Envoi réussi
-            $response['status'] = 'success';
-            $response['message'] = 'Votre message a été envoyé avec succès !';
-        } catch (Exception $e) {
+        // Création du corps de l'e-mail en HTML et Markdown
+        $htmlBody = "
+        <div style='font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: auto; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;'>
+            <div style='background-color: #004d40; color: white; padding: 20px; text-align: center;'>
+                <h2 style='margin: 0;'>Nouvelle Demande de Contact</h2>
+            </div>
+            <div style='padding: 20px;'>
+                <p>Bonjour,</p>
+                <p>Vous avez reçu une nouvelle demande de contact via votre site web BleueEnergy.</p>
+                
+                <table style='width: 100%; border-collapse: collapse; margin-top: 20px;'>
+                    <tr>
+                        <td style='padding: 10px; border: 1px solid #ddd; background-color: #f2f2f2; width: 30%; font-weight: bold;'>Nom</td>
+                        <td style='padding: 10px; border: 1px solid #ddd;'>{$nom}</td>
+                    </tr>
+                    <tr>
+                        <td style='padding: 10px; border: 1px solid #ddd; background-color: #f2f2f2; font-weight: bold;'>E-mail</td>
+                        <td style='padding: 10px; border: 1px solid #ddd;'><a href='mailto:{$email}'>{$email}</a></td>
+                    </tr>
+                </table>
+
+                <div style='margin-top: 20px;'>
+                    <p style='font-weight: bold; margin-bottom: 5px;'>Message :</p>
+                    <div style='border: 1px solid #ddd; padding: 15px; border-radius: 5px; background-color: #fafafa;'>
+                        <p style='margin: 0;'>{$message}</p>
+                    </div>
+                </div>
+                
+                <p style='margin-top: 30px; font-size: 12px; color: #888;'>Ceci est un e-mail automatique, merci de ne pas y répondre directement. Utilisez le lien de réponse pour contacter l'expéditeur.</p>
+            </div>
+            <div style='background-color: #004d40; color: white; padding: 10px; text-align: center; font-size: 12px;'>
+                &copy; 2025 BleueEnergy. Tous droits réservés.
+            </div>
+        </div>";
+
+        // Définir le sujet et le corps
+        $mail->Subject = "Nouvelle demande de contact de la part de {$nom}";
+        $mail->Body    = $htmlBody;
+
+        $mail->send();
+        
+        // Envoi réussi
+        $response['status'] = 'success';
+        $response['message'] = 'Votre message a été envoyé avec succès !';
+
+        }catch (Exception $e) {
             // Envoi échoué
             $response['message'] = "Le message n'a pas pu être envoyé. Erreur: {$mail->ErrorInfo}";
         }

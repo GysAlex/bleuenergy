@@ -152,9 +152,9 @@
         <div class="cta-container">
             <h2 class="cta-title">Découvrez comment cette technologie transforme notre ville</h2>
             <div class="cta-buttons-wrapper">
-                <a href="#" class="cta-button cta-button-primary">Explorer notre Processus</a>
-                <a href="#" class="cta-button cta-button-secondary">Voir l'impact de Nos Usines</a>
-                <a href="#" class="cta-button cta-button-tertiary">Nous Contacter</a>
+                <a href="/technologie" class="cta-button cta-button-primary">Explorer notre Processus</a>
+                <a href="/impact" class="cta-button cta-button-secondary">Voir l'impact de Nos Usines</a>
+                <a href="/contact" class="cta-button cta-button-tertiary">Nous Contacter</a>
             </div>
         </div>
     </section>

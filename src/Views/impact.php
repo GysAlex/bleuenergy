@@ -42,11 +42,9 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Montserrat';
         }
 
         body {
-            font-family: 'Montserrat', sans-serif;
             line-height: 1.6;
             color: var(--text-dark);
         }

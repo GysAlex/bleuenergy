@@ -172,15 +172,21 @@
                     <a href="/technologie">Notre Processus<i class="fa-solid fa-chevron-down submenu-icon"></i></a>
                     <ul class="submenu">
                         <li>
-                            <a href="/technologie/tir">
+                            <a href="/technologie/camion">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                Collecte des déchets
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/technologie/tri">
                                 <i class="fa-solid fa-arrow-right"></i>
                                 Tri des déchets
                             </a>
                         </li>
                         <li>
-                            <a href="/technologie/camion">
+                            <a href="/technologie/usine">
                                 <i class="fa-solid fa-arrow-right"></i>
-                                Camions
+                                Usine de traitement
                             </a>
                         </li>
                     </ul>

@@ -364,7 +364,7 @@
 
     <section class="final-techno">
         <div class="call-to-action">
-            <a href="" class="cta-button">
+            <a href="/impact" class="cta-button">
                 Voir les Bénéfices Concrets de Notre Solution <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>

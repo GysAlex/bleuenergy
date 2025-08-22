@@ -392,9 +392,9 @@
                     <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">
                         Rejoignez-nous dans notre mission de transformation écologique et sociale
                     </p>
-                    <button class="btn btn-custom btn-lg floating-animation" data-aos="fade-up" data-aos-delay="400">
+                    <a href="/contact" class="btn btn-custom btn-lg floating-animation" data-aos="fade-up" data-aos-delay="400">
                         Rejoignez Notre Initiative
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
