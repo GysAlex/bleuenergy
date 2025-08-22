@@ -22,6 +22,8 @@ $tagline = "Pionniers de la Valorisation Énergétique";
     <meta name="twitter:title" content="Notre Histoire | Blue Energy, Pionniers de la Transition Énergétique">
     <meta name="twitter:description" content="Nous sommes les visionnaires derrière la transformation des déchets urbains en une solution énergétique pour les défis de demain. Découvrez notre mission et nos valeurs.">
 
+    <link rel="stylesheet" href=<?php asset('global.css') ?>>
+
     <?php
         include __DIR__."/components/meta.php";
     ?>
@@ -580,7 +582,11 @@ $tagline = "Pionniers de la Valorisation Énergétique";
     </style>
 </head>
 <body>
-    <div class="progress-bar" id="progressBar"></div>
+    
+    <?php
+        include __DIR__."/components/header.php";
+    ?>
+    
 
 
 
@@ -743,27 +749,13 @@ $tagline = "Pionniers de la Valorisation Énergétique";
     </section>
 
     <!-- Footer -->
-    
+    <?php
+        include __DIR__."/components/footer.php";
+    ?>
 
+    <script src="/asset/about.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Progress bar
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            const progressBar = document.getElementById('progressBar');
-            const scrollTop = window.pageYOffset;
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrollPercent = (scrollTop / docHeight) * 100;
-            
-            progressBar.style.width = scrollPercent + '%';
-            
-            // Navbar background on scroll
-            if (scrollTop > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {

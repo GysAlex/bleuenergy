@@ -471,8 +471,7 @@
             <div class="parallax-element" style="
                 left: <?php echo rand(0, 100); ?>%; 
                 animation-delay: <?php echo rand(0, 10); ?>s;
-                animation-duration: <?php echo rand(8, 15); ?>s;
-            "></div>
+                animation-duration: <?php echo rand(8, 15); ?>s;"></div>
         <?php endfor; ?>
     </div>
 

@@ -24,7 +24,7 @@ class PageController
 
     public static function project()
     {
-        return view('project');
+        return view('projet');
     }
 
     public static function about()
