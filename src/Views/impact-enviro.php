@@ -342,14 +342,7 @@
             align-items: center;
         }
 
-        .benefits-image {
-            width: 100%;
-            height: 300px;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/nature.jpg');
-            background-size: cover;
-            background-position: center;
-            border-radius: 10px;
-        }
+       
 
         .benefits-list {
             list-style: none;

@@ -309,7 +309,7 @@
             <!-- Ville Propre -->
             <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="solution-card">
-                    <div class="solution-image" style="background-image: url('images/vd.jpg');">
+                    <div class="solution-image" style="background-image: url('/asset/images/city.jpeg');">
                         <div class="image-overlay"></div>
                     </div>
                     <div class="p-4">
@@ -345,7 +345,7 @@
             <!-- Agriculture Durable -->
             <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="solution-card">
-                    <div class="solution-image" style="background-image: url('images/agric.jpg');">
+                    <div class="solution-image" style="background-image: url('/asset/images/agric.jpg');">
                         <div class="image-overlay"></div>
                     </div>
                     <div class="p-4">
@@ -363,7 +363,7 @@
             <!-- Énergie Verte -->
             <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
                 <div class="solution-card">
-                    <div class="solution-image" style="background-image: url('images/en.jpg');">
+                    <div class="solution-image" style="background-image: url('/asset/images/diesel.png');">
                         <div class="image-overlay"></div>
                     </div>
                     <div class="p-4">
