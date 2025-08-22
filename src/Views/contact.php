@@ -37,6 +37,9 @@ if (isset($_POST['newsletter_email'])) {
     <?php
         include __DIR__."/components/meta.php";
     ?>
+    
+    <link rel="stylesheet" href=<?php asset('global.css') ?>>
+
     <title>Contact</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -75,6 +78,7 @@ if (isset($_POST['newsletter_email'])) {
         .animate-left {
             animation: slideInLeft 0.8s ease-out;
         }
+
 
         .animate-right {
             animation: slideInRight 0.8s ease-out;
@@ -383,6 +387,11 @@ if (isset($_POST['newsletter_email'])) {
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
 
+        /*This line help to fix the problem on the nav-bar */
+       .desktop-menu-items{
+            margin-bottom: 0;
+        }
+
         .newsletter-form button:hover {
             background: rgba(255,255,255,0.3);
             transform: translateY(-2px);
@@ -448,8 +457,9 @@ if (isset($_POST['newsletter_email'])) {
 </head>
 <body>
      <!-- Navigation -->
-   
-
+    <?php 
+        include __DIR__."/components/header.php" 
+    ?>
     <!-- Hero Section avec Background Image et overlay vert foncé -->
     <section class="hero">
         <div class="container">
@@ -754,20 +764,15 @@ if (isset($_POST['newsletter_email'])) {
 
     <!-- Footer -->
    
+    <?php 
+        include __DIR__."/components/footer.php" 
+    ?>
 
+    <script src="/asset/default.js" type="module"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
     <script>
-        // Animation du header au scroll
-        window.addEventListener('scroll', function() {
-            const header = document.getElementById('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
 
         // Animation des éléments au défilement
         const animateElements = document.querySelectorAll('.animate-fade, .animate-left, .animate-right');

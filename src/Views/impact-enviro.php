@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/global.css">
     <style>
         :root {
             --primary-green: #4CAF50;
@@ -31,8 +32,8 @@
             font-family: 'Poppins', sans-serif;
             line-height: 1.6;
             color: var(--text-dark);
-            padding-top: 70px;
         }
+
         .navbar {
             background-color: transparent !important; /* Make it transparent by default */
             transition: background-color 0.3s ease;
@@ -67,6 +68,12 @@
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
         }
+
+        /*This line help to fix the problem on the nav-bar */
+       .desktop-menu-items{
+            margin-bottom: 0;
+        }
+
 
         .animate-fade {
             animation: fadeIn 1s ease-out;
@@ -440,6 +447,9 @@
     </style>
 </head>
 <body>
+    <?php 
+        include __DIR__."/components/header.php"    
+    ?>
     <?php
     // Configuration des données
     $solutions = [
@@ -493,8 +503,8 @@
         'Développement de l\'économie circulaire'
     ];
     ?>
-<a href="impact.php" class="lien-fleche">precedente</a>
  
+
     <!-- Hero Section -->
     <section class="hero-section animate-fade">
         <div class="hero-content animate-left">
@@ -583,21 +593,16 @@
     </section>
 
     <!-- Footer -->
-  
+    <?php 
+        include __DIR__."/components/footer.php"    
+    ?>
 
+    <script src="/asset/default.js" type="module"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
     <script>
-        // Animation du navbar au scroll
-        window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+
 
         // Animation des éléments au défilement
         const observerOptions = {

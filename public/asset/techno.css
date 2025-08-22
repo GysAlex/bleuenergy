@@ -69,6 +69,11 @@
         top: 30%;
     }
 
+    .hero .img-container
+    {
+        height: 450px;
+    }
+
 }
 
 /* Styling the main content of the technology page */

@@ -21,6 +21,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href=<?php asset('global.css') ?>>
+
     <style>
         :root {
             --primary-blue: #1a9248ff;
@@ -63,6 +65,11 @@
         .hero-content {
             position: relative;
             z-index: 2;
+        }
+
+        /*This line help to fix the problem on the nav-bar */
+       .desktop-menu-items{
+            margin-bottom: 0;
         }
 
         .floating-animation {
@@ -219,9 +226,9 @@
 }
 
     </style>
-</head>
- <a href="impact.php" class="lien-fleche">precedente</a>
-<body>
+    <?php 
+        include __DIR__."/components/header.php" 
+    ?>
     <!-- Hero Section -->
 
     
@@ -392,6 +399,11 @@
             </div>
         </div>
     </section>
+    <?php 
+        include __DIR__."/components/footer.php" 
+    ?>
+
+    <script src="/asset/default.js" type="module"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

@@ -22,9 +22,9 @@
     <title>Impact</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href=<?php asset('global.css') ?>>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href=<?php asset('global.css') ?>>
+
     <style>
         :root {
             --primary-green: #00bf63;
@@ -42,7 +42,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Montserrat':
         }
 
         body {
@@ -82,16 +81,13 @@
 
         .hero-title {
             font-size: 32px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: var(--simple-gradient);
-    background-size: 500%;
-    background-position: bottom left;
-    animation: bg-animation infinite reverse 10s;
-    background-clip: text;
-    color: transparent;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: 500%;
+            background-position: bottom left;
+
         }
 
         .hero-subtitle {
@@ -119,6 +115,12 @@
             align-items: center;
             justify-content: space-between;
         }
+
+        /*This line help to fix the problem on the nav-bar */
+       .desktop-menu-items{
+            margin-bottom: 0;
+        }
+
 
         .impact-card:hover {
             transform: translateY(-10px);
@@ -457,11 +459,13 @@
 </head>
 <body>
     
-
+    <?php 
+        include __DIR__."/components/header.php"    
+    ?>
     <section class="hero-section" id="accueil">
         <div class="container">
             <div class="hero-content text-center" data-aos="fade-up">
-                <h1 class="hero-title" style="font-family: 'Montserrat'">Transformer les Défis en Progrès Concrets</h1>
+                <h1 class="hero-title" >Transformer les Défis en Progrès Concrets</h1>
                 <p class="hero-subtitle">
                     À travers nos technologies, nos projets génèrent des bénéfices mesurables pour
                     l'environnement, la société et l'économie. Découvrez un avenir plus durable et
@@ -692,7 +696,10 @@
     </section>
 
       
-
+    <?php 
+        include __DIR__."/components/footer.php"    
+    ?>
+    <script src="/asset/default.js" type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 

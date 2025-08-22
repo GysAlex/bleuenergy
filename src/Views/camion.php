@@ -5,10 +5,10 @@
         include __DIR__."/components/meta.php";
     ?>
     <title>Notre Flotte de Véhicules Spécialisés</title>
+    <link rel="stylesheet" href=<?php asset('global.css') ?>>
+
     <style>
         * {
-            margin: 0;
-            padding: 0;
             box-sizing: border-box;
         }
 
@@ -321,6 +321,11 @@
             animation: fadeInUp 1s ease-out;
         }
 
+        /*This line help to fix the problem on the nav-bar */
+       .desktop-menu-items{
+            margin-bottom: 0;
+        }
+
         .contact-btn {
             display: inline-block;
             padding: 15px 40px;
@@ -466,6 +471,9 @@
 </head>
 <body>
     <!-- Parallax background -->
+    <?php 
+        include __DIR__."/components/header.php" 
+    ?>
     <div class="parallax">
         <?php for ($i = 0; $i < 10; $i++): ?>
             <div class="parallax-element" style="
@@ -588,6 +596,11 @@
         </div>
     </section>
 
+    <?php 
+        include __DIR__."/components/footer.php" 
+    ?>
+
+    <script src="/asset/camion.js" type="module"></script>
     <script>
         // Intersection Observer for animations
         const observerOptions = {

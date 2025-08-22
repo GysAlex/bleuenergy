@@ -526,6 +526,11 @@ $tagline = "Pionniers de la Valorisation Énergétique";
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
+        /*This line help to fix the problem on the nav-bar */
+        .desktop-menu-items {
+            margin-bottom: 0;
+        }
+
 
         /* Responsive adjustments */
         @media (max-width: 992px) {

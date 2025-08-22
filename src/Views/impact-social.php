@@ -25,6 +25,7 @@ $page_description = "Découvrez comment Blue Energy améliore la qualité de vie
     <?php
         include __DIR__."/components/meta.php";
     ?>
+    <link rel="stylesheet" href="/asset/global.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -105,6 +106,12 @@ $page_description = "Découvrez comment Blue Energy améliore la qualité de vie
             height: 4px;
             background: var(--accent-teal);
         }
+
+        /*This line help to fix the problem on the nav-bar */
+       .desktop-menu-items{
+            margin-bottom: 0;
+        }
+
         
         .benefit-card {
             background: white;
@@ -187,7 +194,9 @@ $page_description = "Découvrez comment Blue Energy améliore la qualité de vie
     </style>
 </head>
 <body>
-    <a href="impact.php" class="lien-fleche">precedente</a>
+    <?php 
+        include __DIR__."/components/header.php"    
+    ?>
     <!-- Hero Section -->
     <section class="hero-section" data-aos="fade-down">
         <div class="container text-center">
@@ -312,10 +321,13 @@ $page_description = "Découvrez comment Blue Energy améliore la qualité de vie
         </div>
     </section>
 
-    <hr class="divider">
 
-    <!-- Footer (from your previous pages) -->
-  
+    <!-- Footer -->
+    <?php 
+        include __DIR__."/components/footer.php"    
+    ?>
+
+    <script src="/asset/default.js" type="module"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

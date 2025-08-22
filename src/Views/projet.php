@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php
+        include __DIR__."/components/meta.php";
+    ?>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/asset/global.css">
     <title> projet</title>
     <style>
         * {
-            margin: 0;
-            padding: 0;
             box-sizing: border-box;
         }
 
-        body {
-            font-family: "poppins";
-            line-height: 1.6;
-            color: #333;
-        }
 
         /* Header Navigation */
         .header {
@@ -29,7 +28,7 @@
         .hero {
             background: linear-gradient(135deg, #4be54681 0%, #06b6d4 100%);
             color: white;
-            padding: 4rem 0;
+            padding: 7rem 0;
             text-align: center;
         }
 
@@ -54,7 +53,7 @@
 
         /* Container */
         .container {
-            max-width: 1200px;
+            max-width: var(--max-content_size);
             margin: 0 auto;
             padding: 0 2rem;
         }
@@ -530,6 +529,9 @@
     </style>
 </head>
 <body>
+    <?php
+        include __DIR__."/components/header.php";
+    ?>
     <script>
         // Fonction pour détecter les éléments visibles lors du scroll
         function observeElements() {
@@ -807,6 +809,9 @@
     </section>
 
     <!-- Footer -->
-   
+    <?php 
+        include __DIR__."/components/footer.php"    
+    ?>
+    <script src="/asset/default.js" type="module"></script>
 </body>
 </html>
