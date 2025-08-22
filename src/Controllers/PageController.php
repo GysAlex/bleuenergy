@@ -157,7 +157,7 @@ class PageController
             $mail->send();
 
             // 3. Réponse en cas de succès
-            $response = ['status' => 'success', 'message' => 'Votre message a été envoyé avec succès !'];
+            $response = ['status' => 'success', 'message' => 'Votre message a été envoyé avec succès, nous vous contacterons bientôt.'];
 
         } catch (Exception $e) {
             // 4. Réponse en cas d'erreur
