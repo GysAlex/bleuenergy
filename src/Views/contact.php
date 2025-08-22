@@ -705,11 +705,7 @@
             <h2 class="animate-fade">Newsletter</h2>
             <p class="animate-fade" style="animation-delay: 0.2s">Abonnez-vous à notre newsletter pour recevoir les dernières actualités sur notre projet et les avancées dans le domaine de l'économie circulaire.</p>
             
-            <?php if ($newsletter_sent): ?>
-                <div class="alert alert-success animate-fade" style="max-width: 400px; margin: 0 auto 20px;">
-                    <i class="fas fa-check-circle"></i> Merci pour votre inscription à notre newsletter !
-                </div>
-            <?php endif; ?>
+           
             
             <form class="newsletter-form animate-fade" method="POST" action="" style="animation-delay: 0.4s">
                 <input type="email" name="newsletter_email" placeholder="Votre adresse email" required>
