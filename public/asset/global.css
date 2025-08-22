@@ -27,10 +27,10 @@ body
 header
 {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     z-index: 3;
-    overflow-x: clip;
+    overflow-x: clip !important;
 }
 
 

@@ -16,18 +16,18 @@ $page_description = "Découvrez comment Blue Energy améliore la qualité de vie
     <meta property="og:description" content="Notre projet de valorisation des déchets contribue directement à la santé et au bien-être des communautés, en réduisant les maladies, en créant des villes plus propres et en stimulant le développement local.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://www.bleueenergy.com/impact-social.html">
-    <meta property="og:image" content="https://www.bleueenergy.com/asset/images/impact-social.jpg">
+    <meta property="og:image" content="https://www.bleueenergy.com/asset/images/ville.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="L'Impact Social de Blue Energy">
     <meta name="twitter:description" content="Découvrez comment notre initiative transforme les villes et améliore la qualité de vie des habitants en Afrique, en favorisant la santé, l'assainissement et l'éducation environnementale.">
-    <meta name="twitter:image" content="https://www.bleueenergy.com/asset/images/impact-social.jpg">
+    <meta name="twitter:image" content="https://www.bleueenergy.com/asset/images/ville.jpg">
     <?php
         include __DIR__."/components/meta.php";
     ?>
+    <link rel="stylesheet" href="/asset/global.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href=<?php asset('global.css') ?>>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         :root {
@@ -50,12 +50,6 @@ $page_description = "Découvrez comment Blue Energy améliore la qualité de vie
 
 .lien-fleche:hover {
     color: blue;
-}
-
-
-/*This line help to fix the problem on the nav-bar */
-ul{
-    margin-bottom: 0;
 }
 
 .lien-fleche::before {
@@ -88,7 +82,7 @@ ul{
         }
         
         .hero-section {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/social.jpg');
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/asset/images/social.jpg');
             background-size: cover;
             background-position: center;
             color: white;
@@ -112,6 +106,12 @@ ul{
             height: 4px;
             background: var(--accent-teal);
         }
+
+        /*This line help to fix the problem on the nav-bar */
+       .desktop-menu-items{
+            margin-bottom: 0;
+        }
+
         
         .benefit-card {
             background: white;
@@ -165,144 +165,7 @@ ul{
         }
         
         /* Footer style from your previous pages */
-        .footer {
-            background: #1a1a2e;
-            color: white;
-            padding: 70px 0 30px;
-            position: relative;
-        }
-        
-        .footer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, var(--primary-green), var(--accent-teal));
-        }
-        
-        .footer-section h3 {
-            color: var(--primary-green);
-            margin-bottom: 25px;
-            font-size: 1.3rem;
-            font-weight: 600;
-            position: relative;
-            padding-bottom: 10px;
-        }
-        
-        .footer-section h3::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 2px;
-            background: var(--primary-green);
-        }
-        
-        .footer-section p {
-            color: #ccc;
-            margin-bottom: 20px;
-            line-height: 1.7;
-        }
-        
-        .footer-section ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .footer-section ul li {
-            margin-bottom: 12px;
-            position: relative;
-            padding-left: 20px;
-        }
-        
-        .footer-section ul li::before {
-            content: '→';
-            position: absolute;
-            left: 0;
-            color: var(--primary-green);
-        }
-        
-        .footer-section ul li a {
-            color: #ccc;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        
-        .footer-section ul li a:hover {
-            color: var(--primary-green);
-            padding-left: 5px;
-        }
-        
-        .footer-bottom {
-            border-top: 1px solid #333;
-            padding-top: 30px;
-            text-align: center;
-            color: #999;
-            font-size: 0.9rem;
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 30px;
-        }
-        
-        .social-links a {
-            width: 45px;
-            height: 45px;
-            background: rgba(76, 175, 80, 0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            font-size: 1.1rem;
-        }
-        
-        .social-links a:hover {
-            background: var(--primary-green);
-            transform: translateY(-5px);
-        }
-        
-        .newsletter-form {
-            display: flex;
-            gap: 10px;
-            margin-top: 15px;
-        }
-        
-        .newsletter-form input {
-            flex: 1;
-            padding: 12px;
-            border: 1px solid #333;
-            border-radius: 5px;
-            background: rgba(255,255,255,0.1);
-            color: white;
-        }
-        
-        .newsletter-form input::placeholder {
-            color: #ccc;
-        }
-        
-        .newsletter-form button {
-            background: var(--primary-green);
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .newsletter-form button:hover {
-            background: var(--secondary-green);
-            transform: translateY(-2px);
-        }
-        
+     
         .divider {
             height: 3px;
             background: linear-gradient(90deg, var(--primary-green), var(--accent-teal));
@@ -331,9 +194,8 @@ ul{
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
-    <?php
-        include __DIR__."/components/header.php";
+    <?php 
+        include __DIR__."/components/header.php"    
     ?>
     <!-- Hero Section -->
     <section class="hero-section" data-aos="fade-down">
@@ -356,7 +218,7 @@ ul{
                         </div>
                         <h3>Prévention des maladies hydriques</h3>
                         <p>Réduction significative des risques d'épidémies grâce à une meilleure gestion des déchets.</p>
-                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                        <img src="/asset/images/maladie.jpg" 
                              class="solution-img" alt="Prévention des maladies">
                     </div>
                 </div>
@@ -368,7 +230,7 @@ ul{
                         </div>
                         <h3>Réduction de l'insalubrité</h3>
                         <p>Réduire la pollution des déchets brûlés protège santé, air, climat et environnement local.</p>
-                        <img src="https://images.unsplash.com/photo-1584473457406-6240486418e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                        <img src="/asset/images/reduit.jpg" 
                              class="solution-img" alt="Réduction de l'insalubrité">
                     </div>
                 </div>
@@ -380,7 +242,7 @@ ul{
                         </div>
                         <h3>Assainissement Urbain</h3>
                         <p>Amélioration générale de la salubrité des espaces publics.</p>
-                        <img src="https://images.unsplash.com/photo-1470004914212-05527e49370b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                        <img src="/asset/images/central.jpg" 
                              class="solution-img" alt="Assainissement Urbain">
                     </div>
                 </div>
@@ -395,7 +257,7 @@ ul{
             
             <div class="row align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <img src="images/ville.jpg" 
+                    <img src="/asset/images/ville.jpg" 
                          class="urban-img shadow-lg floating-animation w-100" alt="Ville propre">
                 </div>
                 
@@ -459,11 +321,16 @@ ul{
         </div>
     </section>
 
-    <hr class="divider">
 
-    <?php
-        include __DIR__."/components/footer2.php";
+    <!-- Footer -->
+    <?php 
+        include __DIR__."/components/footer.php"    
     ?>
+
+    <script src="/asset/default.js" type="module"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         // Initialize animations
         AOS.init({

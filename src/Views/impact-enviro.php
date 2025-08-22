@@ -9,9 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href=<?php asset('global.css') ?>>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/global.css">
     <style>
         :root {
             --primary-green: #4CAF50;
@@ -32,17 +32,14 @@
             font-family: 'Poppins', sans-serif;
             line-height: 1.6;
             color: var(--text-dark);
-            padding-top: 70px;
         }
+
         .navbar {
             background-color: transparent !important; /* Make it transparent by default */
             transition: background-color 0.3s ease;
         }
 
-        /*This line help to fix the problem on the nav-bar */
-       ul{
-            margin-bottom: 0;
-        }
+       
     
 
         /* Animations */
@@ -71,6 +68,12 @@
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
         }
+
+        /*This line help to fix the problem on the nav-bar */
+       .desktop-menu-items{
+            margin-bottom: 0;
+        }
+
 
         .animate-fade {
             animation: fadeIn 1s ease-out;
@@ -388,145 +391,6 @@
             transform: scale(1.05);
         }
 
-        .footer {
-            background: #1a1a2e;
-            color: white;
-            padding: 70px 0 30px;
-            position: relative;
-        }
-
-        .footer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, #4CAF50, #2196F3);
-        }
-
-        .footer-section h3 {
-            color: #4CAF50;
-            margin-bottom: 25px;
-            font-size: 1.3rem;
-            font-weight: 600;
-            position: relative;
-            padding-bottom: 10px;
-        }
-
-        .footer-section h3::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 2px;
-            background: #4CAF50;
-        }
-
-        .footer-section p {
-            color: #ccc;
-            margin-bottom: 20px;
-            line-height: 1.7;
-        }
-
-        .footer-section ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 12px;
-            position: relative;
-            padding-left: 20px;
-        }
-
-        .footer-section ul li::before {
-            content: '→';
-            position: absolute;
-            left: 0;
-            color: #4CAF50;
-        }
-
-        .footer-section ul li a {
-            color: #ccc;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .footer-section ul li a:hover {
-            color: #4CAF50;
-            padding-left: 5px;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 30px;
-        }
-
-        .social-links a {
-            width: 45px;
-            height: 45px;
-            background: rgba(76, 175, 80, 0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            font-size: 1.1rem;
-        }
-
-        .social-links a:hover {
-            background: #4CAF50;
-            transform: translateY(-5px) scale(1.1);
-        }
-
-        .footer-bottom {
-            border-top: 1px solid #333;
-            padding-top: 30px;
-            text-align: center;
-            color: #999;
-            font-size: 0.9rem;
-        }
-
-        .newsletter-form {
-            display: flex;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .newsletter-form input {
-            flex: 1;
-            padding: 12px;
-            border: 1px solid #333;
-            border-radius: 5px;
-            background: rgba(255,255,255,0.1);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .newsletter-form input::placeholder {
-            color: #ccc;
-        }
-
-        .newsletter-form button {
-            background: #4CAF50;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .newsletter-form button:hover {
-            background: #45a049;
-            transform: translateY(-2px);
-        }
-
         @media (max-width: 768px) {
             .hero-content h1 {
                 font-size: 2rem;
@@ -583,31 +447,34 @@
     </style>
 </head>
 <body>
+    <?php 
+        include __DIR__."/components/header.php"    
+    ?>
     <?php
     // Configuration des données
     $solutions = [
         [
-            'icon' => '📊',
+            'icon' => '',
             'title' => 'Biogaz',
             'description' => 'Production d\'énergie propre à partir de déchets organiques'
         ],
         [
-            'icon' => '⚡',
+            'icon' => '',
             'title' => 'BioÉlectricité',
             'description' => 'Production renouvelable d\'électricité à partir de la biomasse agricole'
         ],
         [
-            'icon' => '🚛',
+            'icon' => '',
             'title' => 'Bio Diesel',
             'description' => 'Carburants bio-sourcés végétaux pour un carburant propre et durable'
         ],
         [
-            'icon' => '🌱',
+            'icon' => '',
             'title' => 'Biofertilisant',
             'description' => 'Solutions naturelles pour améliorer la fertilité des sols'
         ],
         [
-            'icon' => '♻️',
+            'icon' => '',
             'title' => 'Caoutchouc Recyclé',
             'description' => 'Valorisation des déchets en matériaux utiles'
         ]
@@ -621,11 +488,11 @@
     ];
 
     $processSteps = [
-        ['icon' => '♻️', 'title' => 'Collecte et ramassage des Déchets'],
-        ['icon' => '🔄', 'title' => 'Tri et Préparation'],
-        ['icon' => '📊', 'title' => 'Production d\'Énergie'],
-        ['icon' => '🏭', 'title' => 'Transformation en Produits'],
-        ['icon' => '📢', 'title' => 'Communication']
+        ['icon' => '', 'title' => 'Collecte et ramassage des Déchets'],
+        ['icon' => '', 'title' => 'Tri et Préparation'],
+        ['icon' => '', 'title' => 'Production d\'Énergie'],
+        ['icon' => '', 'title' => 'Transformation en Produits'],
+        ['icon' => '', 'title' => 'Communication']
     ];
 
     $benefits = [
@@ -636,10 +503,8 @@
         'Développement de l\'économie circulaire'
     ];
     ?>
-    <!-- Hero Section -->
-    <?php
-        include __DIR__."/components/header.php";
-    ?>
+ 
+
     <!-- Hero Section -->
     <section class="hero-section animate-fade">
         <div class="hero-content animate-left">
@@ -654,7 +519,7 @@
             <h2 class="section-title animate-fade">Solutions Écologiques Innovantes</h2>
             <p class="section-subtitle animate-fade" style="animation-delay: 0.2s">
                 Notre approche intégrée transforme les déchets organiques en ressources précieuses, contribuant à
-                un avenir plus durable pour l'Afrique.
+                un avenir plus durable pour le Cameroun.
             </p>
             
             <div class="solutions-grid">
@@ -717,47 +582,27 @@
         </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section class="section">
-        <div class="container">
-            <div class="benefits-section">
-                <div class="benefits-image animate-left"></div>
-                <div class="benefits-content animate-right">
-                    <h2 class="section-title" style="text-align: left;">Bénéfices pour la Communauté</h2>
-                    <ul class="benefits-list">
-                        <?php foreach ($benefits as $benefit): ?>
-                        <li><?php echo $benefit; ?></li>
-                        <?php endforeach; ?>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
+   
     <!-- CTA Section -->
     <section class="section cta-section">
         <div class="container">
             <h2>Rejoignez Notre Initiative Écologique</h2>
-            <p>Ensemble, créons un avenir plus durable pour l'Afrique</p>
+            <p>Ensemble, créons un avenir plus durable pour le Cameroun</p>
             <a href="About.php" class="cta-button">En Savoir Plus</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <?php
-        include __DIR__."/components/footer2.php";
+    <?php 
+        include __DIR__."/components/footer.php"    
     ?>
+
+    <script src="/asset/default.js" type="module"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
     <script>
-        // Animation du navbar au scroll
-        window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+
 
         // Animation des éléments au défilement
         const observerOptions = {

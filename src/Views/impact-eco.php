@@ -20,28 +20,24 @@
     <meta name="twitter:description" content="Découvrez comment notre projet de valorisation des déchets contribue concrètement au développement durable, à l'économie locale et à l'amélioration de la qualité de vie en Afrique.">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href=<?php asset('global.css') ?>>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href=<?php asset('global.css') ?>>
+
     <style>
         :root {
-            --primary-blue: #4C6EF5;
-            --secondary-blue: #364FC7;
+            --primary-blue: #1a9248ff;
+            --secondary-blue: #3ea85eff;
             --success-green: #51CF66;
             --light-gray: #F8F9FA;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-        }
-
-        /*This line help to fix the problem on the nav-bar */
-       ul{
-            margin-bottom: 0;
+            font-family:'poppins';
+            
         }
 
         .hero-section {
-            background: linear-gradient(rgba(76, 110, 245, 0.8), rgba(54, 79, 199, 0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%2351CF66" width="1200" height="600"/><path fill="%234C6EF5" opacity="0.7" d="M0,300 Q300,100 600,300 T1200,300 V600 H0 V300"/></svg>');
+            background: linear-gradient(rgba(45, 177, 100, 0.8), rgba(54, 79, 199, 0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%2351CF66" width="1200" height="600"/><path fill="%234C6EF5" opacity="0.7" d="M0,300 Q300,100 600,300 T1200,300 V600 H0 V300"/></svg>');
             background-size: cover;
             background-position: center;
             color: white;
@@ -69,6 +65,11 @@
         .hero-content {
             position: relative;
             z-index: 2;
+        }
+
+        /*This line help to fix the problem on the nav-bar */
+       .desktop-menu-items{
+            margin-bottom: 0;
         }
 
         .floating-animation {
@@ -183,147 +184,7 @@
         }
 
         /* Footer */
-        .footer {
-            background: #1a1a2e;
-            color: white;
-            padding: 70px 0 30px;
-            position: relative;
-        }
-
-        .footer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, #28a745, #20c997);
-        }
-
-        .footer-section h3 {
-            color: #20c997;
-            margin-bottom: 25px;
-            font-size: 1.3rem;
-            font-weight: 600;
-            position: relative;
-            padding-bottom: 10px;
-        }
-
-        .footer-section h3::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 2px;
-            background: #28a745;
-        }
-
-        .footer-section p {
-            color: #ccc;
-            margin-bottom: 20px;
-            line-height: 1.7;
-        }
-
-        .footer-section ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 12px;
-            position: relative;
-            padding-left: 20px;
-        }
-
-        .footer-section ul li::before {
-            content: '→';
-            position: absolute;
-            left: 0;
-            color: #28a745;
-        }
-
-        .footer-section ul li a {
-            color: #ccc;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .footer-section ul li a:hover {
-            color: #20c997;
-            padding-left: 5px;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid #333;
-            padding-top: 30px;
-            text-align: center;
-            color: #999;
-            font-size: 0.9rem;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 30px;
-        }
-
-        .social-links a {
-            width: 45px;
-            height: 45px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            font-size: 1.1rem;
-        }
-
-        .social-links a:hover {
-            background: #28a745;
-            transform: translateY(-5px);
-        }
-
-        .alert {
-            padding: 15px 20px;
-            margin-bottom: 25px;
-            border-radius: 8px;
-            font-size: 1rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .alert::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 5px;
-            height: 100%;
-        }
-
-        .alert-success {
-            background: #d4edda;
-            color: #155724;
-            border: 1px solid #c3e6cb;
-        }
-
-        .alert-success::after {
-            background: #28a745;
-        }
-
-        .alert-danger {
-            background: #f8d7da;
-            color: #721c24;
-            border: 1px solid #f5c6cb;
-        }
-
-        .alert-danger::after {
-            background: #dc3545;
-        }
+        
         .lien-fleche {
     /* Style de base du lien */
     color: green;
@@ -364,15 +225,13 @@
     left: 15px; /* Déplacer la flèche vers la droite */
 }
 
-
     </style>
-</head>
-<body>
-    <?php
-        include __DIR__."/components/header.php";
+    <?php 
+        include __DIR__."/components/header.php" 
     ?>
-    
     <!-- Hero Section -->
+
+    
     <section class="hero-section">
         <div class="container hero-content">
             <div class="row align-items-center">
@@ -381,7 +240,7 @@
                         Notre Impact Économique
                     </h1>
                     <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">
-                        Transformer les défis en opportunités pour un avenir durable en Afrique
+                        Transformer les défis en opportunités pour un avenir durable au Cameroun
                     </p>
                 </div>
             </div>
@@ -442,7 +301,7 @@
         <div class="row mb-5">
             <div class="col-12 text-center">
                 <h2 class="fw-bold mb-4 text-gradient" data-aos="fade-up">
-                    Solutions pour un Environnement Sain
+                    Solutions pour un Environnement plus propre
                 </h2>
             </div>
         </div>
@@ -450,7 +309,7 @@
             <!-- Ville Propre -->
             <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="solution-card">
-                    <div class="solution-image" style="background-image: url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1544&q=80');">
+                    <div class="solution-image" style="background-image: url('images/vd.jpg');">
                         <div class="image-overlay"></div>
                     </div>
                     <div class="p-4">
@@ -486,7 +345,7 @@
             <!-- Agriculture Durable -->
             <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="solution-card">
-                    <div class="solution-image" style="background-image: url('https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+                    <div class="solution-image" style="background-image: url('images/agric.jpg');">
                         <div class="image-overlay"></div>
                     </div>
                     <div class="p-4">
@@ -504,7 +363,7 @@
             <!-- Énergie Verte -->
             <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
                 <div class="solution-card">
-                    <div class="solution-image" style="background-image: url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80');">
+                    <div class="solution-image" style="background-image: url('images/en.jpg');">
                         <div class="image-overlay"></div>
                     </div>
                     <div class="p-4">
@@ -540,13 +399,17 @@
             </div>
         </div>
     </section>
-
-    <br><br><br><br>
-    <!-- Footer -->
-    <?php
-        include __DIR__."/components/footer2.php";
+    <?php 
+        include __DIR__."/components/footer.php" 
     ?>
 
+    <script src="/asset/default.js" type="module"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         // Initialize AOS (Animate On Scroll)
         AOS.init({
