@@ -20,6 +20,11 @@ else if ($uri === "/" && $_SERVER["REQUEST_METHOD"] == "POST")
     PageController::sendContactMail();
 }
 
+else if($uri === "/contact-mail" && $_SERVER["REQUEST_METHOD"] == "POST")
+{
+    PageController::contactSend();
+}
+
 else if($uri === "/partenaire" && $_SERVER["REQUEST_METHOD"] == "GET")
 {
     PageController::partnership();
@@ -33,6 +38,9 @@ else if($uri === "/project" && $_SERVER["REQUEST_METHOD"] == "GET")
 {
     PageController::project();
 }
+
+
+
 
 else if($uri === "/technologie" && $_SERVER["REQUEST_METHOD"] == "GET")
 {

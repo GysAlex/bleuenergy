@@ -83,6 +83,93 @@ class PageController
     }
 
 
+    public static function contactSend()
+    {
+        $response = [];
+
+        try {
+            $nom = trim($_POST['nom'] ?? '');
+            $email = trim($_POST['email'] ?? '');
+            $telephone = trim($_POST['telephone'] ?? '');
+            $sujet = trim($_POST['sujet'] ?? '');
+            $message = trim($_POST['message'] ?? '');
+
+            if (empty($nom) || empty($email) || empty($sujet) || empty($message)) {
+                throw new Exception("Veuillez remplir tous les champs obligatoires.");
+            }
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                throw new Exception("L'adresse e-mail n'est pas valide.");
+            }
+
+            // 2. Configuration et envoi de l'e-mail avec PHPMailer
+            $mail = new PHPMailer(true);
+
+            // Paramètres du serveur SMTP
+            $mail->isSMTP();
+            $mail->Host       = 'smtp.gmail.com';
+            $mail->SMTPAuth   = true;
+            $mail->Username   = 'fokoalex5@gmail.com'; // Votre adresse Gmail
+            $mail->Password   = 'TestPassword'; // Votre mot de passe d'application
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+            $mail->Port       = 465;
+            $mail->CharSet    = 'UTF-8';
+
+            // Destinataires et expéditeur
+            $mail->setFrom('fokoalex5@gmail.com', 'Formulaire BleueEnergy');
+            $mail->addAddress('fokoalex5@gmail.com'); // Destinataire de l'e-mail
+            $mail->addReplyTo($email, $nom);
+
+            // Contenu de l'e-mail (au format HTML, comme défini précédemment)
+            $mail->isHTML(true);
+            $mail->Subject = "Nouvelle demande de contact: " . ucfirst($sujet);
+            
+            // Le corps HTML de l'e-mail
+            $htmlBody = "
+            <div style='font-family: sans-serif; line-height: 1.6; color: #4b5563; max-width: 600px; margin: 20px auto; border: 1px solid #e5e7eb; border-radius: 5px; overflow: hidden; background: linear-gradient(45deg, #F9FAFB, #EFF6FF);'>
+                <div style='background: linear-gradient(90deg, #166534cc, #036aa1cc); color: white; padding: 25px; text-align: center;'>
+                    <h2 style='margin: 0; font-size: 28px;'>Nouveau Message</h2>
+                </div>
+                <div style='padding: 30px;'>
+                    <p style='font-size: 16px;'>Bonjour, M. Biheng</p>
+                    <p style='font-size: 16px;'>Vous avez reçu un nouveau message via le formulaire de contact de BleueEnergy.</p>
+
+                    <div style='margin-top: 25px; border: 1px solid #d1d5db; border-radius: 3px; background-color: white; padding: 15px;'>
+                        <h3 style='font-size: 18px; color: #166534; margin-top: 0;'>Détails de l'expéditeur :</h3>
+                        <p style='margin-bottom: 8px;'><strong style='color: #4b5563;'>Nom :</strong> {$nom}</p>
+                        <p style='margin-bottom: 8px;'><strong style='color: #4b5563;'>E-mail :</strong> <a href='mailto:{$email}' style='color: #036aa1; text-decoration: none;'>{$email}</a></p>
+                        <p style='margin-bottom: 8px;'><strong style='color: #4b5563;'>Téléphone :</strong> {$telephone}</p>
+                        <p style='margin-bottom: 8px;'><strong style='color: #4b5563;'>Sujet :</strong> " . ucfirst($sujet) . "</p>
+                    </div>
+
+                    <div style='margin-top: 25px; border: 1px solid #d1d5db; border-radius: 3px; background-color: white; padding: 15px;'>
+                        <h3 style='font-size: 18px; color: #166534; margin-top: 0;'>Message :</h3>
+                        <p style='margin-top: 10px; white-space: pre-line;'>{$message}</p>
+                    </div>
+
+                    <p style='margin-top: 35px; font-size: 12px; color: #9ca3af;'>Ceci est un e-mail automatique, veuillez répondre directement à l'expéditeur en utilisant l'adresse e-mail fournie.</p>
+                </div>
+                <div style='background-color: #f3f4f6; color: #6b7280; padding: 15px; text-align: center; font-size: 12px; border-top: 1px solid #e5e7eb;'>
+                    &copy; 2025 BleueEnergy. Tous droits réservés.
+                </div>
+            </div>";
+
+            $mail->Body = $htmlBody;
+            $mail->send();
+
+            // 3. Réponse en cas de succès
+            $response = ['status' => 'success', 'message' => 'Votre message a été envoyé avec succès !'];
+
+        } catch (Exception $e) {
+            // 4. Réponse en cas d'erreur
+            $response = ['status' => 'error', 'message' => "Le message n'a pas pu être envoyé. Erreur: {$mail->ErrorInfo}"];
+        } catch (Exception $e) {
+            // Gestion des erreurs de validation
+            $response = ['status' => 'error', 'message' => $e->getMessage()];
+        }
+
+        echo json_encode($response);
+    }
+
 
     public static function sendContactMail()
     {
@@ -120,7 +207,7 @@ class PageController
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'fokoalex5@gmail.com';
-        $mail->Password   = 'password';
+        $mail->Password   = 'TestPassword';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = 465;
         $mail->CharSet = 'UTF-8';
@@ -136,38 +223,31 @@ class PageController
 
         // Création du corps de l'e-mail en HTML et Markdown
         $htmlBody = "
-        <div style='font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: auto; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;'>
-            <div style='background-color: #004d40; color: white; padding: 20px; text-align: center;'>
-                <h2 style='margin: 0;'>Nouvelle Demande de Contact</h2>
-            </div>
-            <div style='padding: 20px;'>
-                <p>Bonjour,</p>
-                <p>Vous avez reçu une nouvelle demande de contact via votre site web BleueEnergy.</p>
-                
-                <table style='width: 100%; border-collapse: collapse; margin-top: 20px;'>
-                    <tr>
-                        <td style='padding: 10px; border: 1px solid #ddd; background-color: #f2f2f2; width: 30%; font-weight: bold;'>Nom</td>
-                        <td style='padding: 10px; border: 1px solid #ddd;'>{$nom}</td>
-                    </tr>
-                    <tr>
-                        <td style='padding: 10px; border: 1px solid #ddd; background-color: #f2f2f2; font-weight: bold;'>E-mail</td>
-                        <td style='padding: 10px; border: 1px solid #ddd;'><a href='mailto:{$email}'>{$email}</a></td>
-                    </tr>
-                </table>
+        <div style='font-family: sans-serif; line-height: 1.6; color: #4b5563; max-width: 600px; margin: 20px auto; border: 1px solid #e5e7eb; border-radius: 5px; overflow: hidden; background: linear-gradient(45deg, #F9FAFB, #EFF6FF);'>
+        <div style='background: linear-gradient(90deg, #166534cc, #036aa1cc); color: white; padding: 25px; text-align: center;'>
+            <h2 style='margin: 0; font-size: 28px;'>Nouveau Message</h2>
+        </div>
+        <div style='padding: 30px;'>
+            <p style='font-size: 16px;'> Bonjour, M. Biheng </p>
+            <p style='font-size: 16px;'>Vous avez reçu un nouveau message via le formulaire de contact de BleueEnergy.</p>
 
-                <div style='margin-top: 20px;'>
-                    <p style='font-weight: bold; margin-bottom: 5px;'>Message :</p>
-                    <div style='border: 1px solid #ddd; padding: 15px; border-radius: 5px; background-color: #fafafa;'>
-                        <p style='margin: 0;'>{$message}</p>
-                    </div>
-                </div>
-                
-                <p style='margin-top: 30px; font-size: 12px; color: #888;'>Ceci est un e-mail automatique, merci de ne pas y répondre directement. Utilisez le lien de réponse pour contacter l'expéditeur.</p>
+            <div style='margin-top: 25px; border: 1px solid #d1d5db; border-radius: 3px; background-color: white; padding: 15px;'>
+                <h3 style='font-size: 18px; color: #166534; margin-top: 0;'>Détails de l'expéditeur :</h3>
+                <p style='margin-bottom: 8px;'><strong style='color: #4b5563;'>Nom :</strong> {$nom}</p>
+                <p style='margin-bottom: 8px;'><strong style='color: #4b5563;'>E-mail :</strong> <a href='mailto:{$email}' style='color: #036aa1; text-decoration: none;'>{$email}</a></p>
             </div>
-            <div style='background-color: #004d40; color: white; padding: 10px; text-align: center; font-size: 12px;'>
-                &copy; 2025 BleueEnergy. Tous droits réservés.
+
+            <div style='margin-top: 25px; border: 1px solid #d1d5db; border-radius: 3px; background-color: white; padding: 15px;'>
+                <h3 style='font-size: 18px; color: #166534; margin-top: 0;'>Message :</h3>
+                <p style='margin-top: 10px; white-space: pre-line;'>{$message}</p>
             </div>
-        </div>";
+
+            <p style='margin-top: 35px; font-size: 12px; color: #9ca3af;'>Ceci est un e-mail automatique, veuillez répondre directement à l'expéditeur en utilisant l'adresse e-mail fournie.</p>
+        </div>
+        <div style='background-color: #f3f4f6; color: #6b7280; padding: 15px; text-align: center; font-size: 12px; border-top: 1px solid #e5e7eb;'>
+            &copy; 2025 BleueEnergy. Tous droits réservés.
+        </div>
+    </div>";
 
         // Définir le sujet et le corps
         $mail->Subject = "Nouvelle demande de contact de la part de {$nom}";

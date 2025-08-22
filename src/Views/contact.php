@@ -1,36 +1,3 @@
-<?php
-// Traitement du formulaire de contact
-$message_sent = false;
-$error_message = '';
-
-if ($_POST) {
-    $nom = isset($_POST['nom']) ? trim($_POST['nom']) : '';
-    $email = isset($_POST['email']) ? trim($_POST['email']) : '';
-    $telephone = isset($_POST['telephone']) ? trim($_POST['telephone']) : '';
-    $sujet = isset($_POST['sujet']) ? trim($_POST['sujet']) : '';
-    $message = isset($_POST['message']) ? trim($_POST['message']) : '';
-    
-    // Validation basique
-    if (empty($nom) || empty($email) || empty($message)) {
-        $error_message = 'Veuillez remplir tous les champs obligatoires.';
-    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $error_message = 'Veuillez entrer une adresse email valide.';
-    } else {
-        // Ici vous pourriez envoyer l'email ou sauvegarder en base de données
-        $message_sent = true;
-    }
-}
-
-// Traitement du formulaire newsletter
-$newsletter_sent = false;
-if (isset($_POST['newsletter_email'])) {
-    $newsletter_email = trim($_POST['newsletter_email']);
-    if (filter_var($newsletter_email, FILTER_VALIDATE_EMAIL)) {
-        $newsletter_sent = true;
-    }
-}
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -45,6 +12,9 @@ if (isset($_POST['newsletter_email'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script> 
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -612,51 +582,39 @@ if (isset($_POST['newsletter_email'])) {
                         <h2><i class="fas fa-seedling"></i> Envoyez-nous un Message</h2>
                         <p>Utilisez le formulaire ci-dessous pour nous envoyer votre requête. Nous nous efforçons de répondre dans les plus brefs délais.</p>
                         
-                        <?php if ($message_sent): ?>
-                            <div class="alert alert-success">
-                                <i class="fas fa-check-circle"></i> Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.
-                            </div>
-                        <?php endif; ?>
-                        
-                        <?php if ($error_message): ?>
-                            <div class="alert alert-danger">
-                                <i class="fas fa-exclamation-circle"></i> <?php echo htmlspecialchars($error_message); ?>
-                            </div>
-                        <?php endif; ?>
-                        
-                        <form method="POST" action="">
+                        <form id="contactForm" method="POST" action="">
                             <div class="form-group">
                                 <label for="nom"><i class="fas fa-user"></i> Nom Complet *</label>
-                                <input type="text" id="nom" name="nom" required value="<?php echo isset($_POST['nom']) ? htmlspecialchars($_POST['nom']) : ''; ?>">
+                                <input type="text" id="nom" name="nom" required>
                             </div>
                             
                             <div class="form-group">
                                 <label for="email"><i class="fas fa-envelope"></i> Adresse E-mail *</label>
-                                <input type="email" id="email" name="email" required value="<?php echo isset($_POST['email']) ? htmlspecialchars($_POST['email']) : ''; ?>">
+                                <input type="email" id="email" name="email" required>
                             </div>
                             
                             <div class="form-group">
                                 <label for="telephone"><i class="fas fa-phone"></i> Numéro de Téléphone</label>
-                                <input type="tel" id="telephone" name="telephone" value="<?php echo isset($_POST['telephone']) ? htmlspecialchars($_POST['telephone']) : ''; ?>">
+                                <input type="tel" id="telephone" name="telephone">
                             </div>
                             
                             <div class="form-group">
                                 <label for="sujet"><i class="fas fa-tag"></i> Sujet du Message *</label>
                                 <select id="sujet" name="sujet" required>
                                     <option value="">Sélectionnez un sujet</option>
-                                    <option value="partenariat" <?php echo (isset($_POST['sujet']) && $_POST['sujet'] == 'partenariat') ? 'selected' : ''; ?>>Partenariat</option>
-                                    <option value="emploi" <?php echo (isset($_POST['sujet']) && $_POST['sujet'] == 'emploi') ? 'selected' : ''; ?>>Opportunités d'emploi</option>
-                                    <option value="information" <?php echo (isset($_POST['sujet']) && $_POST['sujet'] == 'information') ? 'selected' : ''; ?>>Demande d'information</option>
-                                    <option value="autre" <?php echo (isset($_POST['sujet']) && $_POST['sujet'] == 'autre') ? 'selected' : ''; ?>>Autre</option>
+                                    <option value="partenariat">Partenariat</option>
+                                    <option value="emploi">Opportunités d'emploi</option>
+                                    <option value="information">Demande d'information</option>
+                                    <option value="autre">Autre</option>
                                 </select>
                             </div>
                             
                             <div class="form-group">
                                 <label for="message"><i class="fas fa-comment"></i> Votre Message *</label>
-                                <textarea id="message" name="message" required placeholder="Décrivez votre demande en détail..."><?php echo isset($_POST['message']) ? htmlspecialchars($_POST['message']) : ''; ?></textarea>
+                                <textarea id="message" name="message" required placeholder="Décrivez votre demande en détail..."></textarea>
                             </div>
                             
-                            <button type="submit" class="btn-primary">
+                            <button type="submit" class="btn-primary btn-submit">
                                 <i class="fas fa-paper-plane"></i> Envoyer le Message
                             </button>
                         </form>
@@ -772,6 +730,80 @@ if (isset($_POST['newsletter_email'])) {
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            const submitBtn = form.querySelector('.btn-submit');
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                const actionUrl = '/contact-mail'; 
+                const formData = new FormData(form);
+
+                submitBtn.textContent = 'Envoi en cours...';
+                submitBtn.disabled = true;
+
+                fetch(actionUrl, {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur réseau ou réponse du serveur non valide');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.status === 'success') {
+                        // --- Début de la modification : Afficher le toast SweetAlert2 ---
+                        Swal.fire({
+                            toast: true,
+                            icon: 'success',
+                            title: data.message,
+                            position: 'top-end',
+                            showConfirmButton: false,
+                            timer: 3000,
+                            timerProgressBar: true
+                        });
+                        // --- Fin de la modification ---
+                        form.reset(); // Réinitialise le formulaire
+                    } else {
+                        // --- Début de la modification : Afficher le toast SweetAlert2 en cas d'échec ---
+                        Swal.fire({
+                            toast: true,
+                            icon: 'error',
+                            title: data.message,
+                            position: 'top-end',
+                            showConfirmButton: false,
+                            timer: 3000,
+                            timerProgressBar: true
+                        });
+                        // --- Fin de la modification ---
+                    }
+                })
+                .catch(error => {
+                    console.error('Erreur:', error);
+                    // --- Début de la modification : Afficher un toast générique en cas d'erreur ---
+                    Swal.fire({
+                        toast: true,
+                        icon: 'error',
+                        title: 'Une erreur est survenue lors de l\'envoi.',
+                        position: 'top-end',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true
+                    });
+                    // --- Fin de la modification ---
+                })
+                .finally(() => {
+                    submitBtn.textContent = 'Envoyer';
+                    submitBtn.disabled = false;
+                });
+            });
+        });
+    </script>
+
     <script>
 
         // Animation des éléments au défilement
