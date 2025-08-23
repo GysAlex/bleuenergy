@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Waste-to-Energy | Architecture Financière & Étapes Clés - Bleue Energies</title>
+    
+    <meta name="description" content="Découvrez le projet Waste-to-Energy de Bleue Energies au Cameroun. Explorez son architecture financière robuste, ses étapes de maturation et son plan d'investissement de 600 milliards FCFA.">
+    <meta name="keywords" content="projet, Waste-to-Energy, WTE, déchets, énergie, Cameroun, investissement, architecture financière, étapes clés, développement durable, Yaoundé, Douala, financement, 600 milliards FCFA">
+    <meta name="author" content="Bleue Energies">
+    <link rel="canonical" href="https://www.bleueenergy.com/project">
+    
+    <meta property="og:title" content="Projet Waste-to-Energy | Plan d'Investissement & Étapes - Bleue Energies">
+    <meta property="og:description" content="Découvrez le projet Waste-to-Energy de Bleue Energies au Cameroun. Explorez son architecture financière robuste, ses étapes de maturation et son plan d'investissement de 600 milliards FCFA.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.bleueenergy.com/project">
+    <meta property="og:image" content="https://www.bleueenergy.com/asset/images/wte.jpg">
+    
+
     <?php
         include __DIR__."/components/meta.php";
     ?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="/asset/global.css">
-    <title> projet</title>
     <style>
         * {
             box-sizing: border-box;
         }
 
+        :root
+        {
+            --color-blue-primary: #3b82f6; /* Bleu BleueEnergy */
+            --color-green-primary: #10b981; /* Vert BleueEnergy */
+            --color-dark-blue: #1e40af;
+            --color-light-gray: #f8fafc; /* Fond clair */
+            --color-border-gray: #e2e8f0;
+            --color-text-dark: #334155;
+            --color-text-muted: #64748b;
+        }
 
         /* Header Navigation */
         .header {
@@ -53,7 +74,8 @@
 
         /* Container */
         .container {
-            max-width: var(--max-content_size);
+            max-width: 1250px;
+            width: 92%;
             margin: 0 auto;
             padding: 0 2rem;
         }
@@ -79,101 +101,136 @@
 
         .org-structure {
             display: grid;
-            grid-template-columns: 2fr 2fr 3fr;
+            grid-template-columns: 5fr 3fr;
             gap: 2rem;
             margin-bottom: 3rem;
             align-items: start;
         }
 
         .org-hierarchy {
+            flex: 1;
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 1.5rem;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         }
 
         .org-level {
             display: flex;
             justify-content: center;
-            gap: 1rem;
+            flex-wrap: wrap;
+            gap: 1.5rem;
         }
 
         .org-item {
-            background: white;
+            background-color: var(--color-light-gray);
+            border: 1px solid var(--color-border-gray);
+            border-radius: 0.5rem;
+            padding: 1.25rem 1rem;
+            width: 25%;
+            min-width: max-content;
+            text-align: center;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .org-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .org-item h4 {
+            margin-top: 0.5rem;
+            margin-bottom: 0.25rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-text-dark);
+        }
+
+        .org-item p {
+            margin: 0;
+            font-size: 0.875rem;
+            color: var(--text-color);
+        }
+        
+        /* Styles spécifiques aux boîtes SPV */
+        .spv-box {
+            background-color: white;
+            border: 1px solid var(--color-border-gray);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
             padding: 1rem;
             border-radius: 0.5rem;
-            text-align: center;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            min-width: 120px;
-            font-size: 0.9rem;
-        }
-
-        .org-item.state {
-            background: #f0f9ff;
-            border: 2px solid #0ea5e9;
-        }
-
-        .org-item.municipality {
-            background: #f5f5f5;
-            border: 2px solid #6b7280;
-        }
-
-        .org-item.providers {
-            background: #fef3c7;
-            border: 2px solid #f59e0b;
-        }
-
-        .org-item.exploitants {
-            background: #dcfce7;
-            border: 2px solid #22c55e;
-        }
-
-        .org-item.beneficiaries {
-            background: #fce7f3;
-            border: 2px solid #ec4899;
-        }
-
-        .org-box {
-            background: white;
-            padding: 2rem;
-            border-radius: 0.5rem;
-            text-align: center;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        }
-
-        .org-box.spv {
-            border: 2px solid #3b82f6;
-        }
-
-        .org-box.private {
-            border: 2px solid #10b981;
-        }
-
-        .org-icon {
-            width: 3rem;
-            height: 3rem;
-            margin: 0 auto 1rem;
-            border-radius: 50%;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            font-weight: bold;
-            color: white;
+            min-width: 150px;
         }
 
-        .spv-icon {
-            background: #6da3faff;
+        .spv-yaounde {
+            border-color: var(--color-blue-primary);
         }
 
-        .private-icon {
-            background: #10b981;
+        .spv-douala {
+            border-color: var(--color-green-primary);
         }
 
+        .spv-box i {
+            color: var(--color-blue-primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .spv-douala i {
+            color: var(--color-green-primary);
+        }
+        
+        /* STYLES COLONNE DE DROITE (PARTICIPATION ET SOUTIEN) */
         .participation-box {
-            background: white;
-            padding: 2rem;
-            border-radius: 0.5rem;
-            border-left: 4px solid #10b981;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            align-self: center;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            padding: 1rem;
+        }
+
+        .participation-box > h4, .org-hierarchy > h4  {
+            font-size: 1.1rem;
+            font-weight: 700;
+            background: var(--simple-gradient);
+            color: transparent;
+            background-clip: text;
+        }
+
+        .participation-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .participation-item i {
+            font-size: 2rem;
+        }
+
+        .participation-content h5 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin: 0;
+        }
+
+        .participation-content p {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-green-primary);
+            margin: 0;
+        }
+        
+        .participation-content small {
+            font-size: 0.875rem;
+            color: var(--text-color);
         }
 
         /* Steps Section */
@@ -528,19 +585,20 @@
         }
     </style>
 </head>
+
 <body>
     <?php
         include __DIR__."/components/header.php";
     ?>
     <script>
-        // Fonction pour détecter les éléments visibles lors du scroll
+        // Fonction pour détecter les éléments visibles lors du défilement
         function observeElements() {
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
                         
-                        // Animation spéciale pour les éléments avec stagger
+                        // Animation spéciale pour les éléments avec décalage (stagger)
                         if (entry.target.classList.contains('stagger-container')) {
                             const items = entry.target.querySelectorAll('.stagger-item');
                             items.forEach((item, index) => {
@@ -576,26 +634,26 @@
     <?php
     // Configuration des données
     $projectData = [
-        'title' => ' Waste to Energy',
-        'description' => 'Nous impactons le developpement durable en Afrique.',
+        'title' => 'Waste to Energy',
+        'description' => 'Nous impactons le développement durable en Afrique.',
         'budget' => '600 milliards',
         'currency' => 'FCFA ',
         'phases' => [
             [
                 'title' => 'Juillet - Décembre 2026',
                 'description' => 'Nous vous présentons le parcours de notre projet :
-                 comment nous avons établi des partenariats 
-                 et une stratégie de financement pour le mener à bien.',
+                  comment nous avons établi des partenariats 
+                  et une stratégie de financement pour le mener à bien.',
                 'status' => 'active'
             ],
             [
                 'title' => '2028',
-                'description' => 'Formalisation du dit projet assuré, avec nouveaux géhements infrastructures avec les différentes parties prenantes.',
+                'description' => 'Formalisation du projet assurée, avec de nouveaux engagements d\'infrastructures avec les différentes parties prenantes.',
                 'status' => 'completed'
             ],
             [
                 'title' => 'Étapes Futures',
-                'description' => 'Finalisation de tous les aspects construction immobilière et transférement du projet.',
+                'description' => 'Finalisation de tous les aspects de la construction immobilière et du transfert du projet.',
                 'status' => 'future'
             ]
         ],
@@ -603,7 +661,7 @@
             ['label' => 'Usines Waste-to-Energy', 'amount' => '', 'color' => 'blue'],
             ['label' => 'Usines de méthanisation', 'amount' => '', 'color' => 'green'],
             ['label' => 'Centres de collecte', 'amount' => '', 'color' => 'yellow'],
-            ['label' => 'Rues à énergie', 'amount' => '', 'color' => 'red'],
+            ['label' => 'Usines de tri semi-automatique', 'amount' => '', 'color' => 'red'],
             ['label' => 'Data Centers', 'amount' => '', 'color' => 'blue'],
         ]
     ];
@@ -613,9 +671,6 @@
     ];
     ?>
 
-    <!-- Header -->
-   
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1><?= $projectData['title'] ?></h1>
@@ -623,92 +678,91 @@
         </div>
     </section>
 
-    <!-- Architecture Section -->
     <section class="architecture">
         <div class="container">
             <h2 class="section-title">Une Architecture Financière Robuste</h2>
             <p class="section-subtitle">
-                Le projet s'organise autour d'une structure financière solide et d'une gouvernance participative entre acteurs publics et privés, garantissant sa viabilité à long terme.
+                Le projet s'organise autour d'une structure financière solide et d'une gouvernance partagée entre acteurs publics et privés, garantissant sa viabilité à long terme.
             </p>
 
             <div class="org-structure">
                 <div class="org-hierarchy">
-                    <h4 style="text-align: center; color: #1e40af; margin-bottom: 1rem;">Structure Organisationnelle</h4>
+                    <h4 style="">Structure Organisationnelle</h4>
                     
-                    <!-- État -->
-                    <div class="org-level">
-                        <div class="org-item state">
-                            <div style="font-weight: bold;">État</div>
-                            <div style="font-size: 0.8rem; color: #64748b;">Gouvernement central</div>
+                    <div class="org-level top-level">
+                        <div class="org-item spv-box spv-yaounde">
+                            <i class="fa-solid fa-building fa-2x"></i>
+                            <h4 style="color: #3b82f6;">SPV Yaoundé</h4>
+                            <p>Partenariat CUY</p>
+                        </div>
+                        <div class="org-item spv-box spv-douala">
+                            <i class="fa-solid fa-building fa-2x"></i>
+                            <h4 style="color: #16a34a;">SPV Douala</h4>
+                            <p>Partenariat CUD</p>
                         </div>
                     </div>
-                    
-                    <!-- Municipalités -->
-                    <div class="org-level">
-                        <div class="org-item municipality">
-                            <div style="font-weight: bold;">Municipalités</div>
-                            <div style="font-size: 0.8rem; color: #64748b;">Autorités des territoires</div>
+
+                    <div class="org-level intermediate-level">
+                        <div class="org-item state-box">
+                            <i class="fa-solid fa-landmark fa-2x"></i>
+                            <h4>État camerounais</h4>
+                            <p>et ses démembrements</p>
+                        </div>
+                        <div class="org-item bank-box">
+                            <i class="fa-solid fa-building-columns fa-2x"></i>
+                            <h4>Banques</h4>
+                            <p>Gestion des fonds verts</p>
                         </div>
                     </div>
-                    
-                    <!-- Niveau intermédiaire -->
-                    <div class="org-level">
-                        <div class="org-item providers">
-                            <div style="font-weight: bold;">Fournisseurs</div>
-                            <div style="font-size: 0.8rem; color: #64748b;">Services techniques</div>
+
+                    <div class="org-level bottom-level">
+                        <div class="org-item supplier-box">
+                            <i class="fa-solid fa-toolbox fa-2x"></i>
+                            <h4>Fournisseurs</h4>
+                            <p>d'équipements</p>
                         </div>
-                        <div class="org-item exploitants">
-                            <div style="font-weight: bold;">Exploitants</div>
-                            <div style="font-size: 0.8rem; color: #64748b;">Opérateurs industriels</div>
+                        <div class="org-item operator-box">
+                            <i class="fa-solid fa-gears fa-2x"></i>
+                            <h4>Exploitants</h4>
+                            <p>Déchets, énergie, transport</p>
                         </div>
-                        <div class="org-item beneficiaries">
-                            <div style="font-weight: bold;">Bénéficiaires</div>
-                            <div style="font-size: 0.8rem; color: #64748b;">Communautés locales</div>
+                        <div class="org-item investor-box">
+                            <i class="fa-solid fa-handshake-angle fa-2x"></i>
+                            <h4>Investisseurs</h4>
+                            <p>Publics et privés</p>
                         </div>
                     </div>
                 </div>
-                <div class="org-box spv">
-                    <div class="org-icon spv-icon">SPV</div>
-                    <h4>SPV Sécurisé</h4>
-                    <p>Structure dédiée</p>
-                </div>
-                
-                <div class="org-box private">
-                    <div class="org-icon private-icon">30%</div>
-                    <h4>30% Privé</h4>
-                    <p>Capital des fonds privés</p>
-                </div>
-                
+
                 <div class="participation-box">
-                    <h4>Participation et Soutien</h4>
-                    <div style="margin: 1rem 0;">
-                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-                            <span style="color: #3b82f6;">👥</span>
-                            <span>Participation de l'État</span>
+                    <h4 class="h4" >Participation et Soutien</h4>
+                    <div class="participation-item">
+                        <i class="fa-solid fa-building fa-2x" style="color: #3b82f6;"></i>
+                        <div class="participation-content">
+                            <h5>Participation de l'État</h5>
+                            <p>15% à 20%</p>
+                            <small>du capital de chaque SPV</small>
                         </div>
-                        <div style="color: #10b981; font-weight: 600;">15 à 30%</div>
-                        <small style="color: #64748b;">du capital de démarrage</small>
                     </div>
-                    <div>
-                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-                            <span style="color: #10b981;">🎯</span>
-                            <span>Stratégie Spéciale</span>
+                    <div class="participation-item">
+                        <i class="fa-solid fa-handshake-angle fa-2x" style="color: #10b981;"></i>
+                        <div class="participation-content">
+                            <h5>Stratégie financière</h5>
+                            <small >
+                                Le projet s'inscrit dans la stratégie nationale de l'État pour le développement de l'industrie verte.
+                            </small>
                         </div>
-                        <small style="color: #64748b;">
-                            Cautionnement de l'État dans le cadre de l'initiative nationale pour l'industrie verte
-                        </small>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Steps Section -->
     <section class="steps">
         <div class="container">
             <h2 class="section-title fade-in">Nos Prochaines Étapes Clés</h2>
             <p class="section-subtitle fade-in">
-                Notre vision de développement ambitieux nous guidera pour concrétiser ce projet structurant.
+                Notre vision de développement ambitieuse nous guidera pour concrétiser ce projet structurant.
             </p>
 
             <div class="steps-timeline stagger-container">
@@ -723,12 +777,11 @@
         </div>
     </section>
 
-    <!-- Maturation Section -->
     <section class="maturation">
         <div class="container">
             <h2 class="section-title fade-in">Maturation du Projet</h2>
             <p class="section-subtitle fade-in">
-                Pour assurer la progression efficace du projet, nous identifions les actions prioritaires suivantes
+                Pour assurer la progression efficace du projet, nous identifions les actions prioritaires suivantes :
             </p>
 
             <div class="maturation-grid stagger-container">
@@ -738,29 +791,28 @@
                 </div>
                 <div class="maturation-item green stagger-item">
                     <h4>Identification des sites</h4>
-                    <p>Choix de 5 à 20 emplacements à valoriser et en sécurité</p>
+                    <p>Choix de 5 à 20 emplacements à valoriser et sécurisés</p>
                 </div>
                 <div class="maturation-item stagger-item">
                     <h4>Attribution de concessions</h4>
                     <p>Concessions de 30 à 99 ans pour le traitement des déchets</p>
                 </div>
                 <div class="maturation-item green stagger-item">
-                    <h4>Signature d'achat d'énergie</h4>
-                    <p>Signatures des PPA (Power Purchase Agreement)</p>
+                    <h4>Signature de contrats d'achat d'énergie</h4>
+                    <p>Signature des PPA (Power Purchase Agreement)</p>
                 </div>
                 <div class="maturation-item stagger-item">
                     <h4>Formalités administratives</h4>
-                    <p>Facilitation des procédures administratives en engagement des différentes parties</p>
+                    <p>Facilitation des procédures administratives et l'engagement des différentes parties</p>
                 </div>
                 <div class="maturation-item green stagger-item">
                     <h4>Accord d'exclusivité</h4>
-                    <p>Exclusivité des déchets avec les collectivités centralisées</p>
+                    <p>Exclusivité des déchets avec les collectivités centrales</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Investment Section -->
     <section class="investment">
         <div class="container">
             <h2 class="section-title fade-in" style="text-align: center;">Plan des investissements</h2>
@@ -772,9 +824,9 @@
                     <div class="chart-placeholder"></div>
                     <div style="margin-top: 1rem; font-size: 0.9rem; color: #64748b;">
                         <div>■ Usines Waste-to-Energy</div>
-                        <div>■ Usine de tri semi automatique</div>
+                        <div>■ Usines de tri semi-automatique</div>
                         <div>■ Usines de méthanisation</div>
-                        <div>■ Centres de collectes</div>
+                        <div>■ Centres de collecte</div>
                         <div>■ Data Centers</div>
                     </div>
                 </div>
@@ -790,27 +842,25 @@
                             <div class="investment-amount"><?= $investment['amount'] ?></div>
                         </div>
                     <?php endforeach; ?>
-                   
+                    
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
     <section class="cta">
         <div class="container">
             <h2 class="fade-in">Une Vision d'Avenir, des Chiffres Concrets</h2>
             <div class="cta-buttons scale-up">
-                <a href="technologie.php" class="btn btn-primary"> Notre Technologie</a>
-                <a href="impact.php" class="btn btn-secondary">Notre Impact</a>
-                <a href="partenaire.php" class="btn btn-secondary">Devenez Partenaire</a>
+                <a href="/technologie" class="btn btn-primary"> Notre Technologie</a>
+                <a href="/impact" class="btn btn-secondary">Notre Impact</a>
+                <a href="/partenaire" class="btn btn-secondary">Devenez Partenaire</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <?php 
-        include __DIR__."/components/footer.php"    
+        include __DIR__."/components/footer.php"     
     ?>
     <script src="/asset/default.js" type="module"></script>
 </body>

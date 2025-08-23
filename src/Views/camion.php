@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
+    <title>Notre Flotte de Véhicules | Camions & Bus Écologiques - Bleue Energies</title>
+    
+    <meta name="description" content="Découvrez la flotte de véhicules spécialisés de Bleue Energies, incluant nos camions de collecte de déchets et nos bus de transport. Des solutions écologiques, sûres et efficaces pour Douala et Yaoundé.">
+    <meta name="keywords" content="flotte, camions, bus, transport, déchets, écologie, Douala, Yaoundé, Scania, biogaz, GNV, transport durable, véhicules, technologie">
+    <meta name="author" content="Bleue Energies">
+    <link rel="canonical" href="https://www.bleueenergy.com/technologie/camion">
+    
+    <meta property="og:title" content="Flotte de Véhicules Écologiques | Camions & Bus de Bleue Energies">
+    <meta property="og:description" content="Découvrez la flotte de véhicules spécialisés de Bleue Energies, incluant nos camions de collecte de déchets et nos bus de transport. Des solutions écologiques, sûres et efficaces pour Douala et Yaoundé.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.bleueenergy.com/technologie/camion">
+    <meta property="og:image" content="https://www.bleueenergy.com/asset/images/scania1.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <?php
         include __DIR__."/components/meta.php";
     ?>
-    <title>Notre Flotte de Véhicules Spécialisés</title>
     <link rel="stylesheet" href=<?php asset('global.css') ?>>
 
     <style>
@@ -493,62 +507,61 @@
         </div>
     </section>
 
-    <!-- Services Section -->
     <section class="services">
-        <div class="container">
+         <div class="container">
             <div class="services-grid">
                 <div class="service-image">
-                    <img src="/asset/images/scania.jpg" alt="Camion de collecte">
+                     <img src="/asset/images/scania.jpg" alt="Camion de collecte">
                 </div>
-                <div class="service-content">
+                 <div class="service-content">
                     <h2>Camions de Collecte</h2>
                     <p>La flotte des camions spécialisés assure la collecte sécurisée et la distribution et
-                 le ramassage avec des véhicules adaptés pour les besoins des populations.
-                 Équipés d'un système de haute technologie et de sécurité, ces véhicules garantissent un transport fiable 
-                 et respectueux de l'environnement</p>
-                    
-                    <ul class="features-list">
+                    le ramassage avec des véhicules adaptés pour les besoins des populations.
+                    Équipés d'un système de haute technologie et de sécurité, ces véhicules garantissent un transport fiable 
+                    et respectueux de l'environnement</p>
+
+                     <ul class="features-list">
                         <?php
                         $features = [
-                            ['icon' => '🌱', 'title' => 'Transport écologique', 'desc' => 'Solutions durables'],
-                            ['icon' => '🛡️', 'title' => 'Sécurité avancée', 'desc' => 'Technologies de pointe'],
-                            ['icon' => '⚡', 'title' => 'Efficacité énergétique', 'desc' => 'Consommation optimisée'],
-                            ['icon' => '🔧', 'title' => 'Maintenance préventive', 'desc' => 'Entretien professionnel']
+                            ['icon' => '<i class="fas fa-seedling"></i>', 'title' => 'Transport écologique', 'desc' => 'Solutions durables'],
+                            ['icon' => '<i class="fas fa-shield-halved"></i>', 'title' => 'Sécurité avancée', 'desc' => 'Technologies de pointe'],
+                            ['icon' => '<i class="fas fa-bolt"></i>', 'title' => 'Efficacité énergétique', 'desc' => 'Consommation optimisée'],
+                            ['icon' => '<i class="fas fa-wrench"></i>', 'title' => 'Maintenance préventive', 'desc' => 'Entretien professionnel']
                         ];
-                        
-                        foreach ($features as $index => $feature):
+
+                            foreach ($features as $index => $feature):
                         ?>
                             <li class="feature-item" style="animation-delay: <?php echo $index * 0.1; ?>s">
                                 <div class="feature-icon"><?php echo $feature['icon']; ?></div>
                                 <div class="feature-text">
                                     <h4><?php echo $feature['title']; ?></h4>
-                                    <p><?php echo $feature['desc']; ?></p>
+                                     <p><?php echo $feature['desc']; ?></p>
                                 </div>
                             </li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
-            </div>
+           </div>
         </div>
     </section>
 
-    <!-- Transport Section -->
     <section class="transport">
         <div class="container">
             <h2>Bus de transport</h2>
             <div class="transport-grid">
                 <div class="transport-content">
                     <p>Scania est reconnue dans le monde entier pour ses solutions de transport fiable, économe en énergie. Dans un contexte où la préoccupation environnementale devient de plus en plus importante, Scania privilégie des bus équipés de déchargement automatisés, rendant ces processus plus efficaces et plus économes et stimuler des initiatives de transport plus durable.</p>
-                    
-                    <div class="transport-features">
+
+                        <div class="transport-features">
                         <?php
-                        $transportFeatures = [
-                            ['icon' => '🚌', 'title' => 'Confort et sécurité'],
-                            ['icon' => '⚡', 'title' => 'Efficacité énergétique'],
-                            ['icon' => '🌿', 'title' => 'Respect environnement'],
-                            ['icon' => '🛠️', 'title' => 'Technologie avancée']
+                            $transportFeatures = [
+                                
+                            ['icon' => '<i class="fas fa-bus"></i>', 'title' => 'Confort et sécurité'],
+                            ['icon' => '<i class="fas fa-bolt"></i>', 'title' => 'Efficacité énergétique'],
+                            ['icon' => '<i class="fas fa-leaf"></i>', 'title' => 'Respect environnement'],
+                            ['icon' => '<i class="fas fa-wrench"></i>', 'title' => 'Technologie avancée']
                         ];
-                        
+ 
                         foreach ($transportFeatures as $index => $tFeature):
                         ?>
                             <div class="transport-feature" style="animation-delay: <?php echo $index * 0.1; ?>s">
@@ -558,24 +571,23 @@
                         <?php endforeach; ?>
                     </div>
                 </div>
-                <div class="transport-image">
-                    <img src="/asset/images/scannia.jpg" alt="Bus Scania">
+            <div class="transport-image">
+                <img src="/asset/images/scannia.jpg" alt="Bus Scania">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
     <section class="stats">
         <div class="container">
             <div class="stats-grid">
                 <?php
-                $stats = [
-                    ['icon' => '🚛', 'number' => '200+', 'label' => 'Véhicules'],
-                    ['icon' => '🌍', 'number' => '95%', 'label' => 'Écologique'],
-                    ['icon' => '⭐', 'number' => '24/7', 'label' => 'Service']
+                    $stats = [
+                    ['icon' => '<i class="fas fa-truck"></i>', 'number' => '200+', 'label' => 'Véhicules'],
+                    ['icon' => '<i class="fas fa-earth-americas"></i>', 'number' => '95%', 'label' => 'Écologique'],
+                    ['icon' => '<i class="fas fa-star"></i>', 'number' => '24/7', 'label' => 'Service']
                 ];
-                
+
                 foreach ($stats as $index => $stat):
                 ?>
                     <div class="stat-item" style="animation-delay: <?php echo $index * 0.2; ?>s">
@@ -592,7 +604,7 @@
     <section class="contact">
         <div class="container">
             <h2>Vous avez des questions ?</h2>
-            <a href="#contact" class="contact-btn">Nous Contacter</a>
+            <a href="/contact#contact" class="contact-btn">Nous Contacter</a>
         </div>
     </section>
 

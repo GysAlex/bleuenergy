@@ -48,7 +48,7 @@
                     </div>
                     <div class="cta">
                         <button>
-                            <a href="/projet">
+                            <a href="/project">
                                 <span class="little-effect">Découvrir nos solutions</span>
                             </a>
                         </button>

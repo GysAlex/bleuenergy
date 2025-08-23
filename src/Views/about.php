@@ -138,12 +138,11 @@ $tagline = "Pionniers de la Valorisation Énergétique";
 
         /* Hero Section */
         .hero {
-            height: 100vh;
-            background: linear-gradient(135deg, rgba(44, 85, 48, 0.85), rgba(52, 152, 219, 0.75)), 
-                        url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            height: 70vh;
+            background: var(--simple-gradient), url('/asset/images/logo.png');
             background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+            background-position-x: center;
+            background-position-y: 45%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -151,6 +150,7 @@ $tagline = "Pionniers de la Valorisation Énergétique";
             color: white;
             position: relative;
             overflow: hidden;
+            clip-path: ellipse(100% 85% at 50% 15%);
         }
 
         .hero::before {
@@ -261,7 +261,7 @@ $tagline = "Pionniers de la Valorisation Énergétique";
             display: flex;
             align-items: center;
             gap: 2rem;
-            max-width: 750px;
+            max-width: 900px;
             margin: 0 auto;
             background: white;
             padding: 1.8rem;
@@ -892,7 +892,6 @@ $tagline = "Pionniers de la Valorisation Énergétique";
         }
 
         // Create particles periodically
-        setInterval(createParticle, 800);
     </script>
 
 </body>

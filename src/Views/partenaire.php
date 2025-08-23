@@ -194,9 +194,9 @@
                     <p class="form-description">
                         Complétez le formulaire ci-dessous pour nous faire part de votre intérêt à devenir partenaire. Notre équipe vous contactera dans les meilleurs délais pour discuter des possibilités de collaboration.
                     </p>
-                    <button class="join-partners-button">
+                    <a href="/contact#contact" style="text-decoration: none;" class="join-partners-button">
                         Devenir Partenaire
-                    </button>
+                    </a>
                 </div>
 
             </div>
@@ -209,9 +209,9 @@
             <p class="partners-contact-description">
                 Notre équipe dédiée aux partenariats stratégiques est à votre disposition pour répondre à toutes vos questions et explorer les possibilités de collaboration.
             </p>
-            <button class="contact-us-button">
+            <a href="/contact#contact" style="text-decoration: none;" class="contact-us-button">
                 <i class="fa-solid fa-envelope"></i> Contactez-nous
-            </button>
+            </a>
         </div>
     </section>
 

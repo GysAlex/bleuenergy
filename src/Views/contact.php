@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
+
+    <title>Contactez-nous | Partenariats, Emplois & Informations - Bleue Energies</title>
+
+    <meta name="description" content="Contactez l'équipe de Bleue Energies au Cameroun pour des opportunités de partenariats, des questions sur nos technologies Waste-to-Energy ou des candidatures d'emploi. Notre bureau est situé à Douala/Akwa.">
+    <meta name="keywords" content="contact, partenariat, emploi, recrutement, Douala, Cameroun, Bleue Energies, Waste-to-Energy, biogaz, adresse, téléphone, email, contactez-nous">
+    <meta name="author" content="Bleue Energies">
+    <link rel="canonical" href="https://www.bleueenergy.com/contact">
+
+    <meta property="og:title" content="Contactez Bleue Energies | Partenariats & Emplois">
+    <meta property="og:description" content="Contactez l'équipe de Bleue Energies au Cameroun pour des opportunités de partenariats, des questions sur nos technologies Waste-to-Energy ou des candidatures d'emploi. Notre bureau est situé à Douala/Akwa.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.bleueenergy.com/contact">
+    <meta property="og:image" content="https://www.bleueenergy.com/asset/images/ac.jpg">
+
     <?php
         include __DIR__."/components/meta.php";
     ?>
     
+    
+
     <link rel="stylesheet" href=<?php asset('global.css') ?>>
 
-    <title>Contact</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->

@@ -7,6 +7,8 @@
     <meta name="keywords" content="gestion déchets Cameroun, Waste to Energy, énergie propre, biogaz, biodiesel, bioélectricité, Douala, Yaoundé, développement durable, économie circulaire, HYSACAM">
     <meta name="author" content="Votre Nom d'Entreprise ou Agence">
     <meta name="robots" content="index, follow">
+    <meta name="author" content="Bleue Energies">
+    <link rel="canonical" href="https://www.bleueenergy.com">
 
     <meta property="og:title" content="Waste to Energy Cameroun | La solution durable pour les déchets et l'énergie">
     <meta property="og:description" content="Découvrez le projet Waste to Energy, une solution innovante pour la gestion des déchets urbains au Cameroun. Nous transformons les ordures en biogaz, biodiesel et bioélectricité pour une mobilité durable et une économie circulaire.">
@@ -289,7 +291,7 @@
                             </div>
                         </div>
                         <div class="content-image">
-                            <img src="/asset/images/hero.jpeg" alt="Transformation Énergétique">
+                            <img src="/asset/images/wte.jpg" alt="Transformation Énergétique">
                         </div>
                     </section>
 
@@ -302,7 +304,7 @@
                             </div>
                         </div>
                         <div class="content-image">
-                            <img src="/asset/images/camion.jpeg" alt="Impact et Applications">
+                            <img src="/asset/images/camion_new.jpeg" alt="Impact et Applications">
                         </div>
                     </section>
                 </div>
@@ -401,7 +403,7 @@
                 <div class="left-content">
                     <h2>Agissons Ensemble pour une Planète Plus Propre</h2>
                     <p>Nous sommes à la recherche de partenariats pour étendre notre impact. Contactez-nous pour explorer les possibilités de collaboration et découvrir comment notre technologie peut s'adapter à vos besoins spécifiques.</p>
-                    <a href="#" class="btn-primary">Contactez Notre Équipe</a>
+                    <a href="/contact#contact" class="btn-primary">Contactez Notre Équipe</a>
                 </div>
                 <div class="right-content">
                     <div class="contact-form-card">
