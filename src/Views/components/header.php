@@ -166,7 +166,7 @@
                     <a class="<?php addClassIf(" ", 'active') ?>" href="/">Accueil</a>
                 </li>
                 <li>
-                    <a class="<?php addClassIf(" ", 'active') ?>" href="/project">projet</a>
+                    <a class="<?php addClassIf("project", 'active') ?>" href="/project">projet</a>
                 </li>
                 <li class="has-submenu">
                     <a href="/technologie">Notre Processus<i class="fa-solid fa-chevron-down submenu-icon"></i></a>
