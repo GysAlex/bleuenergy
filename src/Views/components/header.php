@@ -234,7 +234,7 @@
                     <a class=" nav-item <?php addClassIf("", 'active') ?>" href="/"  href="">Accueil</a>
                 </li>
                 <li>
-                    <a class=" nav-item <?php addClassIf("projet", 'active') ?>" href="/project"  href="">Projet</a>
+                    <a class=" nav-item <?php addClassIf("project", 'active') ?>" href="/project"  href="">Projet</a>
                 </li>
                 <li>
                     <a class="nav-item <?php addClassIf("technologie", 'active') ?>" href="/technologie">

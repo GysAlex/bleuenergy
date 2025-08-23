@@ -278,7 +278,7 @@
                             </div>
                         </div>
                         <div class="content-image">
-                            <img src="/asset/images/benne.jpg" alt="Collecte et Tri Intelligent">
+                            <img src="/asset/images/tri_tri.jpg" alt="Collecte et Tri Intelligent">
                         </div>
                     </section>
 
