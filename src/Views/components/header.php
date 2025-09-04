@@ -261,6 +261,12 @@
                                 Usines
                             </a>
                         </li>
+                        <li class="inner-menu">
+                            <a href="/technologie/biogaz">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                Biogaz
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li>

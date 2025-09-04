@@ -13,19 +13,19 @@
         <div class="footer-column">
             <h4>Solutions</h4>
             <ul>
-                <li><a href="#">Collecte et Tri</a></li>
-                <li><a href="#">Transformation</a></li>
-                <li><a href="#">Distribution d'Énergie</a></li>
-                <li><a href="#">Applications Transport</a></li>
+                <li><a href="/technologie/tri">Collecte et Tri</a></li>
+                <li><a href="/techonologie/usine">Transformation</a></li>
+                <li><a href="/technologie">Distribution d'Énergie</a></li>
+                <li><a href="/impact">Applications Transport</a></li>
             </ul>
         </div>
         <div class="footer-column">
             <h4>À Propos</h4>
             <ul>
-                <li><a href="#">Notre Mission</a></li>
-                <li><a href="#">Équipe</a></li>
-                <li><a href="#">Partenaires</a></li>
-                <li><a href="#">Mentions légales</a></li>
+                <li><a href="/project">Notre Mission</a></li>
+                <li><a href="/about">Équipe</a></li>
+                <li><a href="/partenaire">Partenaires</a></li>
+                <li><a href="/contact#contact">Contact</a></li>
             </ul>
         </div>
         <div class="footer-column footer-newsletter">
@@ -38,7 +38,7 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2025. Blue Energy. Tous droits réservés.</p>
+        <p>&copy; 2025. Blue Energy. Tous droits réservés. <span style="font-weight: bold; margin-left: 30px; font-size: 1.1em;">Design by EPA GROUP SARL</span></p>
         <div class="social-links">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>

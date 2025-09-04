@@ -40,8 +40,6 @@ else if($uri === "/project" && $_SERVER["REQUEST_METHOD"] == "GET")
 }
 
 
-
-
 else if($uri === "/technologie" && $_SERVER["REQUEST_METHOD"] == "GET")
 {
     PageController::techno();
@@ -51,9 +49,15 @@ else if($uri === "/technologie/tri" && $_SERVER["REQUEST_METHOD"] == "GET")
 {
     PageController::tri();
 }
+
 else if($uri === "/technologie/camion" && $_SERVER["REQUEST_METHOD"] == "GET")
 {
     PageController::camion();
+}
+
+else if($uri === "/technologie/biogaz" && $_SERVER["REQUEST_METHOD"] == "GET" )
+{
+    PageController::biogaz();
 }
 
 else if($uri === "/impact" && $_SERVER["REQUEST_METHOD"] == "GET")

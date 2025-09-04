@@ -108,6 +108,7 @@
             </div>
         </div>
     </section>
+    
     <section class="projet-wte-section">
         <div class="projet-wte-container">
             <div class="projet-wte-grid">

@@ -83,6 +83,12 @@ class PageController
     }
 
 
+    public static function biogaz()
+    {
+        return view('biogaz');
+    }
+
+
     public static function contactSend()
     {
         $response = [];
@@ -108,15 +114,15 @@ class PageController
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'fokoalex5@gmail.com'; // Votre adresse Gmail
-            $mail->Password   = 'TestPassword'; // Votre mot de passe d'application
+            $mail->Username   = 'test_email@gmail.com'; // Votre adresse Gmail
+            $mail->Password   = 'test_password'; // Votre mot de passe d'application
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port       = 465;
             $mail->CharSet    = 'UTF-8';
 
             // Destinataires et expéditeur
-            $mail->setFrom('fokoalex5@gmail.com', 'Formulaire BleueEnergy');
-            $mail->addAddress('fokoalex5@gmail.com'); // Destinataire de l'e-mail
+            $mail->setFrom('test_email@gmail.com', 'Formulaire BleueEnergy');
+            $mail->addAddress('test_email@gmail.com'); // Destinataire de l'e-mail
             $mail->addReplyTo($email, $nom);
 
             // Contenu de l'e-mail (au format HTML, comme défini précédemment)
@@ -206,15 +212,15 @@ class PageController
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'fokoalex5@gmail.com';
-        $mail->Password   = 'TestPassword';
+        $mail->Username   = 'test_email@gmail.com';
+        $mail->Password   = 'test_password';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = 465;
         $mail->CharSet = 'UTF-8';
 
         // Destinataires
-        $mail->setFrom('fokoalex5@gmail.com', 'Formulaire BleueEnergy');
-        $mail->addAddress('fokoalex5@gmail.com'); //Test
+        $mail->setFrom('test_email@gmail.com', 'Formulaire BleueEnergy');
+        $mail->addAddress('test_email@gmail.com'); //Test
         // $mail->addAddress('da@bleueenergy.com');
         $mail->addReplyTo($email, $nom);
 
