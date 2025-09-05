@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <title>Le Biogaz : Une Énergie Durable et Renouvelable | Blue Energy</title>
+    <meta name="description" content="Découvrez le biogaz, une énergie renouvelable produite par la méthanisation des déchets organiques. Apprenez comment Blue Energy transforme les biodéchets en biocarburant pour décarboner le transport lourd.">
+    <meta name="keywords" content="biogaz, biocarburant, énergie renouvelable, méthanisation, gaz vert, transport durable, décarbonation, énergie verte, Blue Energy, déchets organiques">
+    <meta name="author" content="Blue Energy">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bleueenergy.com/technologie/biogaz">
+
+    <meta property="og:title" content="Le Biogaz : L'avenir du Transport Vert | Blue Energy">
+    <meta property="og:description" content="Explorez le potentiel du biogaz, une solution énergétique efficace pour réduire les émissions de carbone et valoriser les déchets.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bleueenergy.com/technologie/biogaz">
+    <meta property="og:image" content="https://bleueenergy.com/asset/images/bus-biogaz-carburant-renouvelable.jpeg">
+    <meta property="og:locale" content="fr_FR">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@VotreCompteTwitter">
+    <meta name="twitter:title" content="Le Biogaz : Une Révolution pour l'Énergie et l'Environnement">
+    <meta name="twitter:description" content="Découvrez comment Blue Energy utilise le biogaz pour une meilleure gestion des déchets et une mobilité durable.">
+    <meta name="twitter:image" content="https://bleueenergy.com/asset/images/bus-biogaz-carburant-renouvelable.jpeg">
+
     <?php
         include __DIR__."/components/meta.php";
     ?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href=<?php asset('global.css') ?>>
     <link rel="stylesheet" href=<?php asset('biogaz.css') ?>>
-    <title>Blueu Energy | Biogaz </title>
 </head>
 <body>
     

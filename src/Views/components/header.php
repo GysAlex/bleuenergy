@@ -1,3 +1,7 @@
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PL5QJ6RW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <style>
         /* Cache tous les sous-menus par défaut */
         .dropdown-menu {
