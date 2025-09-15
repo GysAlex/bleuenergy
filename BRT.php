@@ -291,7 +291,7 @@ $current_year = date('Y');
     <section id="vision" class="vision-section">
         <div class="container">
             <h2 class="text-center section-title fade-in">Notre vision</h2>
-            <p class="text-center lead mb-5 fade-in">Créer un écosystème de transport urbain intelligent et durable qui connecte les communautés tout en réduisant l'empreinte carbone</p>
+            <p class="text-center lead mb-5 fade-in">Grâce au Waste to Energy, les déchets se transforment en bioélectricité pour alimenter le BRT électrique, réduisant durablement l’empreinte carbone et ouvrant la voie à une mobilité urbaine 100 % verte.</p>
             
             <div class="row g-4">
                 <div class="col-md-4">
@@ -329,7 +329,7 @@ $current_year = date('Y');
     <section class="connectivity-section">
         <div class="container">
             <h2 class="text-center section-title fade-in">Connectivité BRT</h2>
-            <p class="text-center lead mb-5 fade-in">Créer un écosystème de transport intelligent et durable qui connecte les communautés tout en réduisant l'empreinte carbone</p>
+            <p class="text-center lead mb-5 fade-in"> Un écosystème de transport qui connecte les communautés tout en réduisant l'empreinte carbone</p>
             
             <div class="row">
                 <div class="col-lg-8">
@@ -370,7 +370,7 @@ $current_year = date('Y');
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <img src="images/image.png" alt="Schéma connectivité" class="img-fluid rounded">
+                    <img src="images/image.jpeg" alt="Schéma connectivité" class="img-fluid rounded">
                 </div>
             </div>
         </div>
@@ -385,7 +385,7 @@ $current_year = date('Y');
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="vehicle-card fade-in">
-                        <img src="images/bus elect.png" alt="Bus électrique">
+                        <img src="images/bus elect.jpeg" alt="Bus électrique">
                         <div class="p-3">
                             <h5>Bus Électriques</h5>
                             <p class="mb-0">Stations haute puissance pour flottes urbaines</p>
@@ -394,7 +394,7 @@ $current_year = date('Y');
                 </div>
                 <div class="col-md-4">
                     <div class="vehicle-card fade-in">
-                        <img src="images/voiture.png" alt="Voiture électrique">
+                        <img src="images/voiture.jpeg" alt="Voiture électrique">
                         <div class="p-3">
                             <h5>Voitures Électriques</h5>
                             <p class="mb-0">Bornes de recharge rapide publiques</p>
@@ -403,7 +403,7 @@ $current_year = date('Y');
                 </div>
                 <div class="col-md-4">
                     <div class="vehicle-card fade-in">
-                        <img src="images/moto.png" alt="Moto électrique">
+                        <img src="images/moto.jpeg" alt="Moto électrique">
                         <div class="p-3">
                             <h5>Motos Électriques</h5>
                             <p class="mb-0">Solutions de recharge compactes</p>
@@ -462,51 +462,7 @@ $current_year = date('Y');
     </section>
 
     <!-- Section Projets Pilotes -->
-    <section id="projets" class="pilot-projects">
-        <div class="container">
-            <h2 class="text-center section-title fade-in">Projets Pilotes</h2>
-        
-            
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="project-card fade-in">
-                        <img src="images/BRT.jpg" alt="Projet BRT Ligne Verte">
-                        <div class="p-4">
-                            <h5>Ligne BRT Verte - Phase 1</h5>
-                            <p>Premier corridor BRT électrique avec stations de recharge intégrées</p>
-                        
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="project-card fade-in">
-                        <img src="images/BRT3.jpg" alt="Projet BRT Ligne Bleue">
-                        <div class="p-4">
-                            <h5>Ligne BRT Bleue - Phase 2</h5>
-                            <p>Extension du réseau avec connexions intermodales</p>
-                         
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section CTA -->
-    <section class="cta-section">
-        <div class="container text-center">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h2 class="mb-4 fade-in">Rejoignez-nous dans la révolution du transport durable et découvrez comment nos solutions peuvent transformer votre ville</h2>
-                    <div class="fade-in">
-                        <a href="#contact" class="btn btn-light btn-lg me-3">Contactez-nous</a>
-                        <a href="#demo" class="btn btn-outline-light btn-lg">Demander une démo</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+   
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     
